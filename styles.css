@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'NotoSansGeorgian-VariableFont_wdth,wght';
+  src: url(./NotoSansGeorgian-VariableFont_wdth%2Cwght.eot);
+  src: url(./NotoSansGeorgian-VariableFont_wdth%2Cwght.eot?#iefix) format('embedded-opentype'),
+       url(./NotoSansGeorgian-VariableFont_wdth%2Cwght.otf) format('otf'),
+       url(./NotoSansGeorgian-VariableFont_wdth%2Cwght.svg#NotoSansGeorgian-VariableFont_wdth%2Cwght) format('svg'),
+       url(./NotoSansGeorgian-VariableFont_wdth%2Cwght.ttf) format('truetype'),
+       url(./NotoSansGeorgian-VariableFont_wdth%2Cwght.woff) format('woff'),
+       url(./NotoSansGeorgian-VariableFont_wdth%2Cwght.woff2) format('woff2');
+}
