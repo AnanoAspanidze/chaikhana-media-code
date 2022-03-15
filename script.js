@@ -58,27 +58,30 @@ window.addEventListener('keyup', () => {
 const rightArrow = document.querySelector('.R');
 const leftArrow = document.querySelector('.L');
 
-if(articlesContainer.scrollWidth > window.innerWidth + 100) { //მარჯვენა ისრის გამოჩენა
-    rightArrow.style.display = 'block';
-}
+const linear = document.querySelector('.linear-reflextion');
+let scrollToRightValue = 0;
 
 function scrollToLeft() { 
-    articlesContainer.scrollLeft -= 510; // 501px-ით ისქროლება onmousedown-ზე
-    if(articlesContainer.scrollLeft === 0) { //თუ მარცხნივ არაფერია
+    scrollToRightValue -= 510; // 501px-ით ისქროლება onmousedown-ზე
+    articlesContainer.scrollLeft = scrollToRightValue;
+    if(scrollToRightValue === 0) { //თუ მარცხნივ არაფერია
         leftArrow.style.display = 'none'; // მარცხენა ისარი ქრება
         rightArrow.style.display = 'block'; // მარჯვენა ჩანს
-    }
-    else if (window.innerWidth + articlesContainer.scrollLeft < articlesContainer.scrollWidth) { //თუ ბოლომდე მარჯვნივ არა გასქროლილი
+    }else if (window.innerWidth + scrollToRightValue < articlesContainer.scrollWidth) { //თუ ბოლომდე მარჯვნივ არა გასქროლილი
         rightArrow.style.display = 'block'; //მარჯვენა ისარი ჩანს
     }
 }
 
+
 function scrollToRight() {
-    articlesContainer.scrollLeft += 510; //501px-ით ისქროლება onmousedown-ზე
-    if (window.innerWidth + articlesContainer.scrollLeft >= articlesContainer.scrollWidth) { //თუ ბოლომდეა მარჯვნივ გასქროლილი
+    scrollToRightValue += 510; //501px-ით ისქროლება onmousedown-ზე
+
+    articlesContainer.scrollLeft = scrollToRightValue;
+
+    if (window.innerWidth + scrollToRightValue >= articlesContainer.scrollWidth) { //თუ ბოლომდეა მარჯვნივ გასქროლილი
+        linear.style.display = 'none';
         rightArrow.style.display = 'none'; // მარჯვენა ისარიქრება
-    }
-    else if(articlesContainer.scrollLeft > 0) { // თუ მარცხნივ არაა ბოლომდე გასქროლილი
+    }else{ // თუ მარცხნივ არაა ბოლომდე გასქროლილი
         leftArrow.style.display = 'block' //მარცხენა ისარი ჩანს
     }
 
