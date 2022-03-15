@@ -1,0 +1,576 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'NotoSansGeorgian-VariableFont_wdth,wght';
+    color: #707070;
+    box-sizing: border-box;
+    overflow-x:hidden ;
+}
+
+
+/* -------------------------------------------HEADER-------------------------------------------- */
+
+
+.header {
+    width: 100%;
+    height: 558px;
+    background-color: #0038D3;
+    position: relative;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    height: 90.5px;
+
+}
+
+.menu {
+    width: 100%;
+    max-width: 516.79px;
+    display: flex;
+    justify-content: end;
+    margin-right: 7%;
+}
+
+.firstul {
+    display: flex;
+}
+
+.firstul a {
+    color: white;
+    font-size: 35px;
+    margin-left: 34px;
+}
+
+.languages a {
+    color: white;
+    font-size: 35px;
+    margin-left: 34px;
+  
+}
+
+
+.ge-cont {
+    display: flex;
+    padding-right: 13px;
+    cursor: pointer;
+}
+
+
+.ge-cont i {
+    color: white;
+    font-size: 22px;
+    transform: translate(10px,17px);
+    user-select: none;
+}
+
+.enru {
+    display: none;
+    background-color: #FFFFFF;
+    color: #0044FF;
+    user-select: none;
+    padding-left: 10px;
+}
+
+/* .lang {
+    padding-left: 40px;
+} */
+
+#en {
+    color: #0044FF;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #0044FF;
+    user-select: none;
+}
+
+#ru {
+    color: #0044FF;
+    user-select: none;
+}
+
+.enru.show {
+    display: block;
+}
+
+
+.logo {
+    margin-left: 7%;
+    font-family: 'BPG WEB 001';
+    color: white;
+    padding-top: 5px;
+}
+
+.logo a {
+    font-size: 39px;
+    color: white;
+}
+
+.header-txt {
+    color: white;
+    font-family: 'BPG WEB 001';
+    font-size: 65px;
+    width: 76%;
+    max-width: 1453px;
+    margin-top: 101.5px;
+    margin-left: 7%;
+    line-height: 66px;
+    height: 264px;
+}
+
+.firsth6 {
+    margin-bottom: 30px;
+}
+
+.chkh-logo img {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    right: 7%;
+    top: 468px;
+}
+
+/* ----------------------------------ABOUT--------------------------------------- */
+
+.about-head {
+    color:#0044FF;
+    font-size: 74px;
+    font-family: 'BPG WEB 001';
+    margin-top: 120px;
+    margin-left: 7%;;
+}
+
+.about-container {
+    width: 73.3%;
+    margin-top: 29px;
+    margin-left: 7%;
+    font-size: 35px;
+    margin-bottom: 126px;
+    line-height: 47px;
+    /* border: 2px solid black; */
+}
+
+#hidden-txt {
+    display: none;
+}
+
+#hidden-txt.show {
+    display: inline;
+}
+
+
+
+.read-more-btn {
+    color: #0044FF;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+.read-more-btn.hide-btn {
+    display:none;
+}
+
+#dots.hide-dots {
+    display: none;
+}
+
+#hidden-list {
+    display: none;
+    margin-left: 37px;
+    list-style: none;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: #0044FF;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 2%;
+    transform: translate(0, -2px);
+}
+
+#hidden-list.show-list {
+    display: block;
+}
+
+
+.deadlines {
+    display: none;
+}
+
+.deadlines.show-deadline {
+    display: block;
+}
+
+#eu-undp {
+    display: none;
+    width: 39%;
+    margin-left: 42%;
+    margin-bottom: 114.5px;
+    /* border: 2px solid red; */
+}
+
+#eu-undp.show-img {
+    display: block;
+}
+
+
+/* --------------------------------PROJECTS----------------------------------- */
+
+.project-container {
+    width: 100%;
+    /* min-height: 1165px; */
+    background-color: #0038D3;
+    padding-bottom: 179px;
+}
+
+.project-head {
+    color: white;
+    font-family: 'BPG WEB 001';
+    font-size: 74px;
+    /* border: 2px solid white; */
+    /* max-width: 881px; */
+    margin-left: 7%;
+    padding-top: 92px;
+}
+
+.projects-grid-container {
+    width: 87%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 16px;
+    margin-top: 76px;
+    /* border: 2px solid red; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid {
+    background-color: #FFFFFF;
+    /* width: 536px; */
+    /* width: 100%; */
+    max-height: 354px;
+    border-radius: 42px;
+    cursor: pointer;
+    padding: 29px 5% 31px 7%;
+}
+
+.grid-head-cont {
+    /* margin-left: 7%; */
+    /* margin-top: 29px; */
+    font-family: 'BPG WEB 001';
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.grid-head {
+    margin-bottom: 13px;
+    color: #0038D3;
+}
+
+.grid-author {
+    color: #0038D3;
+}
+
+.authors {
+    color: black;
+}
+
+.img-story-cont {
+    width: 95%;
+    display: flex;
+    /* margin-left: 8.8%; */
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-story-cont p {
+    font-size: 12px;
+    color: #707070;
+    margin-left: 2.4%;
+    text-align: start;
+}
+
+.img-story-cont img {
+    height: 181px;
+    border-radius: 17px;
+}
+
+
+/* -----------------------------------DETAILS----------------------------------- */
+
+/* პირველი ფლექს კონტეინერი */
+
+.details-head  {
+    font-family: 'BPG WEB 001';
+    font-size: 74px;
+    color: #0044FF;
+    margin-left: 7%;
+    margin-top: 158px;
+    width: 49%;
+    position: relative;
+    /* border: 2px solid black; */
+}
+
+
+
+.details-shadow {
+    width: 100%;
+    height: 60px;
+    background-color: #ADCFD8;
+    border-radius: 43px;
+    transform: translate(3px, 59%);
+    margin-bottom: 142px;
+}
+.details-head p {
+    z-index: 1;
+    position: absolute;
+}
+
+
+.flex {
+    width: 93%;
+    /* border: 2px solid black; */
+    display: flex;
+    margin-left: 7%;
+}
+
+
+.img-inner-flex-1 img {
+    height: 380px;
+    margin-top: 15px;
+    margin-bottom: 270.5px;
+}
+
+.text-container-flex {
+    margin-left: 2.8%;
+}
+
+.inner-flex-header {
+    font-family: 'BPG WEB 001';
+    font-size: 56px;
+    color: #0044FF;
+    margin-bottom: 26px;
+}
+
+.inner-flex-txt  {
+    font-size: 35px;
+    width: 80%;
+    color: #707070;
+
+    margin-bottom: 26px;
+}
+
+.inner-flex-list {
+    display: flex;
+}
+
+.inner-flex-list li{
+    font-size: 35px;
+    color: #707070;
+    margin-left: 54px;
+}
+
+.circle-1 {
+    width: 20px;
+    height: 20px;
+    background-color: #0073FF;
+    border-radius: 50%;
+    /* margin-left: 54px; */
+    margin-bottom: 27px;
+    margin-top: 5px;
+}
+
+.circle-2 {
+    width: 20px;
+    height: 20px;
+    background-color: #0073FF;
+    border-radius: 50%;
+    /* margin-left: 54px; */
+    margin-bottom: 27px;
+    margin-top: 4.5px;
+}
+
+.circle-3 {
+    width: 20px;
+    height: 20px;
+    background-color: #0073FF;
+    border-radius: 50%;
+    /* margin-left: 54px; */
+    margin-bottom: 27px;
+    margin-top: 1px;
+}
+
+.circles {
+    margin-top: 13px;
+}
+
+
+/* აქედან იყწება მეორე ფლექს კონტეინერი */
+
+.img-inner-flex-2 img{
+    height: 390px;
+    margin-bottom: 428px;
+}
+.text-container-flex-2 {
+    margin-top: 7px;
+    margin-left: 1.8%;
+}
+
+/* აქედან იწყება მესამე ფლექს კონტეინერი */
+
+.text-container-flex-3 {
+    margin-left: 1.8%;
+}
+
+.img-inner-flex-3 img {
+    margin-top: 23.5px;
+    height: 458px;
+    margin-bottom: 508px;
+}
+
+/* ----------------------------reflexion------------------------ */
+
+
+
+
+.linear-reflextion {
+    height:100%;
+    /* width: 34%; */
+    width: 650px;
+    background-image: linear-gradient(to right, #6788ff02 , #6787FF);
+    position: absolute;
+    right: 0;
+    z-index: 1;
+
+}
+
+.logo-reflection img {
+    width: 180px;
+    height: 180px;
+    transform: translate(0, -50%);
+    position: absolute;
+}
+
+.pl-7 {
+    padding-left: 7%;
+}
+
+.reflexion-container {
+    width: 100%;
+    min-height: 1668px;
+    background-color: #0038D3;
+    padding-bottom: 54px;
+    position: relative;
+}
+
+.reflexion-header p {
+    font-family: 'BPG WEB 001';
+    color: white;
+    font-size: 74px;
+    width: 50%;
+    margin-left: 7%;
+    padding-top: 259px;
+    margin-bottom: 117px;
+}
+
+.full-article-container {
+    position: relative;
+}
+
+.articles-container {
+    padding-left: 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* display: flex;
+    flex-wrap: nowrap; */
+    gap: 67px;
+    overflow: auto;
+    position: relative;
+    /* border: 1px solid red; */
+    scroll-behavior: smooth;
+}
+
+.article {
+    width: 435px;
+    color: white;
+    /* flex: 0 0 auto; */
+}
+
+.article-author {
+    font-size: 35px;
+    display: inline;
+}
+
+.age {
+    font-size: 14px;
+
+}
+
+.address {
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+.article article {
+    font-size: 25px;
+}
+
+.articles-container::-webkit-scrollbar {
+    display: none;
+}
+
+.arrow {
+    color: white;
+    font-size: 127.74px;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-25%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer !important;
+    z-index: 1;
+}
+
+.R {
+    right: 20px;
+    display: none;
+}
+.L {
+    left: 20px;
+    display: none;
+}
+
+/* ----------------------------FOOTER------------------------ */
+
+footer {
+    width: 100%;
+    height: 267px;
+}
+
+.footer-txt {
+    width: 50%;
+    padding-left: 7%;
+    padding-top: 113px;
+}
+
+.footer-txt p {
+    font-family: 'BPG WEB 001';
+    font-size: 25px;
+    color: black;
+}
+
+.mail {
+    color: #0044FF;
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'BPG WEB 001';
+    src: url('../fonts/bpg-web-001-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/bpg-web-001-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/bpg-web-001-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/bpg-web-001-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/bpg-web-001-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/bpg-web-001-webfont.svg#bpg_web_001regular') format('svg'); /* Legacy iOS */
+}
