@@ -12,10 +12,9 @@ html {
 body {
     font-family: 'NotoSansGeorgian-VariableFont_wdth,wght';
     color: #707070;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     overflow-x:hidden ;
 }
-
 
 /* -------------------------------------------HEADER-------------------------------------------- */
 
@@ -120,7 +119,7 @@ body {
     color: white;
     font-family: 'BPG WEB 001';
     font-size: 65px;
-    width: 76%;
+    /* width: 76%; */
     max-width: 1453px;
     margin-top: 101.5px;
     margin-left: 7%;
@@ -262,12 +261,17 @@ body {
     background-color: #FFFFFF;
     /* width: 536px; */
     /* width: 100%; */
-    max-height: 354px;
+    min-height: 354px;
     border-radius: 42px;
     cursor: pointer;
-    padding: 37px 12px 39px 26px;
+    padding: 37px 12px 52px 26px;
     overflow: auto;
     overflow: hidden;
+}
+
+
+.grid:hover {
+    background-color: #ffffffcc;
 }
 
 .grid-head-cont {
@@ -305,6 +309,8 @@ body {
     color: #707070;
     margin-left: 2.4%;
     text-align: start;
+    /* margin-top: auto;
+    margin-bottom: auto; */
 }
 
 .img-story-cont img {
@@ -350,6 +356,13 @@ body {
     /* border: 2px solid black; */
     display: flex;
     margin-left: 7%;
+}
+
+
+@media  (max-width: 1128px) { /*------------------------------------------------------------------------------------------დროებით პატარა რესფონსივი*/
+    .flex {
+        display: block;
+    }
 }
 
 
@@ -445,6 +458,111 @@ body {
     height: 458px;
     margin-bottom: 508px;
 }
+
+
+
+/* --------------------PROJECTS (for russian)---------------------- */
+
+.project-cont-for-ru {
+    width: 100%;
+    min-height: 1165px;
+    background-color: #0038D3;
+    margin-bottom: 224px;
+    padding-bottom: 78px;
+}
+
+
+.projects-for-rus-header {
+    color: white;
+    font-size: 74px;
+    font-family: 'BPG WEB 001';
+    padding-top: 96px;
+    padding-left: 7%;
+    
+}
+
+.projects-for-rus-header-2 {
+    font-size: 56px;
+    color: white;
+    font-family: 'BPG WEB 001';
+    padding-top: 14px;
+    padding-left: 7%;
+    margin-bottom: 62px;
+}
+
+.project-ru-grid-cont{
+    width: 87%;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 45px;
+    margin-top: 76px;
+    /* border: 2px solid red; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-ru {
+    background-color: white;
+    border-radius: 42px;
+    padding: 53px 20px 42px 28px;
+}
+
+.grid-ru:hover {
+    background-color: #ffffffcc;
+}
+
+.project-ru-grid-cont-header {
+    font-family: 'BPG WEB 001';
+    color: #0038D3;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.authors-ru-grid {
+    display: flex;
+    margin-bottom: 11.3px;
+}
+
+.authors {
+    font-size: 21px;
+    font-family: 'BPG WEB 001';
+    
+}
+
+.names-ru {
+    font-size: 21px;
+    color: #0038D3;
+    font-family: 'BPG WEB 001';
+    /* margin-right: 12.5%; */
+}
+
+.project-ru-grid-cont hr {
+    margin-bottom: 11.7px;
+}
+
+.project-ru-grid-cont img {
+    width: 63%;
+    margin-bottom: 26px;
+}
+
+.grid-ru-story {
+    font-size: 20px;
+    color: #707070;
+}
+
+@media (max-width: 1259px) {
+    .authors-ru-grid {
+        display: block;
+    }
+}
+
+@media (max-width: 1200px) {
+    .project-ru-grid-cont {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 
 /* ----------------------------reflexion------------------------ */
 
@@ -589,6 +707,136 @@ footer {
 
 .background {
     width: 100%;
-    height: 1371px;
+    height: 1446px;
     background-color: #0038D3;
+}
+
+.logo {
+    /* border: 2px solid white; */
+    margin-bottom: 41px;
+}
+
+.white-container {
+    height: 1103px;
+    width: 85.5%;
+    background-color: white;
+    transform: translate(0, 70px); /*აქ დროებით 70პიქსელით ჩამოვწიე იმიტომ რომ ჩამოშლილ ენებს ეფარებოდა*/
+    margin: auto;
+    border-radius: 42px;
+    padding-top: 138px;
+    box-sizing: border-box;
+}
+
+.audio-story-head {
+    font-family: 'BPG WEB 001';
+    color: #0044FF;
+    font-size: 56px;
+    text-align: center;
+    margin-bottom: 29px;
+    
+}
+
+.audio-story-desc {
+    font-family: 'BPG WEB 001';
+    color: #0044FF;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 63px;
+}
+
+.audio {
+    width: 96%;
+    height: 482px;
+    margin-left: 2%;
+    margin-bottom: 58px;
+}
+
+.audio-desc {
+    margin-left: 8.5%;
+    color: #707070;
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+
+.chkh-logo-audio img {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    transform: translate(480%, 27%);
+}
+
+
+
+/* ----------------------------------------------------------------presonal-diary--------------------------------------------------------------------------------------------*/
+
+
+/* -------------------------backgroungd----------------------- */
+
+.background-diary {
+    width: 100%;
+    min-height: 4479px;
+    background-color: #0038D3;
+    padding-bottom: 130px;
+}
+
+
+.inner-cont-diary {
+    width: 85.5%;
+    min-height: 4116px;
+    background-color: #FFFFFF;
+    margin: auto;
+    transform: translate(0, 70px); /*აქ დროებით 70პიქსელით ჩამოვწიე იმიტომ რომ ჩამოშლილ ენებს ეფარებოდა*/
+    border-radius: 42px;
+    position: relative;
+}
+
+.diary-head {
+    font-size: 56px;
+    color: #0044FF;
+    font-family: 'BPG WEB 001';
+    text-align: center;
+    padding-top: 117px;
+    margin-bottom: 29px;
+}
+
+.diary-author {
+    font-size: 35px;
+    color: #0044FF;
+    font-family: 'BPG WEB 001';
+    text-align: center;
+    margin-bottom: 62px;
+}
+
+.diary-txt {
+    font-size: 25px;
+    color: #707070;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 70px;
+}
+
+
+.diary-img {
+    height: 797px;
+    margin-left: 8%;
+    margin-bottom: 70px;
+}
+
+.diary-txt-darker {
+    color: #4d4d4d;
+}
+
+.diary-txt-2 {
+    padding-bottom: 100px;
+}
+
+.logo-diary img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    transform: translate(300%,-90%);
+}
+
+hr {
+    border: .2px solid #707070;
 }

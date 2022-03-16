@@ -7,14 +7,7 @@ const ru = document.getElementById('ru');
 ge.addEventListener('click', () =>  {  // კლიკზე ჩამოიშლება Eng და Rus
     en.classList.toggle('show');
     ru.classList.toggle('show');
-})
-
-
-
-
-
-
-
+});
 
 
 // --------------------------------------------------------------------------------------------------------------------------------------------SEE MORE TEXT
