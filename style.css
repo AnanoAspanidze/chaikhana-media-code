@@ -7,6 +7,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 10px;
 }
 
 body {
@@ -14,6 +15,11 @@ body {
     color: #707070;
     /* box-sizing: border-box; */
     overflow-x:hidden ;
+}
+
+h1, h1, h3, h4, h5, h6 {
+    font-size: unset;
+    font-weight: normal;
 }
 
 /* -------------------------------------------HEADER-------------------------------------------- */
@@ -48,13 +54,13 @@ body {
 
 .firstul a {
     color: white;
-    font-size: 35px;
+    font-size: 3.5rem;
     margin-left: 34px;
 }
 
 .languages a {
     color: white;
-    font-size: 35px;
+    font-size: 3.5rem;
     margin-left: 34px;
   
 }
@@ -69,7 +75,7 @@ body {
 
 .ge-cont i {
     color: white;
-    font-size: 22px;
+    font-size: 2.2rem;
     transform: translate(10px,17px);
     user-select: none;
 }
@@ -111,14 +117,14 @@ body {
 }
 
 .logo a {
-    font-size: 39px;
+    font-size: 3.9rem;
     color: white;
 }
 
 .header-txt {
     color: white;
     font-family: 'BPG WEB 001';
-    font-size: 65px;
+    font-size: 6.5rem;
     /* width: 76%; */
     max-width: 1453px;
     margin-top: 101.5px;
@@ -139,7 +145,7 @@ body {
     }
 }
 
-.firsth6 {
+.firsth1 {
     margin-bottom: 30px;
 }
 
@@ -155,7 +161,7 @@ body {
 
 .about-head {
     color:#0044FF;
-    font-size: 74px;
+    font-size: 7.4rem;
     font-family: 'BPG WEB 001';
     margin-top: 120px;
     margin-left: 7%;;
@@ -165,7 +171,7 @@ body {
     width: 73.3%;
     margin-top: 29px;
     margin-left: 7%;
-    font-size: 35px;
+    font-size: 3.5rem;
     margin-bottom: 126px;
     line-height: 47px;
     /* border: 2px solid black; */
@@ -185,7 +191,7 @@ body {
     color: #0044FF;
     cursor: pointer;
     margin-top: 10px;
-    font-size: 35px;
+    font-size: 3.5rem;
 }
 
 .read-more-btn.hide-btn {
@@ -250,7 +256,7 @@ body {
 .project-head {
     color: white;
     font-family: 'BPG WEB 001';
-    font-size: 74px;
+    font-size: 7.4rem;
     /* border: 2px solid white; */
     /* max-width: 881px; */
     margin-left: 7%;
@@ -273,7 +279,7 @@ body {
     background-color: #FFFFFF;
     /* width: 536px; */
     /* width: 100%; */
-    min-height: 354px;
+    /* height: 354px; */
     border-radius: 42px;
     cursor: pointer;
     padding: 37px 12px 52px 26px;
@@ -290,7 +296,7 @@ body {
     /* margin-left: 7%; */
     /* margin-top: 29px; */
     font-family: 'BPG WEB 001';
-    font-size: 23px;
+    font-size: 2.3rem;
     margin-bottom: 15px;
 }
 
@@ -317,7 +323,7 @@ body {
 }
 
 .img-story-cont p {
-    font-size: 12px;
+    font-size: 1.2rem;
     color: #707070;
     margin-left: 2.4%;
     text-align: start;
@@ -353,11 +359,10 @@ body {
 
 .details-head  {
     font-family: 'BPG WEB 001';
-    font-size: 74px;
+    font-size: 7.4rem;
     color: #0044FF;
     margin-left: 7%;
     margin-top: 158px;
-    width: 49%;
     position: relative;
     /* border: 2px solid black; */
 }
@@ -365,16 +370,25 @@ body {
 
 
 .details-shadow {
-    width: 100%;
+    width: 76.4rem;
     height: 60px;
     background-color: #ADCFD8;
     border-radius: 43px;
     transform: translate(3px, 59%);
     margin-bottom: 142px;
+    position: relative;
 }
-.details-head p {
+
+@media (max-width: 810px) {
+    .details-shadow {
+        width: 38.2rem;
+    }
+}
+
+.details-head h1 {
     z-index: 1;
     position: absolute;
+    font-size: 7.4rem;
 }
 
 
@@ -400,13 +414,13 @@ body {
 
 .inner-flex-header {
     font-family: 'BPG WEB 001';
-    font-size: 56px;
+    font-size: 5.6rem;
     color: #0044FF;
     margin-bottom: 26px;
 }
 
 .inner-flex-txt  {
-    font-size: 35px;
+    font-size: 3.5rem;
     width: 80%;
     color: #707070;
 
@@ -418,7 +432,7 @@ body {
 }
 
 .inner-flex-list li{
-    font-size: 35px;
+    font-size: 3.5rem;
     color: #707070;
     margin-left: 54px;
 }
@@ -488,25 +502,23 @@ body {
 @media  (max-width: 1128px) { /*------------------------------------------------------------------------------------------დროებით პატარა რესფონსივი*/
     .flex {
         display: block;
+        margin-bottom: 100px;
     }
 
     .details-shadow {
         margin-bottom: 230px;
     }
 
-    .text-container-flex {
-        margin-top: -200px;
-        margin-bottom: 70px;
+    .img-inner-flex-1 img {
+        margin-bottom: 30px;
     }
 
-    .text-container-flex-2 {
-        margin-top: -300px;
-        margin-bottom: 70px;
+    .img-inner-flex-2 img {
+        margin-bottom: 30px;
     }
 
-    .text-container-flex-3 {
-        margin-top: -500px;
-        margin-bottom: 70px;
+    .img-inner-flex-3 img {
+        margin-bottom: 0px;
     }
 }
 
@@ -525,7 +537,7 @@ body {
 
 .projects-for-rus-header {
     color: white;
-    font-size: 74px;
+    font-size: 7.4rem;
     font-family: 'BPG WEB 001';
     padding-top: 96px;
     padding-left: 7%;
@@ -533,7 +545,7 @@ body {
 }
 
 .projects-for-rus-header-2 {
-    font-size: 56px;
+    font-size: 5.6rem;
     color: white;
     font-family: 'BPG WEB 001';
     padding-top: 14px;
@@ -566,7 +578,7 @@ body {
 .project-ru-grid-cont-header {
     font-family: 'BPG WEB 001';
     color: #0038D3;
-    font-size: 26px;
+    font-size: 2.6rem;
     margin-bottom: 8px;
 }
 
@@ -576,13 +588,13 @@ body {
 }
 
 .authors {
-    font-size: 21px;
+    font-size: 2.1rem;
     font-family: 'BPG WEB 001';
     
 }
 
 .names-ru {
-    font-size: 21px;
+    font-size: 2.1rem;
     color: #0038D3;
     font-family: 'BPG WEB 001';
     /* margin-right: 12.5%; */
@@ -660,10 +672,10 @@ body {
     position: relative;
 }
 
-.reflexion-header p {
+.reflexion-header h1 {
     font-family: 'BPG WEB 001';
     color: white;
-    font-size: 74px;
+    font-size: 7.4rem;
     width: 50%;
     margin-left: 7%;
     padding-top: 259px;
@@ -694,22 +706,22 @@ body {
 }
 
 .article-author {
-    font-size: 35px;
+    font-size: 3.5rem;
     display: inline;
 }
 
 .age {
-    font-size: 14px;
+    font-size: 1.4rem;
 
 }
 
 .address {
-    font-size: 21px;
+    font-size: 2.1rem;
     margin-bottom: 30px;
 }
 
 .article article {
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 
 .articles-container::-webkit-scrollbar {
@@ -718,7 +730,7 @@ body {
 
 .arrow {
     color: white;
-    font-size: 127.74px;
+    font-size: 12.8rem;
     position: absolute;
     top: 25%;
     transform: translateY(-25%);
@@ -752,7 +764,7 @@ footer {
 
 .footer-txt p {
     font-family: 'BPG WEB 001';
-    font-size: 25px;
+    font-size: 2.5rem;
     color: black;
 }
 
@@ -791,7 +803,7 @@ footer {
 .audio-story-head {
     font-family: 'BPG WEB 001';
     color: #0044FF;
-    font-size: 56px;
+    font-size: 5.6rem;
     text-align: center;
     margin-bottom: 29px;
     
@@ -801,7 +813,7 @@ footer {
     font-family: 'BPG WEB 001';
     color: #0044FF;
     text-align: center;
-    font-size: 35px;
+    font-size: 3.5rem;
     margin-bottom: 63px;
 }
 
@@ -815,7 +827,7 @@ footer {
 .audio-desc {
     margin-left: 8.5%;
     color: #707070;
-    font-size: 25px;
+    font-size: 2.5rem;
     margin-bottom: 7px;
 }
 
@@ -852,7 +864,7 @@ footer {
 }
 
 .diary-head {
-    font-size: 56px;
+    font-size: 5.6rem;
     color: #0044FF;
     font-family: 'BPG WEB 001';
     text-align: center;
@@ -861,7 +873,7 @@ footer {
 }
 
 .diary-author {
-    font-size: 35px;
+    font-size: 3.5rem;
     color: #0044FF;
     font-family: 'BPG WEB 001';
     text-align: center;
@@ -869,7 +881,7 @@ footer {
 }
 
 .diary-txt {
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #707070;
     margin-left: 8%;
     margin-right: 8%;
@@ -924,7 +936,7 @@ hr {
 }
 
 .slider-header {
-    font-size: 56px;
+    font-size: 5.6rem;
     color: #0038D3;
     font-family: 'BPG WEB 001';  
     padding-top: 123px;
@@ -932,7 +944,7 @@ hr {
 }
 
 .slider-author {
-    font-size: 35px;
+    font-size: 3.5rem;
     font-family: 'BPG WEB 001';
     color: #0038D3;
     text-align: center;
@@ -944,7 +956,7 @@ hr {
     width: 86%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #616161;
     margin-bottom: 177px;
 }
@@ -1008,7 +1020,7 @@ hr {
 }
 
 .prev-arr {
-    font-size: 70px;
+    font-size: 7rem;
     cursor: pointer;
     transform: translateX(-75px);
     z-index: 9;
@@ -1017,14 +1029,14 @@ hr {
 }
 
 .next-arr {
-    font-size: 70px;
+    font-size: 7rem;
     margin-left: 200px;
     cursor: pointer;
     transform: translateX(-150px);
 }
 
 #text {
-    font-size: 45px;
+    font-size: 4.5rem;
     color: #004FD8;
     position: absolute;
     transform: translate(-19px, -17px);
