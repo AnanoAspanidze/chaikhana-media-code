@@ -94,6 +94,7 @@ $('.slider-img').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     speed: 100,
+    adaptiveHeight: true,
     centerMode: true,
     centerPadding: '0px',
     prevArrow: '<span id="p" class="prev-arr" onclick="sliderCounter(false)"><i class="fa-solid fa-chevron-left"></i></span> <div id="text"> 1/9 </div>',

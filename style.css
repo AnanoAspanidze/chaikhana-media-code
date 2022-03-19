@@ -127,6 +127,18 @@ body {
     height: 264px;
 }
 
+@media (max-width: 1118px) {
+    .header {
+        padding-bottom: 100px;
+    }
+
+    .chkh-logo {
+        position: absolute;
+        top: 100px;
+        right: 7%;
+    }
+}
+
 .firsth6 {
     margin-bottom: 30px;
 }
@@ -319,8 +331,23 @@ body {
     border-radius: 17px;
 }
 
+@media (max-width: 1200px) {
+    .projects-grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 850px) {
+    .projects-grid-container {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* -----------------------------------DETAILS----------------------------------- */
+
+.details-main {
+    padding-left: 30px;
+}
 
 /* პირველი ფლექს კონტეინერი */
 
@@ -359,12 +386,6 @@ body {
 }
 
 
-@media  (max-width: 1128px) { /*------------------------------------------------------------------------------------------დროებით პატარა რესფონსივი*/
-    .flex {
-        display: block;
-    }
-}
-
 
 .img-inner-flex-1 img {
     height: 380px;
@@ -374,6 +395,7 @@ body {
 
 .text-container-flex {
     margin-left: 2.8%;
+    /* border: 2px solid black; */
 }
 
 .inner-flex-header {
@@ -435,6 +457,10 @@ body {
     margin-top: 13px;
 }
 
+.list {
+    margin-bottom: 50px;
+}
+
 
 /* აქედან იყწება მეორე ფლექს კონტეინერი */
 
@@ -457,6 +483,31 @@ body {
     margin-top: 23.5px;
     height: 458px;
     margin-bottom: 508px;
+}
+
+@media  (max-width: 1128px) { /*------------------------------------------------------------------------------------------დროებით პატარა რესფონსივი*/
+    .flex {
+        display: block;
+    }
+
+    .details-shadow {
+        margin-bottom: 230px;
+    }
+
+    .text-container-flex {
+        margin-top: -200px;
+        margin-bottom: 70px;
+    }
+
+    .text-container-flex-2 {
+        margin-top: -300px;
+        margin-bottom: 70px;
+    }
+
+    .text-container-flex-3 {
+        margin-top: -500px;
+        margin-bottom: 70px;
+    }
 }
 
 
@@ -560,6 +611,16 @@ body {
 @media (max-width: 1200px) {
     .project-ru-grid-cont {
         grid-template-columns: 1fr 1fr;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 850px) {
+    .project-ru-grid-cont {
+        grid-template-columns: 1fr;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -707,7 +768,7 @@ footer {
 
 .background {
     width: 100%;
-    height: 1446px;
+    min-height: 1446px;
     background-color: #0038D3;
 }
 
@@ -717,7 +778,7 @@ footer {
 }
 
 .white-container {
-    height: 1103px;
+    min-height: 1103px;
     width: 85.5%;
     background-color: white;
     transform: translate(0, 70px); /*აქ დროებით 70პიქსელით ჩამოვწიე იმიტომ რომ ჩამოშლილ ენებს ეფარებოდა*/
@@ -817,7 +878,7 @@ footer {
 
 
 .diary-img {
-    height: 797px;
+    width: 69%;
     margin-left: 8%;
     margin-bottom: 70px;
 }
@@ -846,7 +907,7 @@ hr {
 
 .background-slider {
     width: 100%;
-    min-height: 3200px; /*3911px;*/
+    min-height: 3690px; /*3911px;*/
     background-color: #0038D3;
     padding-bottom: 130px;
 }
@@ -885,7 +946,7 @@ hr {
     margin-right: auto;
     font-size: 25px;
     color: #616161;
-    margin-bottom: 107px;
+    margin-bottom: 177px;
 }
 
 
@@ -894,7 +955,7 @@ hr {
 
 .slider-img {
     /* border: 2px solid black; */
-    margin-bottom: 80px;
+    margin-bottom: 150px;
 }
 
 
@@ -903,14 +964,39 @@ hr {
     margin-left: auto;
     margin-right: auto;
     margin-top: 120px;
-    margin-bottom: 110px;
+    margin-bottom: 100px;
    
 }
 
 .slick-center img {
     width: 100%;
     margin-top: 0 !important;
+    margin-left: auto;
+    margin-right: auto;
+    /* transform: translate(-11%, -20%); */
  
+}
+
+
+@media (max-width:1024px) {
+    .slick-center img {
+        width: 100%;
+        transform: translate(0, 0);
+        margin-bottom: 100px;
+    }
+
+    .paragtaph {
+        margin-bottom: 50px;
+    }
+
+    .slider-img {
+        margin-bottom: 80px;
+    }
+
+    .background-slider {
+        width: 100%;
+        min-height: 4570px; 
+    }
 }
 
 .slick-arrow {
@@ -946,3 +1032,11 @@ hr {
 
 /* ----------------------------------------------------end-slider */
 
+.logo-slider img{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(300%, 50%);
+}
