@@ -157,3 +157,4 @@ function sliderCounter(increase) {
     text.innerHTML = `${x}/${y}`;
 }
 
+//
