@@ -17,7 +17,7 @@ body {
     overflow-x:hidden ;
 }
 
-h1, h1, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-size: unset;
     font-weight: normal;
 }
@@ -832,10 +832,15 @@ footer {
 }
 
 .chkh-logo-audio img {
-    position: absolute;
-    width: 180px;
-    height: 180px;
-    transform: translate(480%, 27%);
+    width: 18rem;
+    height: 18rem;
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    margin-left: auto; 
+    margin-right: auto; 
+    transform: translateY(50%);
 }
 
 
@@ -904,10 +909,16 @@ footer {
 }
 
 .logo-diary img{
-    position: absolute;
-    width: 180px;
-    height: 180px;
-    transform: translate(300%,-90%);
+    width: 18rem;
+    height: 18rem;
+    /* transform: translate(300%,-90%); */
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    margin-left: auto; 
+    margin-right: auto; 
+    transform: translateY(50%);
 }
 
 hr {
@@ -919,9 +930,9 @@ hr {
 
 .background-slider {
     width: 100%;
-    min-height: 3690px; /*3911px;*/
+    min-height: 3542px; /*3911px;*/
     background-color: #0038D3;
-    padding-bottom: 130px;
+    padding-bottom: 0px;
 }
 
 .inner-cont-slider {
@@ -929,7 +940,8 @@ hr {
     min-height: 2500px; /*3257px*/
     background-color: #FFFFFF;
     padding-bottom: 70px; /*დროებით*/
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     transform: translate(0, 70px); /*აქ დროებით 70პიქსელით ჩამოვწიე იმიტომ რომ ჩამოშლილ ენებს ეფარებოდა*/
     border-radius: 42px;
     /* position: relative; */
@@ -989,6 +1001,18 @@ hr {
  
 }
 
+@media (max-width: 1673px) {
+    .background-slider {
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .background-slider {
+        padding-bottom: 200px;
+    }
+}
+
 
 @media (max-width:1024px) {
     .slick-center img {
@@ -1007,9 +1031,15 @@ hr {
 
     .background-slider {
         width: 100%;
-        min-height: 4570px; 
+        /* min-height: 4570px;  */
+    }
+
+    .background-slider {
+        padding-bottom: 230px;
     }
 }
+
+
 
 .slick-arrow {
     position: absolute;
@@ -1045,10 +1075,13 @@ hr {
 /* ----------------------------------------------------end-slider */
 
 .logo-slider img{
-    width: 180px;
-    height: 180px;
-    position: absolute;
+    width: 18rem;
+    height: 18rem;
+    position: absolute; 
+    left: 0; 
+    right: 0; 
     bottom: 0;
-    left: 0;
-    transform: translate(300%, 50%);
+    margin-left: auto; 
+    margin-right: auto; 
+    transform: translateY(50%);
 }
