@@ -282,6 +282,11 @@ h1, h2, h3, h4, h5, h6 {
     .read-more-btn {
         font-size: 2.5rem;
     }
+
+    .circle {
+        width: 10px;
+        height: 10px;
+    }
 }
 
 
