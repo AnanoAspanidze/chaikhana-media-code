@@ -53,8 +53,8 @@ window.addEventListener('keyup', () => {
 
 const rightArrow = document.querySelector('.R');
 const leftArrow = document.querySelector('.L');
-
-const linear = document.querySelector('.linear-reflextion');
+const linearR = document.querySelector('.linear-reflextion-right');
+const linearL = document.querySelector('.linear-reflextion-left');
 let scrollToRightValue = 0;
 
 function scrollToLeft() { 
@@ -62,9 +62,12 @@ function scrollToLeft() {
     articlesContainer.scrollLeft = scrollToRightValue;
     if(scrollToRightValue === 0) { //თუ მარცხნივ არაფერია
         leftArrow.style.display = 'none'; // მარცხენა ისარი ქრება
+        linearL.style.display = 'none';
         rightArrow.style.display = 'block'; // მარჯვენა ჩანს
+        linearR.style.display = 'block';
     }else if (window.innerWidth + scrollToRightValue < articlesContainer.scrollWidth) { //თუ ბოლომდე მარჯვნივ არა გასქროლილი
         rightArrow.style.display = 'block'; //მარჯვენა ისარი ჩანს
+        linearR.style.display = 'block';
     }
 }
 
@@ -75,13 +78,20 @@ function scrollToRight() {
     articlesContainer.scrollLeft = scrollToRightValue;
 
     if (window.innerWidth + scrollToRightValue >= articlesContainer.scrollWidth) { //თუ ბოლომდეა მარჯვნივ გასქროლილი
-        linear.style.display = 'none';
+        //linear.style.display = 'none';
         rightArrow.style.display = 'none'; // მარჯვენა ისარიქრება
+        linearR.style.display = 'none';
     }else{ // თუ მარცხნივ არაა ბოლომდე გასქროლილი
         leftArrow.style.display = 'block' //მარცხენა ისარი ჩანს
+        linearL.style.display = 'block';
     }
 
 }
+
+
+//------------------------------------------------------------------------------------------personal-diary popup image
+
+
 
 // --------------------------------------------------------------------------------------------------------------SLIDER
 
@@ -99,9 +109,8 @@ $('.slider-img').slick({
     speed: 100,
     adaptiveHeight: true,
     centerMode: true,
+    arrows: false,
     centerPadding: '0px',
-    prevArrow: '<span id="p" class="prev-arr" onclick="sliderCounter(false)"><i class="fa-solid fa-chevron-left"></i></span> <div id="text"> 1/9 </div>',
-    nextArrow: '<span id="n" class="next-arr" onclick="sliderCounter(true)"><i class="fa-solid fa-chevron-right"></i></span>',
     responsive: [
         {
         breakpoint: 1024,
@@ -137,27 +146,84 @@ $('.slider-img').slick({
     ]
 });
 
+//აქ შევქმენი ერთიცალი სურათის მთვლელი, რომელიც მოაქვს slickCurrentSlide იდან, ანუ კონკრეტულად რომელ სლაიდზე დგას სლაიდერი
+let slideCounter =  1;
+
+//აქ ვქმნი ელემენტს, რომელიც შემდეგ ამატებს ამ ელემენტს .popup-img კლასში ( 241-ე ხაზში აკეთებს დამატებას)
+const imageItem =  document.createElement('img');
+
+$('.prev-arr').on('click', function(){
+  $('.slider-img').slick('slickPrev');
+  slideCounter = $('.slider-img').slick('slickCurrentSlide');
+  imageItem.src = document.querySelectorAll('.slider-items img')[slideCounter].getAttribute('src');
+});
+
+$('.next-arr').on('click', function(){
+  $('.slider-img').slick('slickNext');
+  slideCounter = $('.slider-img').slick('slickCurrentSlide'); // აქ დაწოლისას მოაქვს კონკრეტული ინდექსი იმ ელემენტის რომელზეც სლაიდერი დგას 
+  imageItem.src = document.querySelectorAll('.slider-items img')[slideCounter].getAttribute('src'); // ეს ჩემს შექმნილ img ელემენტის src ში ამატებს იმ ინდექსზე მდგომ სლაიდს, რომელიც ზედა კოდიდან მომაქვს 
+});
+
 
 // image-counter
 
 
   let sliderItems = document.querySelectorAll(".slider-items")
+  let path5 = document.getElementById('Path_5');
+  let path6 = document.getElementById('Path_6');
 
   let x = 1, y = sliderItems.length
-
+  const text = document.getElementById('text');
   text.innerHTML = `${x}/${y}`
+
+  path5.style.fill = '#707070';
+  path6.style.fill = '#004FD8';
 
 function sliderCounter(increase) {
 
     if(increase) { 
         if(x < y) {
             x++;
+            console.log(x, y);
+            path5.style.fill = '#004FD8';
         }
+        if(x === y) {
+          path6.style.fill = '#707070';
+        }
+        
     } else if (x > 1) {
         x--;
+        if(x === 1) {
+          path5.style.fill = '#707070';
+        }
+        if( x === y - 1) {
+          path6.style.fill = '#004FD8';
+        }
     }
     
     text.innerHTML = `${x}/${y}`;
 }
 
-//
+//აქ სლაიდერზე ფოტოს დაჭერისას ფოტო დიდდება
+
+document.querySelectorAll('.slider-items img').forEach(image => {
+  image.onclick = () => {
+    document.querySelector('.popup-image').style.display = 'block';
+    
+    document.querySelector('.popup-image').append(imageItem); // აქ აფენდ ით ვამატემ იმ ელემენტს რაც მაღლა შევქმენი 148-ე ხაზში, იმიტომ ვამატებ დაკლიკვისას რომ მერე ისრებმა დაინახონ დამატებული ელემენტი და აღიქვან
+    imageItem.src = image.getAttribute('src'); // აქ ის სორსი ჩავდე ახალ შექმნილი ელემენტის სორსში რომელიც დაკლიკვიდან მომაქვს
+    // $('.slider-img').slick('unslick');
+    // document.querySelector('.slider-img').style.display = 'none';
+    // document.querySelector('.arrows').style.display = 'none';
+    
+  }
+});
+
+
+document.getElementById('close').onclick = () => {
+  document.querySelector('.popup-image').style.display = 'none';
+}
+
+
+
+
