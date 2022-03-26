@@ -22,3 +22,11 @@ document.querySelectorAll('.diary-popup-img').forEach((image, index) => {
     [...document.querySelectorAll('.popup-diary')][index].style.display = 'none';
   }
 })
+
+
+/*document.querySelectorAll('.diary-img-cont').forEach(image => {
+  image.onclick = () => {
+    document.querySelector('.popup-diary').style.display = 'block';
+    document.querySelector('.popup-diary img').src = image.getAttribute('src');
+  }
+})*/

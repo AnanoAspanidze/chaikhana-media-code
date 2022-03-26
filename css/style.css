@@ -1112,10 +1112,6 @@ footer {
     margin-bottom: 7px;
 }
 
-.intro {
-    margin-bottom: 50px;
-}
-
 .chkh-logo-audio img {
     width: 18rem;
     height: 18rem;
@@ -1353,7 +1349,7 @@ hr {
     color: #0038D3;
     text-align: center;
     padding-top: 22px;
-    margin-bottom: 59px;
+    margin-bottom: 100px;
 }
 
 .paragtaph {
@@ -1362,17 +1358,27 @@ hr {
     margin-right: auto;
     font-size: 2.5rem;
     color: #616161;
-    margin-bottom: 177px;
+    /* margin-bottom: 177px; */
+}
+
+.paragtaph1 {
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5rem;
+    color: #616161;
+    margin-bottom: 100px;
 }
 
 
 /* ----------------------------------------------------slider */
 
-/* 
+
 .slider-img {
-    border: 2px solid black;
-    margin-bottom: 150px;
-} */
+    /* border: 2px solid black; */
+    /* margin-bottom: 150px; */
+    height: 1000px;
+}
 
 
 .slider-items img {
@@ -1454,7 +1460,7 @@ hr {
 }
 
 #text {
-    font-size: 4.5rem;
+    font-size: 3rem;
     color: #004FD8;
     /* position: absolute; */
     /* transform: translate(-19px, -17px); */
@@ -1540,7 +1546,7 @@ hr {
     width: 150px;
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 2rem;
+    /* gap: 2rem; */
     align-items: center;
     user-select: none;
     margin-left: auto;
@@ -1574,6 +1580,14 @@ hr {
 
 
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+
+    
+    .slider-img {
+        /* border: 2px solid black; */
+        /* margin-bottom: 150px; */
+        height: 800px;
+    }
+
     .slider-header {
         font-size: 3rem;
         padding-top: 56px;
@@ -1581,12 +1595,12 @@ hr {
 
     .slider-author {
         font-size: 1.8rem;
-        margin-bottom: 27px;
+        margin-bottom: 50px;
     }
 
     .paragtaph {
         font-size: 1.6rem;
-        margin-bottom: 26px;
+        margin-bottom: 100px;
     }
 
     .logo-slider img {
