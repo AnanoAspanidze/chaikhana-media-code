@@ -1,32 +1,29 @@
-// document.querySelector('.diary-img-cont img').onclick = () => {
-//     document.querySelector('.popup-diary').style.display = 'block';
-//   }
-  
-//   document.querySelector('.diary-popup-img').onclick = () => {
-//     document.querySelector('.popup-diary').style.display = 'none';
-//   }
 
 
-document.querySelectorAll('.diary-img-cont').forEach((image, index) => {
-  image.onclick = () => {
-    [...document.querySelectorAll('.popup-diary')][index].style.display = 'block';
-    let item = document.querySelectorAll('.popup-diary');
-    for (let i = 0; i < item.length; i++) {
-      i.src = image.getAttribute('src');
-    }
+const innerCont = document.getElementById("inner-page-container");
+const popupDiary = document.createElement("div");
+const popupImage = document.createElement("img");
+popupDiary.className = "popup-diary";
+popupImage.className = "diary-popup-img";
+popupDiary.append(popupImage);
+
+innerCont.addEventListener("click", e => {
+  if (e.target.className === "diary-img") {
+    popupImage.src = e.target.src;
+    popupDiary.style.display = "block";
+    e.target.after(popupDiary);
   }
+
+  popupImage.onclick = e => {
+    popupDiary.remove();
+
+  };
 });
 
-document.querySelectorAll('.diary-popup-img').forEach((image, index) => {
-  image.onclick = () => {
-    [...document.querySelectorAll('.popup-diary')][index].style.display = 'none';
+/*innerCont.addEventListener("keydown", function (t) {
+  console.log(t.key);
+  if (t.key === "Escape") {
+    popupDiary.remove();
   }
-})
+});*/
 
-
-/*document.querySelectorAll('.diary-img-cont').forEach(image => {
-  image.onclick = () => {
-    document.querySelector('.popup-diary').style.display = 'block';
-    document.querySelector('.popup-diary img').src = image.getAttribute('src');
-  }
-})*/
