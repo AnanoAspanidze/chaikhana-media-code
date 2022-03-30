@@ -228,10 +228,10 @@ function mobileMenu() {
 }
 
 function removeMenu() {
-  document.querySelector(".mobile-menu").remove();
+  document.querySelector(".mobile-menu").style.display = "none";
   document.querySelector(".logo-burger").style.display = "none";
   document.querySelector(".xmark").style.display = "none";
   document.querySelector(".line").style.display = "none";
   document.querySelector(".mobile-menu-cont").style.display = "none";
-  } //ამით რომ ჩავკეცავ, მეორეთ აღარ იხსნება
+  }
 

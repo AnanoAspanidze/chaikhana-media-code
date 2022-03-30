@@ -86,8 +86,8 @@ h6 {
   font-family: "BPG WEB 001";
   color: white;
   position: fixed;
-  top: 31px;
-  left: 13px;
+  top: 27px;
+  left: 7%;
   z-index: 100;
   font-size: 1.6rem;
   display: none;
@@ -103,12 +103,13 @@ h6 {
   font-size: 6rem;
   cursor: pointer;
   display: none;
+  color: white;
 }
 
 
 .line {
   position: fixed;
-  top: 70px;
+  top: 63px;
   left: 0;
   width: 100vw;
   z-index: 10;
@@ -119,7 +120,7 @@ h6 {
 .mobile-menu-cont {
   position: fixed;
   top: 90px;
-  left: 20px;
+  left: 7%;
   z-index: 1000;
   font-size: 2rem;
   display: none;
@@ -136,6 +137,7 @@ h6 {
 .mobile-enru {
   margin-left: 20px;
 }
+
 
 
 
