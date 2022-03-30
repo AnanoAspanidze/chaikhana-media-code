@@ -4,6 +4,14 @@ const ge = document.querySelector(".ge-cont");
 const en = document.getElementById("en");
 const ru = document.getElementById("ru");
 
+window.addEventListener("click", e => {
+  if (!e.target.className.includes("lang") && !e.target.className.includes("fa-solid fa-caret-down")) {
+    en.classList.remove("show");
+    ru.classList.remove("show");
+    ge.classList.remove("show");
+  }
+});
+
 ge.addEventListener("click", () => {
   // კლიკზე ჩამოიშლება Eng და Rus
   en.classList.toggle("show");
@@ -208,3 +216,22 @@ document.querySelectorAll(".slider-items img").forEach(image => {
 document.getElementById("close").onclick = () => {
   document.querySelector(".popup-image").style.display = "none";
 };
+
+//burger-menu-popup
+
+function mobileMenu() {
+  document.querySelector(".mobile-menu").style.display = 'block';
+  document.querySelector(".logo-burger").style.display = "block";
+  document.querySelector(".xmark").style.display = "block";
+  document.querySelector(".line").style.display = "block";
+  document.querySelector(".mobile-menu-cont").style.display = "block";
+}
+
+function removeMenu() {
+  document.querySelector(".mobile-menu").remove();
+  document.querySelector(".logo-burger").style.display = "none";
+  document.querySelector(".xmark").style.display = "none";
+  document.querySelector(".line").style.display = "none";
+  document.querySelector(".mobile-menu-cont").style.display = "none";
+  } //ამით რომ ჩავკეცავ, მეორეთ აღარ იხსნება
+

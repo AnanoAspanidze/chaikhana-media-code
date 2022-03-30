@@ -6,6 +6,7 @@
   text-decoration: none;
   /* list-style: none; */
   box-sizing: border-box;
+  list-style: none;
 }
 
 html {
@@ -68,6 +69,82 @@ h6 {
   font-size: 3rem;
 }
 
+/* burger-menu-click-popup */
+
+.mobile-menu {
+  width: 100%;
+  height: 100vh;
+  background-color: #0044ff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: none;
+}
+
+.logo-burger  {
+  font-family: "BPG WEB 001";
+  color: white;
+  position: fixed;
+  top: 31px;
+  left: 13px;
+  z-index: 100;
+  font-size: 1.6rem;
+  display: none;
+}
+
+.xmark {
+  position: fixed;
+  top: -10px;
+  right: 40px;
+  z-index: 10;
+  font-weight: bold;
+  width: 14px;
+  font-size: 6rem;
+  cursor: pointer;
+  display: none;
+}
+
+
+.line {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100vw;
+  z-index: 10;
+  border-top: 1px solid white;
+  display: none;
+}
+
+.mobile-menu-cont {
+  position: fixed;
+  top: 90px;
+  left: 20px;
+  z-index: 1000;
+  font-size: 2rem;
+  display: none;
+}
+
+.mobile-menu-cont a {
+  color: white;
+}
+
+.mobile-languages {
+  display: flex;
+}
+
+.mobile-enru {
+  margin-left: 20px;
+}
+
+
+
+/* burger-menu-click-popup-end */
+
+
+
+
+
 .menu li:hover {
   opacity: 0.6;
 }
@@ -107,16 +184,6 @@ h6 {
   padding-left: 10px;
 }
 
-.mobile-menu {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #0038d3;
-  display: none;
-}
-
 /* .lang {
     padding-left: 40px;
 } */
@@ -143,7 +210,7 @@ h6 {
   color: white;
   padding-top: 5px;
   margin-bottom: 107px;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .logo a {
@@ -305,6 +372,7 @@ h6 {
   .logo a {
     font-size: 1.6rem;
     border: 2xp solid white;
+    width: 200px;
     /* display: inherit; */
   }
 
@@ -936,7 +1004,7 @@ h6 {
 
   .img-inner-flex-3 img {
     width: 50%;
-     margin-bottom: 0px;
+    margin-bottom: 0px;
   }
 
   .text-container-flex-2 {
@@ -983,9 +1051,7 @@ h6 {
   .text-container-flex-3 {
     padding-bottom: 70px;
   }
-
 }
-
 
 @media (max-width: 768px) {
   .project-details {
@@ -1409,7 +1475,6 @@ h6 {
   .reflexion-container {
     padding-bottom: 85px;
   }
-
 }
 
 @media (max-width: 768px) {
