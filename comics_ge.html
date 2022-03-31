@@ -20,22 +20,42 @@
     <section class="background-slider">
         <header class="navigation">
             <div class="border"></div>
-            <div class="logo">
-                <a href="index_ge.html">Chai Khana media.code</a>
-            </div>
-            <nav class="menu">
-                <ul class="firstul">
-                    <li><a href="index_ge.html" class="main">მთავარი</a></li>
-                    <li><a href="#" class="projects">პროექტები</a></li>
-                </ul>
-                <ul class="languages">
-                    <div class="ge-cont">
+                <div class="logo">
+                    <a href="index_ge.html">Chai Khana media.code</a>
+                </div>
+                <nav class="menu">
+                    <ul class="firstul">
+                        <li><a href="index_ge.html" class="main">მთავარი</a></li>
+                        <li><a href="#projects-cont" class="projects">პროექტები</a></li>
+                    </ul>
+                    <ul class="languages">
+                        <div class="ge-cont">
                         <li><a href="#" id="ge" class="lang ge">Geo</a></li>
                         <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <li><a href="index.html" id="en" class="lang enru en">Eng</a></li>
+                        <li><a href="index_ru.html" id="ru" class="lang enru ru">Rus</a></li>
+                    </ul>
+                    <div class="burger">
+                        <i id="burger" class="fa-solid fa-bars"  onclick="mobileMenu()"></i>
+                        <div id="mobMenu" class="mobile-menu"></div>
+                        <div class="mobile-nav-cont">
+                            <!-- <div class="logo-burger">Chai Khana media.code</div> -->
+                            <hr class="line">
+                        </div>
+                        <div class="mobile-menu-cont">
+                            <ul>
+                                <li><a href="index_ge.html" class="mobile-main">მთავარი</a></li><br>
+                                <li><a href="#projects-cont" class="mobile-projects" onclick="removeMenu()">პროექტები</a></li><br>
+                                <ul class="mobile-languages">
+                                    <li><a href="#" class="mobile-leng" onclick="removeMenu()"><b>Geo</b></a></li>
+                                    <li><a href="index.html"  class="mobile-leng mobile-enru" onclick="removeMenu()">Eng</a></li>
+                                    <li><a href="index_ru.html"  class="mobile-leng mobile-enru" onclick="removeMenu()">Rus</a></li>
+                                </ul>
+                            </ul>
+                        </div>
                     </div>
-                    <li><a href="#" id="en" class="lang enru en">Eng</a></li>
-                    <li><a href="#" id="ru" class="lang enru ru">Rus</a></li>
-                </ul>
+                <div id="xmark" class="xmark" onclick="removeMenu()">&times;</div>
             </nav>
         </header>
         <section class="inner-cont-slider">
@@ -184,5 +204,6 @@
 
     <!-- script -->
     <script src="javascript/script.js"></script>
+    <script src="javascript/slides.js"></script>
 
 </body>

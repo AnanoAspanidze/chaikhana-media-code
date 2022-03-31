@@ -17,7 +17,7 @@
         <header class="navigation">
             <div class="border"></div>
             <div class="logo">
-                <a href="index_ge.html">Chai Khana media.code</a>
+                <a href="index_ru.html">Chai Khana media.code</a>
             </div>
             <nav class="menu">
                 <ul class="firstul">
@@ -32,11 +32,31 @@
                     <li><a href="index.html" id="en" class="lang enru en">Eng</a></li>
                     <li><a href="index_ge.html" id="ru" class="lang enru ru">Geo</a></li>
                 </ul>
+                <div class="burger">
+                    <i id="burger" class="fa-solid fa-bars"  onclick="mobileMenu()"></i>
+                    <div id="mobMenu" class="mobile-menu"></div>
+                    <div class="mobile-nav-cont">
+                        <!-- <div class="logo-burger">Chai Khana media.code</div> -->
+                        <hr class="line">
+                    </div>
+                    <div class="mobile-menu-cont">
+                        <ul>
+                            <li><a href="index_ge.html" class="mobile-main">Главное</a></li><br>
+                            <li><a href="#projects-cont" class="mobile-projects" onclick="removeMenu()">Проекты</a></li><br>
+                            <ul class="mobile-languages">
+                                <li><a href="#" class="mobile-leng" onclick="removeMenu()">Geo</a></li>
+                                <li><a href="index.html"  class="mobile-leng mobile-enru" onclick="removeMenu()">Eng</a></li>
+                                <li><a href="index_ru.html"  class="mobile-leng mobile-enru" onclick="removeMenu()"><b>Rus</b></a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div id="xmark" class="xmark" onclick="removeMenu()">&times;</div>
             </nav>
         </header>
         <div class="header-txt">
             <h1 class="firsth1">Chai Khana media.code</h1>
-            <h3 class="first-desc">Инициатива цифровой и медиаграмотности в конфликтных регионах Южного Кавказа</h3>
+            <h3 class="first-desc">Инициатива цифровой и медиаграмотности <br> в конфликтных регионах Южного Кавказа</h3>
         </div>
         <div class="chkh-logo">
             <img src="images/logo.png" alt="logo">
@@ -334,31 +354,37 @@
                     <h1 class="article-author">Резо Турашвили</h1><span class="age">19 лет</span>
                     <p class="address">поселение для вынужденно перемещенных лиц в Шашвеби</p>
                     <article>«Этот проект предоставил мне очень хорошую и важную информацию. Я познакомился с такими людьми, как вы и провел незабываемое время. Кроме того, во время проекта я коснулся практических тем, которые пригодились в повседневной жизни. Например, мобильное фото и видеографика. На информацию, распространяемую в социальных сетях, сегодня я смотрю более критически, чем прежде. Я многое узнал и о кибербезопасности. Могу сказать об этом проекте только хорошее».</article>
+                    <div class="vertical-line"></div>
                 </div>
                 <div class="article">
                     <h1 class="article-author">Лика Мошиашвили</h1>
                     <p class="address">тренер по цифровым коммуникациям</p>
                     <article>«Знание новых технологий и медиаграмотность – возможность, которая в будущем будет способствовать развитию отношений лиц, проживающих на конфликтных территориях».</article>
+                    <div class="vertical-line"></div>
                 </div>
                 <div class="article">
                     <h1 class="article-author">Лали Пулариани</h1>
                     <p class="address">тренер по управлению социальными медиаплатформами</p>
                     <article>«Думаю, этот проект имеет переломное значение для подростков, принимающих в нем участие. Они здесь усвоили все техники и формы современной коммуникации. В дальнейшем они помогут им в поиске единомышленников вокруг собственных идей и в преобразовании противников в своих сторонников».</article>
+                    <div class="vertical-line"></div>
                 </div>
                 <div class="article">
                     <h1 class="article-author">Гурам Цибахашвили</h1>
                     <p class="address">тренер по фотографии</p>
                     <article>«Очень жаль, что проект закончился, впрочем, я считаю он был интересен и важен с двух точек зрения: первое – ты знакомишься с новыми людьми, которые позволяют тебе заглянуть в свой мир и второе – это прекрасная возможность говорить с ними и передавать то, что ты когда-то приобрел на собственном опыте. Наверное, они не научились бы этому в школе».</article>
+                    <div class="vertical-line"></div>
                 </div>
                 <div class="article">
                     <h1 class="article-author">Мака Петриашвили</h1>
                     <p class="address">тренер по кибербезопасности</p>
                     <article>«Как по формату, так и по содержанию, проект был релевантным с точки зрения медиаграмотности и построения мира в регионе. Он обязательно положительно повлияет на процесс мирного урегулирования конфликта».</article>
+                    <div class="vertical-line"></div>
                 </div>
                 <div class="article">
                     <h1 class="article-author">Георгий Гогуа</h1>
                     <p class="address">тренер мультимедиа журналистики</p>
                     <article>«В сегодняшних реалиях, когда социальные сети особенно популярны, а в огромном потоке информации сложно различить точную информацию от неточной, медиаграмотность особенно важна. Поэтому любая активность, которая предоставит молодежи возможность осознания медиаграмотности, как теоретически, так и практически, увеличивает шансы на получение лучшей медиасреды в будущем. На мой взгляд, данный проект служил именно этому и мог стать еще интересней с направлением Training of Trainers. Это бы позволило молодым людям поделиться своим опытом с другими в комфортной для себя обстановке».</article>
+                    <div class="vertical-line"></div>
                 </div>
             </div>
         </div>

@@ -1,39 +1,12 @@
-// ------------------------------------------------------------------------------------------------------------------LANGUAGES
-
-const ge = document.querySelector(".ge-cont");
-const en = document.getElementById("en");
-const ru = document.getElementById("ru");
-
-window.addEventListener("click", e => {
-  if (!e.target.className.includes("lang") && !e.target.className.includes("fa-solid fa-caret-down")) {
-    en.classList.remove("show");
-    ru.classList.remove("show");
-    ge.classList.remove("show");
-  }
-});
-
-ge.addEventListener("click", () => {
-  // კლიკზე ჩამოიშლება Eng და Rus
-  en.classList.toggle("show");
-  ru.classList.toggle("show");
-});
-
 // -----------------------------------------------------------------------------------------------------------------SEE MORE TEXT
 
-const btn = document.querySelector(".read-more-btn");
-const hidden = document.getElementById("hidden-txt");
-const dots = document.getElementById("dots");
-const img = document.getElementById("eu-undp");
-const list = document.getElementById("hidden-list");
-const deadlines = document.querySelector(".deadlines");
-
 const readMore = () => {
-  hidden.classList.toggle("show");
-  btn.classList.toggle("hide-btn");
-  dots.classList.toggle("hide-dots");
-  img.classList.toggle("show-img");
-  list.classList.toggle("show-list");
-  deadlines.classList.toggle("show-deadline");
+  document.getElementById("hidden-txt").classList.toggle("show");
+  document.querySelector(".read-more-btn").classList.toggle("hide-btn");
+  document.getElementById("dots").classList.toggle("hide-dots");
+  document.getElementById("eu-undp").classList.toggle("show-img");
+  document.getElementById("hidden-list").classList.toggle("show-list");
+  document.querySelector(".deadlines").classList.toggle("show-deadline");
 };
 
 // ----------------------------------------------------------------------------------------------------------------SCROLL ARTICLES
@@ -60,7 +33,7 @@ const linearL = document.querySelector(".linear-reflextion-left");
 let scrollToRightValue = 0;
 
 function scrollToLeft() {
-  scrollToRightValue -= 349; // 501px-ით ისქროლება onmousedown-ზე
+  scrollToRightValue -= 350; // 501px-ით ისქროლება onmousedown-ზე
   articlesContainer.scrollLeft = scrollToRightValue;
   if (scrollToRightValue === 0) {
     //თუ მარცხნივ არაფერია
@@ -76,7 +49,7 @@ function scrollToLeft() {
 }
 
 function scrollToRight() {
-  scrollToRightValue += 349; //501px-ით ისქროლება onmousedown-ზე
+  scrollToRightValue += 350; //501px-ით ისქროლება onmousedown-ზე
 
   articlesContainer.scrollLeft = scrollToRightValue;
 
@@ -92,139 +65,15 @@ function scrollToRight() {
   }
 }
 
-//------------------------------------------------------------------------------------------personal-diary popup image
-
-// --------------------------------------------------------------------------------------------------------------SLIDER
-
-//შესაცვლელია ისრები
-//დაკლიკვაზე სურათი მთელს ეკრანზე უნდა იშლებოდეს
-//შესაცვლელია სურათების ზომა
-
-$(".slider-img").slick({
-  infinite: false,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  speed: 100,
-  adaptiveHeight: true,
-  centerMode: true,
-  arrows: false,
-  centerPadding: "0px",
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: true,
-        infinite: false,
-        dots: false,
-        //აქ შესაცვლელია სურათების ზომა
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: true,
-        infinite: false,
-        dots: false,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: true,
-        infinite: false,
-        dots: false,
-      },
-    },
-  ],
-});
-
-//აქ შევქმენი ერთიცალი სურათის მთვლელი, რომელიც მოაქვს slickCurrentSlide იდან, ანუ კონკრეტულად რომელ სლაიდზე დგას სლაიდერი
-let slideCounter = 1;
-
-//აქ ვქმნი ელემენტს, რომელიც შემდეგ ამატებს ამ ელემენტს .popup-img კლასში ( 241-ე ხაზში აკეთებს დამატებას)
-const imageItem = document.createElement("img");
-
-$(".prev-arr").on("click", function () {
-  $(".slider-img").slick("slickPrev");
-  slideCounter = $(".slider-img").slick("slickCurrentSlide");
-  imageItem.src = document.querySelectorAll(".slider-items img")[slideCounter].getAttribute("src");
-});
-
-$(".next-arr").on("click", function () {
-  $(".slider-img").slick("slickNext");
-  slideCounter = $(".slider-img").slick("slickCurrentSlide"); // აქ დაწოლისას მოაქვს კონკრეტული ინდექსი იმ ელემენტის რომელზეც სლაიდერი დგას
-  imageItem.src = document.querySelectorAll(".slider-items img")[slideCounter].getAttribute("src"); // ეს ჩემს შექმნილ img ელემენტის src ში ამატებს იმ ინდექსზე მდგომ სლაიდს, რომელიც ზედა კოდიდან მომაქვს
-});
-
-// image-counter
-
-let sliderItems = document.querySelectorAll(".slider-items");
-let path5 = document.getElementById("Path_5");
-let path6 = document.getElementById("Path_6");
-
-let x = 1,
-  y = sliderItems.length;
-const text = document.getElementById("text");
-text.innerHTML = `${x}/${y}`;
-
-path5.style.fill = "#707070";
-path6.style.fill = "#004FD8";
-
-function sliderCounter(increase) {
-  if (increase) {
-    if (x < y) {
-      x++;
-      console.log(x, y);
-      path5.style.fill = "#004FD8";
-    }
-    if (x === y) {
-      path6.style.fill = "#707070";
-    }
-  } else if (x > 1) {
-    x--;
-    if (x === 1) {
-      path5.style.fill = "#707070";
-    }
-    if (x === y - 1) {
-      path6.style.fill = "#004FD8";
-    }
-  }
-
-  text.innerHTML = `${x}/${y}`;
-}
-
-//აქ სლაიდერზე ფოტოს დაჭერისას ფოტო დიდდება
-
-document.querySelectorAll(".slider-items img").forEach(image => {
-  image.onclick = () => {
-    document.querySelector(".popup-image").style.display = "block";
-
-    document.querySelector(".popup-image").append(imageItem); // აქ აფენდ ით ვამატემ იმ ელემენტს რაც მაღლა შევქმენი 148-ე ხაზში, იმიტომ ვამატებ დაკლიკვისას რომ მერე ისრებმა დაინახონ დამატებული ელემენტი და აღიქვან
-    imageItem.src = image.getAttribute("src"); // აქ ის სორსი ჩავდე ახალ შექმნილი ელემენტის სორსში რომელიც დაკლიკვიდან მომაქვს
-    // $('.slider-img').slick('unslick');
-    // document.querySelector('.slider-img').style.display = 'none';
-    // document.querySelector('.arrows').style.display = 'none';
-  };
-});
-
-document.getElementById("close").onclick = () => {
-  document.querySelector(".popup-image").style.display = "none";
-};
-
 //burger-menu-popup
 
 function mobileMenu() {
-  document.querySelector(".mobile-menu").style.display = 'block';
+  document.querySelector(".mobile-menu").style.display = "block";
   document.querySelector(".logo-burger").style.display = "block";
   document.querySelector(".xmark").style.display = "block";
   document.querySelector(".line").style.display = "block";
   document.querySelector(".mobile-menu-cont").style.display = "block";
+  document.querySelector(".logo").style.display = "none";
 }
 
 function removeMenu() {
@@ -233,5 +82,6 @@ function removeMenu() {
   document.querySelector(".xmark").style.display = "none";
   document.querySelector(".line").style.display = "none";
   document.querySelector(".mobile-menu-cont").style.display = "none";
-  }
+}
 
+//ფოტო-სლაიდერები
