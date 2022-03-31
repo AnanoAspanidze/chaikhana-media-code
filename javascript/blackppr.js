@@ -15,6 +15,7 @@ function removeMenu() {
   document.querySelector(".xmark").style.display = "none";
   document.querySelector(".line").style.display = "none";
   document.querySelector(".mobile-menu-cont").style.display = "none";
+  document.querySelector(".logo").style.display = "block";
 }
 
 //აქედან იწყება ფოტო-სლაიდერი
@@ -45,17 +46,10 @@ function scrollToLeft() {
 
 function scrollToRight() {
   scrollToRightValue1 += 450; //501px-ით ისქროლება onmousedown-ზე
-
   articlesContainer1.scrollLeft = scrollToRightValue1;
-
-
-  console.log(articlesContainer1.clientWidth, articlesContainer1.scrollWidth);
-  
-
   if (articlesContainer1.clientWidth + scrollToRightValue1 >= articlesContainer1.scrollWidth) {
     //თუ ბოლომდეა მარჯვნივ გასქროლილი
     //linear.style.display = 'none';
-
     rightArrow1.style.display = "none"; // მარჯვენა ისარიქრება
     leftArrow1.style.display = "block"; 
   } else {

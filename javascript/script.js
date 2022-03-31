@@ -82,6 +82,7 @@ function removeMenu() {
   document.querySelector(".xmark").style.display = "none";
   document.querySelector(".line").style.display = "none";
   document.querySelector(".mobile-menu-cont").style.display = "none";
+  document.querySelector(".logo").style.display = "block";
 }
 
 //ფოტო-სლაიდერები

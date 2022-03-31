@@ -35,7 +35,7 @@
                     <i id="burger" class="fa-solid fa-bars"  onclick="mobileMenu()"></i>
                     <div id="mobMenu" class="mobile-menu"></div>
                     <div class="mobile-nav-cont">
-                        <!-- <div class="logo-burger">Chai Khana media.code</div> -->
+                        <div class="logo-burger">Chai Khana media.code</div>
                         <hr class="line">
                     </div>
                     <div class="mobile-menu-cont">
@@ -110,27 +110,42 @@
                 -შენს დახვედრას ნუ მომიშლის ღმერთი, დე! 
             </p>
 
-            <div class="photo-container">
-                <img class="diary-img" src="images/return-to-gali/1.jpg" alt="diary-image">
-                <figcaption>Ეს ჩემი ძაღლი, ბათურაა. Თუ ოდესმე ვინმე  მონატრებაზე მკითხავს, ძაღლსა და ადამიანს შორის სიყვარულზე, ამ ფოტოს ვაჩვენებ. Ვიღაცისთვის, უბრალოდ ძაღლია, ჩემთვის - დაბადების დღის საჩუქარი მამასგან. </figcaption>
+            <div class="full-slider-cont">
+                <!-- <div class="image-linear-right"></div> -->
+                <!-- <div class="image-linear-left"></div> -->
+                <button class="photo-slider-arrow left left-friends" onmousedown="scrollToLeft()">
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="44.907" height="127.743" viewBox="0 0 44.907 127.743">
+                    <path id="Path_1" data-name="Path 2" d="M1782.736-32l-63.59,44.907L1654.994-32l64.153,24.054Z" transform="translate(31.995 1782.736) rotate(-90)" fill="#fff" />
+                    </svg>
+                </button>
+                <button class="photo-slider-arrow right right-friends" onmousedown="scrollToRight()">
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="44.907" height="127.743" viewBox="0 0 44.907 127.743">
+                    <path id="Path_2" data-name="Path 2" d="M1782.736-32l-63.59,44.907L1654.994-32l64.153,24.054Z" transform="translate(31.995 1782.736) rotate(-90)" fill="#fff" />
+                    </svg>
+                </button>
 
-                <img class="diary-img" src="images/return-to-gali/2.jpg" alt="diary-image">
-                <figcaption>Ეს მდინარე ხუმუშქურია, რომელიც ორ სოფელს ჰყოფს. მდინარეს რომ გადახვალ, ჩემს სოფელს მიადგები, ჩემს საამაყო ოდაბადეს.</figcaption>
+                <div id="inner-page-container" class="photo-container">
+                        <img class="diary-img" src="images/return-to-gali/1.jpg" alt="diary-image">
+                        <!-- <figcaption>Ეს ჩემი ძაღლი, ბათურაა. Თუ ოდესმე ვინმე  მონატრებაზე მკითხავს, ძაღლსა და ადამიანს შორის სიყვარულზე, ამ ფოტოს ვაჩვენებ. Ვიღაცისთვის, უბრალოდ ძაღლია, ჩემთვის - დაბადების დღის საჩუქარი მამასგან. </figcaption> -->
 
-                <img class="diary-img" src="images/return-to-gali/3.jpg" alt="diary-image">
-                <figcaption>ეს სოფელი მზიურია. Ამ ადგილას უამრავი ადამიანი ელოდებოდა საზოგადოებრივ ტრანსპორტს ომამდე. დღეს აქ ადგილობრივები იკრიბებიან და ერთმანეთს გასაჭირსა და სიხარულს  უზიარებენ.</figcaption>
+                        <img class="diary-img" src="images/return-to-gali/2.jpg" alt="diary-image">
+                        <!-- <figcaption>Ეს მდინარე ხუმუშქურია, რომელიც ორ სოფელს ჰყოფს. მდინარეს რომ გადახვალ, ჩემს სოფელს მიადგები, ჩემს საამაყო ოდაბადეს.</figcaption> -->
 
-                <img class="diary-img" src="images/return-to-gali/4.jpg" alt="diary-image">
-                <figcaption> Ეს საცხოვრებელი კორპუსი სოფელ მზიურში  დანგრევის პირას არის, თუმცა, გარეთ დარჩენას მაინც იქ ცხოვრებას ამჯობინებენ.</figcaption>
+                        <img class="diary-img" src="images/return-to-gali/3.jpg" alt="diary-image">
+                        <!-- <figcaption>ეს სოფელი მზიურია. Ამ ადგილას უამრავი ადამიანი ელოდებოდა საზოგადოებრივ ტრანსპორტს ომამდე. დღეს აქ ადგილობრივები იკრიბებიან და ერთმანეთს გასაჭირსა და სიხარულს  უზიარებენ.</figcaption> -->
 
-                <img class="diary-img" src="images/return-to-gali/5.jpg" alt="diary-image">
-                <figcaption>სოფელი მზიური. Ეს ნაძვები სეზონის ყველა დროისა და ყველა გამვლელის ამბავს იტევენ. </figcaption>
+                        <img class="diary-img" src="images/return-to-gali/4.jpg" alt="diary-image">
+                        <!-- <figcaption> Ეს საცხოვრებელი კორპუსი სოფელ მზიურში  დანგრევის პირას არის, თუმცა, გარეთ დარჩენას მაინც იქ ცხოვრებას ამჯობინებენ.</figcaption> -->
 
-                <img class="diary-img" src="images/return-to-gali/6.jpg" alt="diary-image">
-                <figcaption>Ესეც საზოგადოებრივი ტრანსპორტის გაჩერებაა სოფელ მზიურში.</figcaption>
-   
-                <img class="diary-img" src="images/return-to-gali/7.jpg" alt="diary-image">
-                <figcaption>ეს ფოტო, ვფიქრობ, ყველა იძულებით გადაადგილებულ პირს ეხება. ამ გზას სოფელ ხურჩამდე მივყავართ, მაგრამ ახლა, ამ Მავთულხლართების მიღმა, რუსი სამხედროებისა და მათი ოჯახების საერთო საცხოვრებელია. </figcaption>
+                        <img class="diary-img" src="images/return-to-gali/5.jpg" alt="diary-image">
+                        <!-- <figcaption>სოფელი მზიური. Ეს ნაძვები სეზონის ყველა დროისა და ყველა გამვლელის ამბავს იტევენ. </figcaption> -->
+
+                        <img class="diary-img" src="images/return-to-gali/6.jpg" alt="diary-image">
+                        <!-- <figcaption>Ესეც საზოგადოებრივი ტრანსპორტის გაჩერებაა სოფელ მზიურში.</figcaption> -->
+        
+                        <img class="diary-img" src="images/return-to-gali/7.jpg" alt="diary-image">
+                        <!-- <figcaption>ეს ფოტო, ვფიქრობ, ყველა იძულებით გადაადგილებულ პირს ეხება. ამ გზას სოფელ ხურჩამდე მივყავართ, მაგრამ ახლა, ამ Მავთულხლართების მიღმა, რუსი სამხედროებისა და მათი ოჯახების საერთო საცხოვრებელია. </figcaption> -->
+                </div>
             </div>
         </div>
     </section>
@@ -139,6 +154,9 @@
             <p>პროექტთან დაკავშირებული კითხვების შემთხვევაში დაგვიკავშირდით მეილზე: <span class="mail">info@chaikhana.media</span></p>
         </div>
     </footer>
-    <script src="javascript/script.js"></script>
-    <script src="javascript//diary.js"></script>
+
+      <script src="javascript/blackppr.js"></script>
+      <script src="javascript/languages.js"></script>
+      <script src="javascript/diary.js"></script>
+      <!-- <script src="javascript/script.js"></script> -->
 </body>

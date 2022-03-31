@@ -55,7 +55,7 @@
       </header>
       <div class="inner-cont-diary">
         <div class="logo-diary">
-          <img src="images/logo.png" alt="logo" />
+          <a href="https://chaikhana.media/" target="_blank"><img src="images/logo.png" alt="logo"></a>
         </div>
         <h1 class="diary-head">“საერთაშორისო სადგური” დედამიწაზე</h1>
         <h1 class="diary-author">ავტორი: ულვია შაჰინ ქარიმოვა</h1>
@@ -69,9 +69,9 @@
           განსხვავებული აღმოჩნდა. ის ერთ-ერთი ყველაზე დიდი უბანია თბილისში. მე მხოლოდ ნაწილზე გიყვებით. ამ ფოტოების ნახვის შემდეგ, მჯერა, ეს ადგილი ისევე შეგიყვარდებათ, როგორც მე.
         </p>
 
-        <div id="inner-page-container">
+        <!-- <div id="inner-page-container"> -->
           <div class="photo-container">
-            <img class="diary-img one-img" src="images/international-space/1.  (Zara and me).jpeg" alt="diary-image" />
+            <img class="diary-img" src="images/international-space/1.  (Zara and me).jpeg" alt="diary-image" />
           </div>
 
           <p class="diary-txt diary=txt-1">
@@ -92,16 +92,46 @@
             კვირა დღის პირველი საათია. რუსები სალოცავად მოვიდნენ
           </p>
 
-          <div class="photo-container">
+          <div class="full-slider-cont">
+        <!-- <div class="image-linear-right"></div> -->
+        <!-- <div class="image-linear-left"></div> -->
+          <button class="photo-slider-arrow left left-space" onmousedown="scrollToLeft()">
+            <svg class="" xmlns="http://www.w3.org/2000/svg" width="44.907" height="127.743" viewBox="0 0 44.907 127.743">
+              <path id="Path_1" data-name="Path 2" d="M1782.736-32l-63.59,44.907L1654.994-32l64.153,24.054Z" transform="translate(31.995 1782.736) rotate(-90)" fill="#fff" />
+            </svg>
+          </button>
+          <button class="photo-slider-arrow right right-space" onmousedown="scrollToRight()">
+            <svg class="" xmlns="http://www.w3.org/2000/svg" width="44.907" height="127.743" viewBox="0 0 44.907 127.743">
+              <path id="Path_2" data-name="Path 2" d="M1782.736-32l-63.59,44.907L1654.994-32l64.153,24.054Z" transform="translate(31.995 1782.736) rotate(-90)" fill="#fff" />
+            </svg>
+          </button>
+
+          <div id="inner-page-container" class="photo-container">
               <img class="diary-img" src="images/international-space/11 Photo Georgi cooks and sells himself.JPG" alt="diary-image" />
               <img class="diary-img" src="images/international-space/5 Photo Russian Church (inside).JPG" alt="diary-image" />
               <img class="diary-img" src="images/international-space/5.1 Photo Orthodox (Russian Church).JPG" alt="diary-image" />
               <img class="diary-img" src="images/international-space/6 Photo Javakhishvili 68.jpeg" alt="diary-image" />
           </div>
+        </div>
 
           <p class="diary-txt diary=txt-1">45 წლის გიორგი გოგოლაძე ამ უბნის მოსახლეობისთვის დღეში 80 ცალ შოთს აცხობს. თონე აქ სამი წლის წინ მოაწყო და მარტო მუშაობს.</p>
           
-          <div  class="photo-container">
+
+                    <div class="full-slider-cont">
+        <!-- <div class="image-linear-right"></div> -->
+        <!-- <div class="image-linear-left"></div> -->
+          <button class="photo-slider-arrow left left-space" onmousedown="scrollToLeft()">
+            <svg class="" xmlns="http://www.w3.org/2000/svg" width="44.907" height="127.743" viewBox="0 0 44.907 127.743">
+              <path id="Path_1" data-name="Path 2" d="M1782.736-32l-63.59,44.907L1654.994-32l64.153,24.054Z" transform="translate(31.995 1782.736) rotate(-90)" fill="#fff" />
+            </svg>
+          </button>
+          <button class="photo-slider-arrow right right-space" onmousedown="scrollToRight()">
+            <svg class="" xmlns="http://www.w3.org/2000/svg" width="44.907" height="127.743" viewBox="0 0 44.907 127.743">
+              <path id="Path_2" data-name="Path 2" d="M1782.736-32l-63.59,44.907L1654.994-32l64.153,24.054Z" transform="translate(31.995 1782.736) rotate(-90)" fill="#fff" />
+            </svg>
+          </button>
+
+          <div id="inner-page-container" class="photo-container">
               <img class="diary-img" src="images/international-space/13 Photo Vegetable shops (inside3).JPG" alt="diary-image" />
               <img class="diary-img" src="images/international-space/7.1 Photo Underground oven.JPG" alt="diary-image" />
               <img class="diary-img" src="images/international-space/7.2 Photo Rolling the bread into balls.JPG" alt="diary-image" />
@@ -110,6 +140,7 @@
               <img class="diary-img" src="images/international-space/10 Photo Bread house (inside).JPG" alt="diary-image" />
               <img class="diary-img" src="images/international-space/11 Photo Georgi cooks and sells himself.JPG" alt="diary-image" />
           </div>
+        </div>
 
           <p class="diary-txt diary=txt-1">
             მარჯანიშვილზე ხილ-ბოსტნეულის სახელდახელოდ მოწყობილ უამრავ მაღაზიას შეხვდებით. მოვაჭრეების უმრავლესობა ეთნიკურად აზერბაიჯანელია. 51 წლის ლალა რასულოვა მათგან ერთ-ერთია. თავად საბურთალოზე
@@ -207,7 +238,7 @@
           </div>
           
           <p class="diary-txt diary=txt-1"></p>
-        </div>
+        <!-- </div> -->
       </div>
     </section>
     <footer>
