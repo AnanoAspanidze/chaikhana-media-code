@@ -1854,7 +1854,7 @@ footer {
   border-radius: 42px;
   position: relative;
   padding-bottom: 170px;
-  padding-right: 6.3%;
+  /* padding-right: 6.3%; */
 }
 
 .diary-head {
@@ -2311,6 +2311,10 @@ hr {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 70px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -100px);
+  z-index: 2;
 }
 
 #p,
@@ -2457,15 +2461,10 @@ hr {
     font-size: 1.6rem;
   }
 
-  .arrows {
-    position: absolute;
-    bottom: -180px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 
   .arrows {
     width: 80px;
+    transform: translate(-50%, 270px);
   }
 
   #text {

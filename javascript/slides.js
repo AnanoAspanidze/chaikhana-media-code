@@ -107,10 +107,11 @@ document.querySelectorAll(".slider-items img").forEach(image => {
     imageItem.src = image.getAttribute("src"); // აქ ის სორსი ჩავდე ახალ შექმნილი ელემენტის სორსში რომელიც დაკლიკვიდან მომაქვს
     // $('.slider-img').slick('unslick');
     // document.querySelector('.slider-img').style.display = 'none';
-    // document.querySelector('.arrows').style.display = 'none';
+    document.querySelector('.arrows').style.display = 'none';
   };
 });
 
 document.getElementById("close").onclick = () => {
   document.querySelector(".popup-image").style.display = "none";
+  document.querySelector(".arrows").style.display = "grid";
 };
