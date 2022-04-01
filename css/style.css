@@ -1857,6 +1857,14 @@ footer {
   /* padding-right: 6.3%; */
 }
 
+.inner-cont-diary-space {
+  padding-right: 6.3% !important;
+}
+
+.inner-cont-diary-gali {
+  padding-right: 6.3% !important;
+}
+
 .diary-head {
   font-size: 5.6rem;
   color: #0044ff;
@@ -1967,8 +1975,6 @@ footer {
 }
 
 figcaption {
-  margin-left: 7%;
-  width: 50%;
   font-size: 1.3rem;
 }
 
@@ -2634,7 +2640,8 @@ hr {
   top: 50%;
   transform: translate(-50%, -50%);
   max-height: 90%;
-  width: 50%;
+  max-width: 90%;
+  width: auto;
 }
 
 .photo-slider-arrow {
@@ -2654,6 +2661,7 @@ hr {
   z-index: 1;
   transform: translateY(50%);
 }
+
 .left-friends {
   left: 17%;
   z-index: 1;
@@ -2735,6 +2743,25 @@ hr {
     left: 14%;
   }
 }
+
+
+.right-gali {
+  right: 3%;
+  display: block;
+  z-index: 1;
+  transform: translateY(50%);
+}
+
+.left-gali {
+  left: 13%;
+  z-index: 1;
+  display: none;
+  /* bottom: 10px; */
+  /* transform: translateX(50%); */
+  transform: translate(-50px, 63px) rotate(180deg);
+}
+
+
 
 .image-linear-right {
   height: 100%;
