@@ -13,13 +13,16 @@ function removeMenu() {
 	document.querySelector('.xmark').style.display = 'none'
 	document.querySelector('.line').style.display = 'none'
 	document.querySelector('.mobile-menu-cont').style.display = 'none'
-	document.querySelector('.logo').style.display = 'block'
+	document.querySelector('.logo').style.display = 'block';
 }
 
 //აქედან იწყება ფოტო-სლაიდერი
 
-;[...document.querySelectorAll('.full-slider-cont')].forEach((eachSlider) => {
-	eachSlider.querySelector('.diary-img').classList.add('active-diary-img')
+[...document.querySelectorAll('.full-slider-cont')].forEach((eachSlider) => {
+
+  let firstChildElement = eachSlider.querySelector(".something") ?? eachSlider.querySelector(".diary-img");
+  firstChildElement.classList.add("active-diary-img");
+
 	const articlesContainer1 = eachSlider.querySelector('.inner-page-container')
 	const rightArrow1 = eachSlider.querySelector('.right')
 	const leftArrow1 = eachSlider.querySelector('.left')
