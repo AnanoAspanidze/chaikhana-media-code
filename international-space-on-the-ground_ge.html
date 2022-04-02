@@ -14,87 +14,93 @@
     <!----------------------- BACKGROUND ------------------------>
     <section class="background-diary">
       <header class="navigation">
-       <div class="border"></div>
-            <div class="logo">
-                <a href="index_ge.html">Chai Khana media.code</a>
+        <div class="border"></div>
+        <div class="logo">
+          <a href="index_ge.html">Chai Khana media.code</a>
+        </div>
+        <nav class="menu">
+          <ul class="firstul">
+            <li><a href="index_ge.html" class="main">მთავარი</a></li>
+            <li><a href="#projects-cont" class="projects">პროექტები</a></li>
+          </ul>
+          <ul class="languages">
+            <div class="ge-cont">
+              <li><a href="#" id="ge" class="lang ge">Geo</a></li>
+              <i class="fa-solid fa-caret-down"></i>
             </div>
-            <nav class="menu">
-                <ul class="firstul">
-                    <li><a href="index_ge.html" class="main">მთავარი</a></li>
-                    <li><a href="#projects-cont" class="projects">პროექტები</a></li>
+            <li><a href="index.html" id="en" class="lang enru en">Eng</a></li>
+            <li><a href="index_ru.html" id="ru" class="lang enru ru">Rus</a></li>
+          </ul>
+          <div class="burger">
+            <i id="burger" class="fa-solid fa-bars" onclick="mobileMenu()"></i>
+            <div id="mobMenu" class="mobile-menu"></div>
+            <div class="mobile-nav-cont">
+              <a class="logo-burger" href="index_ge.html">Chai Khana media.code</a>
+              <hr class="line" />
+            </div>
+            <div class="mobile-menu-cont">
+              <ul>
+                <li><a href="index_ge.html" class="mobile-main">მთავარი</a></li>
+                <br />
+                <li><a href="#projects-cont" class="mobile-projects" onclick="removeMenu()">პროექტები</a></li>
+                <br />
+                <ul class="mobile-languages">
+                  <li>
+                    <a href="#" class="mobile-leng" onclick="removeMenu()"><b>Geo</b></a>
+                  </li>
+                  <li><a href="index.html" class="mobile-leng mobile-enru" onclick="removeMenu()">Eng</a></li>
+                  <li><a href="index_ru.html" class="mobile-leng mobile-enru" onclick="removeMenu()">Rus</a></li>
                 </ul>
-                <ul class="languages">
-                    <div class="ge-cont">
-                    <li><a href="#" id="ge" class="lang ge">Geo</a></li>
-                    <i class="fa-solid fa-caret-down"></i>
-                    </div>
-                    <li><a href="index.html" id="en" class="lang enru en">Eng</a></li>
-                    <li><a href="index_ru.html" id="ru" class="lang enru ru">Rus</a></li>
-                </ul>
-                <div class="burger">
-                    <i id="burger" class="fa-solid fa-bars"  onclick="mobileMenu()"></i>
-                    <div id="mobMenu" class="mobile-menu"></div>
-                    <div class="mobile-nav-cont">
-                        <a class="logo-burger" href="index_ge.html">Chai Khana media.code</a>
-                        <hr class="line">
-                    </div>
-                    <div class="mobile-menu-cont">
-                        <ul>
-                            <li><a href="index_ge.html" class="mobile-main">მთავარი</a></li><br>
-                            <li><a href="#projects-cont" class="mobile-projects" onclick="removeMenu()">პროექტები</a></li><br>
-                            <ul class="mobile-languages">
-                                <li><a href="#" class="mobile-leng" onclick="removeMenu()"><b>Geo</b></a></li>
-                                <li><a href="index.html"  class="mobile-leng mobile-enru" onclick="removeMenu()">Eng</a></li>
-                                <li><a href="index_ru.html"  class="mobile-leng mobile-enru" onclick="removeMenu()">Rus</a></li>
-                            </ul>
-                        </ul>
-                    </div>
-                </div>
-                <div id="xmark" class="xmark" onclick="removeMenu()">&times;</div>
-            </nav>
+              </ul>
+            </div>
+          </div>
+          <div id="xmark" class="xmark" onclick="removeMenu()">&times;</div>
+        </nav>
       </header>
       <div class="inner-cont-diary inner-cont-diary-space">
         <div class="logo-diary">
-          <a href="https://chaikhana.media/" target="_blank"><img src="images/logo.png" alt="logo"></a>
+          <a href="https://chaikhana.media/" target="_blank"><img src="images/logo.png" alt="logo" /></a>
         </div>
         <h1 class="diary-head">“საერთაშორისო სადგური” დედამიწაზე</h1>
         <h1 class="diary-author">ავტორი: ულვია შაჰინ ქარიმოვა</h1>
         <p class="diary-txt diary=txt-1">
           თბილისში სწავლის დაფინანსების შესახებ რომ გავიგე, ჩემს თავს ვკითხე - გაგვიჭირდება ახალ ქვეყანაში ცხოვრება, თუ არა? დიდხანს ვმერყეობდი ამერიკის საელჩოში საბუთების შეტანაზე. თუ ამ ნაბიჯს
-          გადავდგამდი, ნიშნავდა, რომ მე და ჩემს გოგონას ახალი ცხოვრება დამოუკიდებლად უნდა დაგვეწყო. ვფიქრობდი, რომ ჩემი შვილისთვის სახლიდან მოშორებით ყოფნა მარტივი არ იქნებოდა.<br><br>
+          გადავდგამდი, ნიშნავდა, რომ მე და ჩემს გოგონას ახალი ცხოვრება დამოუკიდებლად უნდა დაგვეწყო. ვფიქრობდი, რომ ჩემი შვილისთვის სახლიდან მოშორებით ყოფნა მარტივი არ იქნებოდა.
+        </p>
+
+        <div class="photo-container2 inner-page-container">
+          <img id="img-left" class="diary-img" src="images/international-space/1.  (Zara and me).jpeg" alt="diary-image" />
+        </div>
+        <p class="diary-txt diary=txt-1">
           ერთ-ერთი სარეკომენდაციო წერილი ჩემმა საყვარელმა მასწავლებელმა ელჩინ შიხლიმ დამიწერა. ბატონი შიხლი გამოცემა „აინას“ დამფუძნებელი და მთავარი რედაქტორია. ჩემი ფიქრები მას გავუზიარე. დამამშვიდა
           და მითხრა: „ღმერთის წყალობით, ყველაფერი კარგად იქნება.“ ზუსტად ისე მოხდა, როგორც მითხრა. მე და ჩემს გოგონას, ზარას, თბილისი ერთი ნახვით შეგვიყვარდა. ზარას არც მეგობრების პოვნა გაუჭირდა
-          სკოლაში და თბილისიც ბაქოსავით შეუყვარდა.<br><br>
+          სკოლაში და თბილისიც ბაქოსავით შეუყვარდა.<br /><br />
           რამდენიმე თვე თბილისის ძველ უბანში, მთაწმინდაზე ვცხოვრობდით. მერე, ზარას სკოლასთან ახლოს რომ ვყოფილიყავით, მარჯანიშვილზე გადავედით. თავისი მრავალფეროვნებით ეს უბანი ყველაფრისგან
           განსხვავებული აღმოჩნდა. ის ერთ-ერთი ყველაზე დიდი უბანია თბილისში. მე მხოლოდ ნაწილზე გიყვებით. ამ ფოტოების ნახვის შემდეგ, მჯერა, ეს ადგილი ისევე შეგიყვარდებათ, როგორც მე.
         </p>
 
         <!-- <div id="inner-page-container"> -->
-          <div class="photo-container">
-            <img class="diary-img" src="images/international-space/1.  (Zara and me).jpeg" alt="diary-image" />
-          </div>
 
-          <p class="diary-txt diary=txt-1">
-            ფოტოების გადაღებას მარჯანიშვილის მეტროსთან მდებარე ქუჩით ვიწყებთ. აქ ყოველთვის ბევრი ხალხი და ბევრი მანქანაა. მეტროს წინ მცირე მოვაჭრეები დგანან. მარჯანიშვილის მეტრო-სადგური 1966 წლის 11
-            იანვარს გაიხსნა. სახელი დიდი ქართველი რეჟისორის, კოტე მარჯანიშვილის საპატივსაცემოდ ეწოდა
-          </p>
+        <p class="diary-txt diary=txt-1">
+          ფოტოების გადაღებას მარჯანიშვილის მეტროსთან მდებარე ქუჩით ვიწყებთ. აქ ყოველთვის ბევრი ხალხი და ბევრი მანქანაა. მეტროს წინ მცირე მოვაჭრეები დგანან. მარჯანიშვილის მეტრო-სადგური 1966 წლის 11
+          იანვარს გაიხსნა. სახელი დიდი ქართველი რეჟისორის, კოტე მარჯანიშვილის საპატივსაცემოდ ეწოდა
+        </p>
 
-          <div  class="photo-container">
-              <img class="diary-img" src="images/international-space/2 Photo Metro Marjanishvili (outside).JPG" alt="diary-image" />
-              <img class="diary-img" src="images/international-space/3 Photo Marjanishvili str.jpeg" alt="diary-image" />
-          </div>
+        <div class="photo-container inner-page-container">
+          <img class="diary-img" src="images/international-space/2 Photo Metro Marjanishvili (outside).JPG" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/3 Photo Marjanishvili str.jpeg" alt="diary-image" />
+        </div>
 
-          <p class="diary-txt diary=txt-1">
-            მეტროდან რამდენიმე მეტრში, ჯავახიშვილის ქუჩაზე, რუსული მართლმადიდებლური ეკლესიაა. რუსები სალოცავად აქ ყოველდღე მოდიან. ლოცულობენ მაშინაც, როცა ეკლესიას ჩაუვლიან ხოლმე. ფოტოების გადასაღებად
-            მისულს, ადგილზე ბევრი ხალხი დამხვდა. ბავშვებიც მოეყვანათ.<br><br>>
-            1864 წელს აგებულ ამ რუსულ ეკლესიას რამდენიმე შთამბეჭდავი მოხატულობა ამშვენებს, მათ შორის მარიამ მაგდალინელის, წმინდა ნინოსა და წმინდა ნიკოლოზის გამოსახულებები. სხვა წმინდანებს შორის იპოვით
-            წმ. შიო მღვიმელის ხატსაც.<br><br>
-            კვირა დღის პირველი საათია. რუსები სალოცავად მოვიდნენ
-          </p>
+        <p class="diary-txt diary=txt-1">
+          მეტროდან რამდენიმე მეტრში, ჯავახიშვილის ქუჩაზე, რუსული მართლმადიდებლური ეკლესიაა. რუსები სალოცავად აქ ყოველდღე მოდიან. ლოცულობენ მაშინაც, როცა ეკლესიას ჩაუვლიან ხოლმე. ფოტოების გადასაღებად
+          მისულს, ადგილზე ბევრი ხალხი დამხვდა. ბავშვებიც მოეყვანათ.<br /><br />> 1864 წელს აგებულ ამ რუსულ ეკლესიას რამდენიმე შთამბეჭდავი მოხატულობა ამშვენებს, მათ შორის მარიამ მაგდალინელის, წმინდა
+          ნინოსა და წმინდა ნიკოლოზის გამოსახულებები. სხვა წმინდანებს შორის იპოვით წმ. შიო მღვიმელის ხატსაც.<br /><br />
+          კვირა დღის პირველი საათია. რუსები სალოცავად მოვიდნენ
+        </p>
 
-          <div class="full-slider-cont">
-        <!-- <div class="image-linear-right"></div> -->
-        <!-- <div class="image-linear-left"></div> -->
+        <div class="full-slider-cont">
+          <!-- <div class="image-linear-right"></div> -->
+          <!-- <div class="image-linear-left"></div> -->
           <button class="photo-slider-arrow left left-space" onmousedown="scrollToLeft()">
             <svg class="" xmlns="http://www.w3.org/2000/svg" width="44.907" height="127.743" viewBox="0 0 44.907 127.743">
               <path id="Path_1" data-name="Path 2" d="M1782.736-32l-63.59,44.907L1654.994-32l64.153,24.054Z" transform="translate(31.995 1782.736) rotate(-90)" fill="#fff" />
@@ -106,138 +112,137 @@
             </svg>
           </button>
 
-          <div id="inner-page-container" class="photo-container">
-              <img class="diary-img" src="images/international-space/11 Photo Georgi cooks and sells himself.JPG" alt="diary-image" />
-              <img class="diary-img" src="images/international-space/5 Photo Russian Church (inside).JPG" alt="diary-image" />
-              <img class="diary-img" src="images/international-space/5.1 Photo Orthodox (Russian Church).JPG" alt="diary-image" />
-              <img class="diary-img" src="images/international-space/6 Photo Javakhishvili 68.jpeg" alt="diary-image" />
+          <div class="inner-page-container photo-container">
+            <img class="diary-img" src="images/international-space/11 Photo Georgi cooks and sells himself.JPG" alt="diary-image" />
+            <img class="diary-img" src="images/international-space/5 Photo Russian Church (inside).JPG" alt="diary-image" />
+            <img class="diary-img" src="images/international-space/5.1 Photo Orthodox (Russian Church).JPG" alt="diary-image" />
+            <img class="diary-img" src="images/international-space/6 Photo Javakhishvili 68.jpeg" alt="diary-image" />
           </div>
         </div>
 
-          <p class="diary-txt diary=txt-1">45 წლის გიორგი გოგოლაძე ამ უბნის მოსახლეობისთვის დღეში 80 ცალ შოთს აცხობს. თონე აქ სამი წლის წინ მოაწყო და მარტო მუშაობს.</p>
-          
+        <p class="diary-txt diary=txt-1">45 წლის გიორგი გოგოლაძე ამ უბნის მოსახლეობისთვის დღეში 80 ცალ შოთს აცხობს. თონე აქ სამი წლის წინ მოაწყო და მარტო მუშაობს.</p>
 
-                    <div class="full-slider-cont">
-        <!-- <div class="image-linear-right"></div> -->
-        <!-- <div class="image-linear-left"></div> -->
-          <button class="photo-slider-arrow left left-space" onmousedown="scrollToLeft()">
+        <div class="full-slider-cont">
+          <!-- <div class="image-linear-right"></div> -->
+          <!-- <div class="image-linear-left"></div> -->
+          <button class="photo-slider-arrow left left-space">
             <svg class="" xmlns="http://www.w3.org/2000/svg" width="44.907" height="127.743" viewBox="0 0 44.907 127.743">
               <path id="Path_1" data-name="Path 2" d="M1782.736-32l-63.59,44.907L1654.994-32l64.153,24.054Z" transform="translate(31.995 1782.736) rotate(-90)" fill="#fff" />
             </svg>
           </button>
-          <button class="photo-slider-arrow right right-space" onmousedown="scrollToRight()">
+          <button class="photo-slider-arrow right right-space">
             <svg class="" xmlns="http://www.w3.org/2000/svg" width="44.907" height="127.743" viewBox="0 0 44.907 127.743">
               <path id="Path_2" data-name="Path 2" d="M1782.736-32l-63.59,44.907L1654.994-32l64.153,24.054Z" transform="translate(31.995 1782.736) rotate(-90)" fill="#fff" />
             </svg>
           </button>
 
-          <div id="inner-page-container" class="photo-container">
-              <img class="diary-img" src="images/international-space/13 Photo Vegetable shops (inside3).JPG" alt="diary-image" />
-              <img class="diary-img" src="images/international-space/7.1 Photo Underground oven.JPG" alt="diary-image" />
-              <img class="diary-img" src="images/international-space/7.2 Photo Rolling the bread into balls.JPG" alt="diary-image" />
-              <img class="diary-img" src="images/international-space/8 Photo Man cooks bread.JPG" alt="diary-image" />
-              <img class="diary-img" src="images/international-space/9 Photo Gogoladze cooks bread.JPG" alt="diary-image" />
-              <img class="diary-img" src="images/international-space/10 Photo Bread house (inside).JPG" alt="diary-image" />
-              <img class="diary-img" src="images/international-space/11 Photo Georgi cooks and sells himself.JPG" alt="diary-image" />
+          <div class="inner-page-container photo-container">
+            <img class="diary-img" src="images/international-space/13 Photo Vegetable shops (inside3).JPG" alt="diary-image" />
+            <img class="diary-img" src="images/international-space/7.1 Photo Underground oven.JPG" alt="diary-image" />
+            <img class="diary-img" src="images/international-space/7.2 Photo Rolling the bread into balls.JPG" alt="diary-image" />
+            <img class="diary-img" src="images/international-space/8 Photo Man cooks bread.JPG" alt="diary-image" />
+            <img class="diary-img" src="images/international-space/9 Photo Gogoladze cooks bread.JPG" alt="diary-image" />
+            <img class="diary-img" src="images/international-space/10 Photo Bread house (inside).JPG" alt="diary-image" />
+            <img class="diary-img" src="images/international-space/11 Photo Georgi cooks and sells himself.JPG" alt="diary-image" />
           </div>
         </div>
 
-          <p class="diary-txt diary=txt-1">
-            მარჯანიშვილზე ხილ-ბოსტნეულის სახელდახელოდ მოწყობილ უამრავ მაღაზიას შეხვდებით. მოვაჭრეების უმრავლესობა ეთნიკურად აზერბაიჯანელია. 51 წლის ლალა რასულოვა მათგან ერთ-ერთია. თავად საბურთალოზე
-            ცხოვრობს, თუმცა აქ თავის შვილებთან ერთად მუშაობს. შვილები საქართველოში დაიბადნენ და გაიზარდნენ. ლალა თქმით, მის მაღაზიას ყოველდღე ბევრი სხვადასხვა კულტურისა და ტრადიციის ადამიანისტუმრობს.
-          </p>
+        <p class="diary-txt diary=txt-1">
+          მარჯანიშვილზე ხილ-ბოსტნეულის სახელდახელოდ მოწყობილ უამრავ მაღაზიას შეხვდებით. მოვაჭრეების უმრავლესობა ეთნიკურად აზერბაიჯანელია. 51 წლის ლალა რასულოვა მათგან ერთ-ერთია. თავად საბურთალოზე
+          ცხოვრობს, თუმცა აქ თავის შვილებთან ერთად მუშაობს. შვილები საქართველოში დაიბადნენ და გაიზარდნენ. ლალა თქმით, მის მაღაზიას ყოველდღე ბევრი სხვადასხვა კულტურისა და ტრადიციის ადამიანისტუმრობს.
+        </p>
 
-          <div class="photo-container">
-              <img class="diary-img" src="images/international-space/12 Photo Vegetable shops.JPG" alt="diary-image" />
-              <img class="diary-img" src="images/international-space/13 Photo Vegetable shops (inside3).JPG" alt="diary-image" />
-              <img class="diary-img" src="images/international-space/14 Photo Vegetable shops (inside).JPG" alt="diary-image" />
-              <img class="diary-img" src="images/international-space/15 Photo Vegetable shops run by Azerbaijanis.JPG" alt="diary-image" />
-          </div>
+        <div class="photo-container inner-page-container">
+          <img class="diary-img" src="images/international-space/12 Photo Vegetable shops.JPG" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/13 Photo Vegetable shops (inside3).JPG" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/14 Photo Vegetable shops (inside).JPG" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/15 Photo Vegetable shops run by Azerbaijanis.JPG" alt="diary-image" />
+        </div>
 
-          <p class="diary-txt diary=txt-1">
-            მაღაზია „ანკარა“ იორდანელ არაბებს ეკუთვნით. მაღაზიის კონსულტანტები ჰიჯაბს ატარებენ. მაღაზიაში ფოტოების გადაღების უფლება არ მომცეს. ვერც მოლარეები გადავიღე. ძალიან კონსერვატიული ხალხია
-          </p>
+        <p class="diary-txt diary=txt-1">
+          მაღაზია „ანკარა“ იორდანელ არაბებს ეკუთვნით. მაღაზიის კონსულტანტები ჰიჯაბს ატარებენ. მაღაზიაში ფოტოების გადაღების უფლება არ მომცეს. ვერც მოლარეები გადავიღე. ძალიან კონსერვატიული ხალხია
+        </p>
 
-          <div class="photo-container">
-            <img class="diary-img" src="images/international-space/16 Photo Ankara market runs by Arabians.JPG" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/17 Photo Turkish restaurant (outside).JPG" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/18 Photo Turkish restaurant (inside).JPG" alt="diary-image" />
-          </div>
+        <div class="photo-container inner-page-container">
+          <img class="diary-img" src="images/international-space/16 Photo Ankara market runs by Arabians.JPG" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/17 Photo Turkish restaurant (outside).JPG" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/18 Photo Turkish restaurant (inside).JPG" alt="diary-image" />
+        </div>
 
-          <p class="diary-txt diary=txt-1">„ხინკალოში“ ქართველებთან ერთად, რუსებიც მუშაობენ. ყოველდღიურად აქ ასობით პელმენი და ხინკალი მზადდება</p>
-          
-          <div class="photo-container">
-            <img class="diary-img" src="images/international-space/19 Photo Khingal House (outside).JPG" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/20 Photo Khingal House (preparing russian pelmeni).JPG" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/21 Photo Khingal House (inside2).JPG" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/22 Photo Khingal House (inside).JPG" alt="diary-image" />
-          </div>
+        <p class="diary-txt diary=txt-1">„ხინკალოში“ ქართველებთან ერთად, რუსებიც მუშაობენ. ყოველდღიურად აქ ასობით პელმენი და ხინკალი მზადდება</p>
 
-          <p class="diary-txt diary=txt-1">მარჯანიშვილის ქუჩას ყოველდღიურად ასუფთავებენ. დასუფთავების სამსახურის თანამშრომლებს შორის არიან ქართველები, რუსები, და სომხები</p>
-          
-          <div class="photo-container">
-            <img class="diary-img" src="images/international-space/23 Photo Garbage trucks 2.jpeg" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/24 Photo Garbage trucks.jpeg" alt="diary-image" />
-          </div>
+        <div class="photo-container inner-page-container">
+          <img class="diary-img" src="images/international-space/19 Photo Khingal House (outside).JPG" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/20 Photo Khingal House (preparing russian pelmeni).JPG" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/21 Photo Khingal House (inside2).JPG" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/22 Photo Khingal House (inside).JPG" alt="diary-image" />
+        </div>
 
-          <p class="diary-txt diary=txt-1">
-            მარჯანიშვილის ერთ ქუჩაზე, ერთმანეთის მოპირდაპირედ, რუსულ და სომხურ ეკლესიებს დაინახავთ. მეტროდან ოდნავ მოშორებით პეტრე-პავლეს სახელობის კათოლიკური ეკლესიაა. ბაროკოს სტილის ეს შენობა1877
-            წელს აშენდა, ძმები ზუბალაშვილების ინიციატივით. ეკლესიის მრევლი რუსებს, სომხებს, ქართველებსა და დასავლელ ექსპატებს აერთიანებს
-          </p>
+        <p class="diary-txt diary=txt-1">მარჯანიშვილის ქუჩას ყოველდღიურად ასუფთავებენ. დასუფთავების სამსახურის თანამშრომლებს შორის არიან ქართველები, რუსები, და სომხები</p>
 
-          <div class="photo-container">
-            <img class="diary-img" src="images/international-space/25 Photo Church.jpeg" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/25. 1 Photo .jpg" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/26 Photo.jpg" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/27 Photo Javakhishvili 59.jpeg" alt="diary-image" />
-          </div>
-          
-          <p class="diary-txt diary=txt-1">
-            37-ე სკოლა მარჯანიშვილის უბანში ერთადერთია, სადაც სხვადასხვა ეროვნების მოსწავლეები დადიან. აქ ნახავთ აზერბაიჯანელ, თურქ, სომეხ, რუს, ჩინელ და ქართველ მოსწავლეებს
-          </p>
+        <div class="photo-container inner-page-container">
+          <img class="diary-img" src="images/international-space/23 Photo Garbage trucks 2.jpeg" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/24 Photo Garbage trucks.jpeg" alt="diary-image" />
+        </div>
 
-          <div class="photo-container">
-            <img class="diary-img" src="images/international-space/28 Photo.jpg" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/29 Photo.jpg" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/30 Photo inside of school 37.jpeg" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/31 Photo School №37.jpeg" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/32 Photo № 37 school_s yard.jpg" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/33 Photo pupils in the class.jpeg" alt="diary-image" />
-          </div>
+        <p class="diary-txt diary=txt-1">
+          მარჯანიშვილის ერთ ქუჩაზე, ერთმანეთის მოპირდაპირედ, რუსულ და სომხურ ეკლესიებს დაინახავთ. მეტროდან ოდნავ მოშორებით პეტრე-პავლეს სახელობის კათოლიკური ეკლესიაა. ბაროკოს სტილის ეს შენობა1877 წელს
+          აშენდა, ძმები ზუბალაშვილების ინიციატივით. ეკლესიის მრევლი რუსებს, სომხებს, ქართველებსა და დასავლელ ექსპატებს აერთიანებს
+        </p>
 
-          <p class="diary-txt diary=txt-1">ზარა და ვართანიანი სკოლიდან სახლისკენ მომავალ გზაზე მარჯანიშვილის მეტროს ერთად მიუყვებიან.</p>
+        <div class="photo-container inner-page-container">
+          <img class="diary-img" src="images/international-space/25 Photo Church.jpeg" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/25. 1 Photo .jpg" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/26 Photo.jpg" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/27 Photo Javakhishvili 59.jpeg" alt="diary-image" />
+        </div>
 
-          <div class="photo-container">
-            <img class="diary-img" src="images/international-space/34 Photo Metro.jpeg" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/35 Photo Metro Marjanishvili2.JPG" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/36 Photo Inside of Metro Marjanishvili.JPG" alt="diary-image" />
-          </div>
+        <p class="diary-txt diary=txt-1">
+          37-ე სკოლა მარჯანიშვილის უბანში ერთადერთია, სადაც სხვადასხვა ეროვნების მოსწავლეები დადიან. აქ ნახავთ აზერბაიჯანელ, თურქ, სომეხ, რუს, ჩინელ და ქართველ მოსწავლეებს
+        </p>
 
-          <p class="diary-txt diary=txt-1">ახალგაზრდებისა და ტურისტების საყვარელი გასართობი სივრცე „ფაბრიკაც“ მარჯანიშვილზეა. აქ იპოვით ბარებს, ჰოსტელებს და საერთო სამუშაო სივრცეებს.</p>
-          
-          <div class="photo-container">
-            <img class="diary-img" src="images/international-space/37 Photo Fabrika 2nd.jpeg" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/38 Photo Fabrika.jpeg" alt="diary-image" />
-          </div>
+        <div class="photo-container inner-page-container">
+          <img class="diary-img" src="images/international-space/28 Photo.jpg" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/29 Photo.jpg" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/30 Photo inside of school 37.jpeg" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/31 Photo School №37.jpeg" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/32 Photo № 37 school_s yard.jpg" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/33 Photo pupils in the class.jpeg" alt="diary-image" />
+        </div>
 
-          <p class="diary-txt diary=txt-1">გუმბათოვანი შენობები აქ ყველაზე პოპულარული შენობებია</p>
+        <p class="diary-txt diary=txt-1">ზარა და ვართანიანი სკოლიდან სახლისკენ მომავალ გზაზე მარჯანიშვილის მეტროს ერთად მიუყვებიან.</p>
 
-          <div class="photo-container">
-            <img class="diary-img" src="images/international-space/39 Photo .jpg" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/40 Photo .jpg" alt="diary-image" />
-          </div>
+        <div class="photo-container inner-page-container">
+          <img class="diary-img" src="images/international-space/34 Photo Metro.jpeg" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/35 Photo Metro Marjanishvili2.JPG" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/36 Photo Inside of Metro Marjanishvili.JPG" alt="diary-image" />
+        </div>
 
-          <p class="diary-txt diary=txt-1">ამ უბანში ბევრ ისტორიულ შენობას დაინახავთ, თუმცა კარგად თუ დააკვირდებით, თანამედროვე არქიტექტურის ნიმუშებსაც მოკრავთ თვალს.</p>
-          
-          <div class="photo-container">
-            <img class="diary-img" src="images/international-space/41 Photo Dodo Abashidze street.jpeg" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/42 Photo Old street in Marjanishvili.JPG" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/43 Photo Old Streets in Marjanishvili.JPG" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/44 Photo Old Streets in Marjanishvili2.JPG" alt="diary-image" />
-            <img class="diary-img" src="images/international-space/45 Photo Modern buildings in Marjanishvili.JPG" alt="diary-image" />
-          </div>
-          
-          <p class="diary-txt diary=txt-1"></p>
+        <p class="diary-txt diary=txt-1">ახალგაზრდებისა და ტურისტების საყვარელი გასართობი სივრცე „ფაბრიკაც“ მარჯანიშვილზეა. აქ იპოვით ბარებს, ჰოსტელებს და საერთო სამუშაო სივრცეებს.</p>
+
+        <div class="photo-container inner-page-container">
+          <img class="diary-img" src="images/international-space/37 Photo Fabrika 2nd.jpeg" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/38 Photo Fabrika.jpeg" alt="diary-image" />
+        </div>
+
+        <p class="diary-txt diary=txt-1">გუმბათოვანი შენობები აქ ყველაზე პოპულარული შენობებია</p>
+
+        <div class="photo-container inner-page-container">
+          <img class="diary-img" src="images/international-space/39 Photo .jpg" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/40 Photo .jpg" alt="diary-image" />
+        </div>
+
+        <p class="diary-txt diary=txt-1">ამ უბანში ბევრ ისტორიულ შენობას დაინახავთ, თუმცა კარგად თუ დააკვირდებით, თანამედროვე არქიტექტურის ნიმუშებსაც მოკრავთ თვალს.</p>
+
+        <div class="photo-container inner-page-container">
+          <img class="diary-img" src="images/international-space/41 Photo Dodo Abashidze street.jpeg" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/42 Photo Old street in Marjanishvili.JPG" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/43 Photo Old Streets in Marjanishvili.JPG" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/44 Photo Old Streets in Marjanishvili2.JPG" alt="diary-image" />
+          <img class="diary-img" src="images/international-space/45 Photo Modern buildings in Marjanishvili.JPG" alt="diary-image" />
+        </div>
+
+        <p class="diary-txt diary=txt-1"></p>
         <!-- </div> -->
       </div>
     </section>
@@ -250,9 +255,9 @@
       </div>
     </footer>
 
-      <script src="javascript/blackppr.js"></script>
-      <script src="javascript/languages.js"></script>
-      <script src="javascript/diary.js"></script>
-      <!-- <script src="javascript/script.js"></script> -->
+    <script src="javascript/languages.js"></script>
+    <script src="javascript/blackppr.js"></script>
+    <script src="javascript/diary.js"></script>
+    <!-- <script src="javascript/script.js"></script> -->
   </body>
 </html>

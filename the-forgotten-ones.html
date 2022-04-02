@@ -15,47 +15,51 @@
     <section class="background-diary">
       <header class="navigation">
         <div class="border"></div>
-            <div class="logo">
-                <a href="index_ge.html">Chai Khana media.code</a>
+        <div class="logo">
+          <a href="index_ge.html">Chai Khana media.code</a>
+        </div>
+        <nav class="menu">
+          <ul class="firstul">
+            <li><a href="index_ge.html" class="main">მთავარი</a></li>
+            <li><a href="#projects-cont" class="projects">პროექტები</a></li>
+          </ul>
+          <ul class="languages">
+            <div class="ge-cont">
+              <li><a href="#" id="ge" class="lang ge">Geo</a></li>
+              <i class="fa-solid fa-caret-down"></i>
             </div>
-            <nav class="menu">
-                <ul class="firstul">
-                    <li><a href="index_ge.html" class="main">მთავარი</a></li>
-                    <li><a href="#projects-cont" class="projects">პროექტები</a></li>
+            <li><a href="index.html" id="en" class="lang enru en">Eng</a></li>
+            <li><a href="index_ru.html" id="ru" class="lang enru ru">Rus</a></li>
+          </ul>
+          <div class="burger">
+            <i id="burger" class="fa-solid fa-bars" onclick="mobileMenu()"></i>
+            <div id="mobMenu" class="mobile-menu"></div>
+            <div class="mobile-nav-cont">
+              <div class="logo-burger">Chai Khana media.code</div>
+              <hr class="line" />
+            </div>
+            <div class="mobile-menu-cont">
+              <ul>
+                <li><a href="index_ge.html" class="mobile-main">მთავარი</a></li>
+                <br />
+                <li><a href="#projects-cont" class="mobile-projects" onclick="removeMenu()">პროექტები</a></li>
+                <br />
+                <ul class="mobile-languages">
+                  <li>
+                    <a href="#" class="mobile-leng" onclick="removeMenu()"><b>Geo</b></a>
+                  </li>
+                  <li><a href="index.html" class="mobile-leng mobile-enru" onclick="removeMenu()">Eng</a></li>
+                  <li><a href="index_ru.html" class="mobile-leng mobile-enru" onclick="removeMenu()">Rus</a></li>
                 </ul>
-                <ul class="languages">
-                    <div class="ge-cont">
-                    <li><a href="#" id="ge" class="lang ge">Geo</a></li>
-                    <i class="fa-solid fa-caret-down"></i>
-                    </div>
-                    <li><a href="index.html" id="en" class="lang enru en">Eng</a></li>
-                    <li><a href="index_ru.html" id="ru" class="lang enru ru">Rus</a></li>
-                </ul>
-                <div class="burger">
-                    <i id="burger" class="fa-solid fa-bars"  onclick="mobileMenu()"></i>
-                    <div id="mobMenu" class="mobile-menu"></div>
-                    <div class="mobile-nav-cont">
-                        <div class="logo-burger">Chai Khana media.code</div>
-                        <hr class="line">
-                    </div>
-                    <div class="mobile-menu-cont">
-                        <ul>
-                            <li><a href="index_ge.html" class="mobile-main">მთავარი</a></li><br>
-                            <li><a href="#projects-cont" class="mobile-projects" onclick="removeMenu()">პროექტები</a></li><br>
-                            <ul class="mobile-languages">
-                                <li><a href="#" class="mobile-leng" onclick="removeMenu()"><b>Geo</b></a></li>
-                                <li><a href="index.html"  class="mobile-leng mobile-enru" onclick="removeMenu()">Eng</a></li>
-                                <li><a href="index_ru.html"  class="mobile-leng mobile-enru" onclick="removeMenu()">Rus</a></li>
-                            </ul>
-                        </ul>
-                    </div>
-                </div>
-                <div id="xmark" class="xmark" onclick="removeMenu()">&times;</div>
-            </nav>
+              </ul>
+            </div>
+          </div>
+          <div id="xmark" class="xmark" onclick="removeMenu()">&times;</div>
+        </nav>
       </header>
-      <div id="inner-page-container" class="inner-cont-diary">
+      <div  class="inner-cont-diary">
         <div class="logo-diary">
-          <a href="https://chaikhana.media/" target="_blank"><img src="images/logo.png" alt="logo"></a>
+          <a href="https://chaikhana.media/" target="_blank"><img src="images/logo.png" alt="logo" /></a>
         </div>
         <h1 class="diary-head">ისინი, ვინც დაივიწყეს</h1>
         <h1 class="diary-author">ავტორი: ირაკლი</h1>
@@ -67,7 +71,7 @@
           მამამისი, ნაური, მეზღვაური იყო, შორ მანძილებზე დაცურავდა და მრავალი ქვეყანა ჰქონდა ნანახი. ხოლო დედა, ნონა, გალის მუნიციპალიტეტის სასწრაფო დახმარების ექიმად მუშაობდა.
         </p>
 
-        <div class="photo-container2">
+        <div class="photo-container2 inner-page-container">
           <img id="img-left" class="diary-img" src="images/the-forgotten-ones/1.jpeg" alt="diary-image" />
         </div>
 
@@ -80,17 +84,15 @@
           1992 წლის აგვისტოში, აფხაზეთში სამოქალაქო ომი დაიწყო. საომარი მოქმედებების შედეგად, რომელიც 1 წელი და 2 თვე გაგრძელდა, 1993 წელს რეგიონის მოსახლეობის უმეტეს ნაწილს, ძირითადად ქართველებს,
           საკუთარი სახლების დატოვება მოუწიათ. ომმა არც პატარა ირაკლის ოჯახს აუარა გვერდი. ისინი სოხუმში წავიდნენ, სადაც თავის რიგს ელოდნენ ბორანზე ასასვლელად, რომელიც მათ რუსეთში გადაიყვანდა.<br /><br />
           „მახსოვს, ზღვასთან ვიყავით. ბევრი ბორანი იდგა. ჩვენც გემს ველოდებოდით. ხალხი ბორნებისკენ მიიწევდა. ბევრს არ უშვებდნენ, ბორტზე ადგილები არ ყოფნიდათ. ძალიან კარგად მახსოვს, რადგან გარშემო
-          პანიკა სუფევდა“, - იხსენებს ირაკლი.<br><br>
+          პანიკა სუფევდა“, - იხსენებს ირაკლი.<br /><br />
           უცნობია, თუ რამდენმა დევნილმა უშველა თავს ზღვით. ქალაქი გარშემორტყმული იყო უნომრო სამხედრო კატერებით. ხალხი წინ მიიიწევდა და იბრძოდა ნავმისადგომთან ადგილის მოსაპოვებლად, ზოგს რიგმა მოუწია,
           ზოგი კი სამუდამოდ დარჩა ცეცხლმოდებულ სოხუმში.
-
         </p>
-        <div class="photo-container2">
+        <div class="photo-container2 inner-page-container">
           <img id="img-right" class="diary-img" src="images/the-forgotten-ones/2.png" alt="diary-image" />
         </div>
 
         <p class="diary-txt diary=txt-1">
-          
           „ძალიად დიდხანს მივცურავდით, საშინლად ცხელოდა. ქალები და მოხუცები ერთ მხარეს დასვეს, მამაკაცები მეორე , ბავშვები კი ზედა გემბანზე იყვნენ. ჩამოსვლისას მატარებლებში გადავნაწილდით. ზოგი
           მოსკოვისკენ გაემგზავრა, სადაც ნათესავები ჰყავა, ზოგი კი , როგორც ჩვენ, სანკტ-პეტერბურგისკენ. იქ, საბჭოთა კავშირის დროიდან მოყოლებული ცხოვრობდა მამაჩემის ძმა. თან მხოლოდ მცირე რაოდენობის
           ნივთები და პასპორტები გვქონდა“, - გვიყვება ირაკლი. <br /><br />
@@ -99,7 +101,7 @@
           გვირჩია პეტერბურგში წავსულიყავით, რადგან იქ არც ომი იყო და სიტუაციაც სტაბილური იყო.
         </p>
 
-        <div class="photo-container2">
+        <div class="photo-container2 inner-page-container">
           <img id="img-left" class="diary-img" src="images/the-forgotten-ones/3.jpeg" alt="diary-image" />
         </div>
 
@@ -129,7 +131,7 @@
           ერთმანეთს იცნობს და შეიძლება ბევრ რამეზე მოლაპარაკება. ალბათ ზუსტად ამის გამო ხალხი არ ცდილობს დიდი ქალაქებში გადასვლას“, - ამბობს ირაკლი.
         </p>
 
-        <div class="photo-container2">
+        <div class="photo-container2 inner-page-container">
           <img id="img-right" class="diary-img" src="images/the-forgotten-ones/4.jpeg" alt="diary-image" />
         </div>
 
@@ -188,7 +190,7 @@
           მაინც“, -იხსენებს ირაკლი.
         </p>
 
-        <div class="photo-container2">
+        <div class="photo-container2 inner-page-container">
           <img id="img-left" class="diary-img" src="images/the-forgotten-ones/5.png" alt="diary-image" />
         </div>
 

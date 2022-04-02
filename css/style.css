@@ -1682,6 +1682,7 @@ footer {
 
 .name-friend {
   font-weight: bolder;
+  color: #000;
 }
 
 .audio-story-head {
@@ -1702,7 +1703,7 @@ footer {
 
 .audio {
   width: 93%;
-  height: 482px;
+  /* height: 482px; */
   margin-left: 8%;
   margin-bottom: 58px;
   margin-top: 58px;
@@ -1732,9 +1733,9 @@ footer {
     margin-bottom: 15px;
   }
 
-  .logo {
+  /* .logo {
     margin-bottom: 70px;
-  }
+  } */
 
   .audio-story-desc {
     font-size: 1.8rem;
@@ -1751,6 +1752,7 @@ footer {
 
   .audio {
     margin-bottom: 32px;
+    margin-top: 32px;
   }
 
   .white-container {
@@ -1909,7 +1911,7 @@ footer {
   max-height: 336px;
   cursor: pointer;
   float: left;
-  padding: 20px 20px 20px 0;
+  padding: 20px 20px 0 0;
   max-width: 80%;
   height: auto;
 }
@@ -1931,9 +1933,10 @@ footer {
     float: none;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 95%;
+    max-width: 100%;
     max-height: 1000px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     margin-top: 30px;
     margin-bottom: 30px;
   }
@@ -1942,31 +1945,41 @@ footer {
     float: none;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 95%;
+    max-width: 100%;
     max-height: 1000px;
     transform: translateX(5%);
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-left: -8%;
   }
 }
 
 @media (max-width: 768px) {
+  .inner-cont-diary {
+    padding-bottom: 70px;
+  }
+
   #img-left {
     float: none;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    /* width: 90%;
+    margin-left: 25px; */
     max-height: 1000px;
-    margin-left: 25px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 95%;
+    max-width: 100%;
   }
 
   #img-right {
     float: none;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 95%;
+    max-width: 100%;
+    margin-left: -8%;
     max-height: 1000px;
     transform: translateX(5%);
     margin-top: 10px;
@@ -2467,7 +2480,6 @@ hr {
     font-size: 1.6rem;
   }
 
-
   .arrows {
     width: 80px;
     transform: translate(-50%, 270px);
@@ -2614,6 +2626,7 @@ hr {
   height: 336px;
   color: white;
   position: relative;
+  cursor: pointer;
 }
 
 .photo-container2 {
@@ -2655,20 +2668,27 @@ hr {
   width: 64px;
 }
 
+.full-slider-cont {
+  position: relative;
+}
+
 .right-friends {
-  right: 10%;
+  right: -5%;
+  top: 50%;
+  transform: translateY(-50%);
   display: block;
   z-index: 1;
-  transform: translateY(50%);
 }
 
 .left-friends {
-  left: 17%;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
   z-index: 1;
   display: none;
   /* bottom: 10px; */
   /* transform: translateX(50%); */
-  transform: translate(-50px, 63px) rotate(180deg);
+  /* transform: translate(-50px, 63px) rotate(180deg); */
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
@@ -2676,11 +2696,11 @@ hr {
     width: 40px;
   }
 
-  .left-friends {
+  /* .left-friends {
     left: 20%;
-  }
+  } */
 }
-
+/* 
 @media (max-width: 800px) {
   .left-friends {
     left: 22%;
@@ -2703,7 +2723,7 @@ hr {
   .left-friends {
     left: 30%;
   }
-}
+} */
 
 @media (max-width: 768px) {
   .photo-slider-arrow svg {
@@ -2744,24 +2764,23 @@ hr {
   }
 }
 
-
 .right-gali {
-  right: 3%;
+  right: -5%;
+  top: 50%;
+  transform: translateY(-100%);
   display: block;
   z-index: 1;
-  transform: translateY(50%);
 }
 
 .left-gali {
-  left: 13%;
+  left: 10%;
+  top: 50%;
   z-index: 1;
   display: none;
   /* bottom: 10px; */
   /* transform: translateX(50%); */
-  transform: translate(-50px, 63px) rotate(180deg);
+  transform: translateY(-100%) rotate(180deg);
 }
-
-
 
 .image-linear-right {
   height: 100%;
