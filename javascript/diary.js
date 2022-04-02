@@ -7,7 +7,7 @@ const zoomerImg = container => {
   popupDiary.append(popupImage);
 
   container.addEventListener("click", e => {
-    if (e.target.className === "diary-img") {
+    if (e.target.classList.contains("diary-img")) {
       popupImage.src = e.target.src;
       popupDiary.style.display = "block";
       e.target.after(popupDiary);
