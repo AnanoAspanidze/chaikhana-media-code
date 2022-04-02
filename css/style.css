@@ -619,7 +619,8 @@ h6 {
   /* height: 354px; */
   border-radius: 42px;
   cursor: pointer;
-  padding: 37px 20px 52px 20px;
+  /* padding: 37px 20px 52px 20px; */
+  padding: 25px 20px 20px 20px;
   overflow: auto;
   overflow: hidden;
 }
@@ -2726,7 +2727,7 @@ hr {
     left: 20%;
   } */
 }
-/* 
+/*
 @media (max-width: 800px) {
   .left-friends {
     left: 22%;
