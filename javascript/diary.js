@@ -13,7 +13,7 @@ const zoomerImg = container => {
       e.target.after(popupDiary);
     }
 
-    popupImage.onclick = e => {
+    popupDiary.onclick = e => {
       popupDiary.remove();
     };
   });

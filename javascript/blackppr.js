@@ -60,10 +60,14 @@ function removeMenu() {
 
 
 	rightArrow1.addEventListener('click', () => {
+
+		leftArrow1.style.display = "block"; //მარცხენა ისარი ჩანს
+   		linearL1.style.display = "block";
+
 		const currentActiveDiaryImg =
 			eachSlider.querySelector('.active-diary-img')
 		const moveRightValue = currentActiveDiaryImg.offsetWidth + 20
-    console.log(moveRightValue, currentActiveDiaryImg);
+    	console.log(moveRightValue, currentActiveDiaryImg);
 		scrollToRightValue1 += moveRightValue //501px-ით ისქროლება onmousedown-ზე
 		articlesContainer1.scrollLeft = scrollToRightValue1
 		if (

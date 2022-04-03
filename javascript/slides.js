@@ -78,7 +78,6 @@ function sliderCounter(increase) {
   if (increase) {
     if (x < y) {
       x++;
-      console.log(x, y);
       path5.style.fill = "#004FD8";
     }
     if (x === y) {
@@ -107,11 +106,14 @@ document.querySelectorAll(".slider-items img").forEach(image => {
     imageItem.src = image.getAttribute("src"); // აქ ის სორსი ჩავდე ახალ შექმნილი ელემენტის სორსში რომელიც დაკლიკვიდან მომაქვს
     // $('.slider-img').slick('unslick');
     // document.querySelector('.slider-img').style.display = 'none';
-    document.querySelector('.arrows').style.display = 'none';
+    document.querySelector(".arrows").style.display = "none";
+    document.querySelector(".navigation").style.display = "none";
   };
 });
 
 document.getElementById("close").onclick = () => {
   document.querySelector(".popup-image").style.display = "none";
   document.querySelector(".arrows").style.display = "grid";
+    document.querySelector(".navigation").style.display = "flex";
+
 };
