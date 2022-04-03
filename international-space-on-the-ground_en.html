@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-        <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>International space on the ground</title>
     <link rel="icon" href="images/logo.png" />
-    <meta name="description" content="მედია და ციფრული წიგნიერების ინიციატივა სამხრეთ კავკასიის კონფლიქტურ რეგიონებში"/>
+    <meta name="description" content="Media and Digital Literacy Initiative in the Conflict Regions of the South Caucasus" />
     <meta property="og:type" content="article" />
     <!-- <meta property="og:url" content="" />  -->
     <meta property="og:title" content="Chai Khana media.code" />
-    <meta property="og:description" content="მედია და ციფრული წიგნიერების ინიციატივა სამხრეთ კავკასიის კონფლიქტურ რეგიონებში" />
+    <meta property="og:description" content="Media and Digital Literacy Initiative in the Conflict Regions of the South Caucasus" />
     <!-- <meta property="og:image" content="" /> -->
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
     <script src="https://kit.fontawesome.com/ad2b7b6887.js" crossorigin="anonymous"></script>
     <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
@@ -30,36 +30,36 @@
         </div>
         <nav class="menu">
           <ul class="firstul">
-            <li><a href="index_ge.html" class="main">მთავარი</a></li>
-            <li><a href="index_ge.html#projects-cont" class="projects">პროექტები</a></li>
+            <li><a href="index.html" class="main">Home</a></li>
+            <li><a href="index.html#projects-cont" class="projects">Projects</a></li>
           </ul>
           <ul class="languages">
             <div class="ge-cont">
-              <li><a href="#" id="ge" class="lang ge">Geo</a></li>
+              <li><a href="#" id="ge" class="lang ge">Eng</a></li>
               <i class="fa-solid fa-caret-down"></i>
             </div>
-            <li><a href="international-space-on-the-ground_en.html" id="en" class="lang enru en">Eng</a></li>
-            <li><a href="index_ru.html" id="ru" class="lang enru ru">Rus</a></li>
+            <li><a href="international-space-on-the-ground_ge.html" id="en" class="lang enru en">Geo</a></li>
+            <li><a href="#" id="ru" class="lang enru ru">Rus</a></li>
           </ul>
           <div class="burger">
             <i id="burger" class="fa-solid fa-bars" onclick="mobileMenu()"></i>
             <div id="mobMenu" class="mobile-menu"></div>
             <div class="mobile-nav-cont">
-              <a class="logo-burger" href="index_ge.html">Chai Khana media.code</a>
+              <div class="logo-burger">Chai Khana media.code</div>
               <hr class="line" />
             </div>
             <div class="mobile-menu-cont">
               <ul>
-                <li><a href="index_ge.html" class="mobile-main">მთავარი</a></li>
+                <li><a href="index.html" class="mobile-main">Home</a></li>
                 <br />
-                <li><a href="index_ge.html#projects-cont" class="mobile-projects" onclick="removeMenu()">პროექტები</a></li>
+                <li><a href="index.html#projects-cont" class="mobile-projects" onclick="removeMenu()">Projects</a></li>
                 <br />
                 <ul class="mobile-languages">
+                  <li><a href="international-space-on-the-ground_ge.html" class="mobile-leng" onclick="removeMenu()">Geo</a></li>
                   <li>
-                    <a href="#" class="mobile-leng" onclick="removeMenu()"><b>Geo</b></a>
+                    <a href="#" class="mobile-leng mobile-enru" onclick="removeMenu()"><b>Eng</b></a>
                   </li>
-                  <li><a href="international-space-on-the-ground_en.html" class="mobile-leng mobile-enru" onclick="removeMenu()">Eng</a></li>
-                  <li><a href="index_ru.html" class="mobile-leng mobile-enru" onclick="removeMenu()">Rus</a></li>
+                  <li><a href="#" class="mobile-leng mobile-enru" onclick="removeMenu()">Rus</a></li>
                 </ul>
               </ul>
             </div>
@@ -71,29 +71,34 @@
         <div class="logo-diary">
           <a href="https://chaikhana.media/" target="_blank"><img src="images/logo.png" alt="logo" /></a>
         </div>
-        <h1 class="diary-head">“საერთაშორისო სადგური” დედამიწაზე</h1>
-        <h1 class="diary-author">ავტორი: ულვია შაჰინ ქარიმოვა</h1>
+        <h1 class="diary-head">“International space” on the ground</h1>
+        <h1 class="diary-author">Author: Ulviyya Shahin Karimova</h1>
         <p class="diary-txt diary=txt-1">
-          თბილისში სწავლის დაფინანსების შესახებ რომ გავიგე, ჩემს თავს ვკითხე - გაგვიჭირდება ახალ ქვეყანაში ცხოვრება, თუ არა? დიდხანს ვმერყეობდი ამერიკის საელჩოში საბუთების შეტანაზე. თუ ამ ნაბიჯს
-          გადავდგამდი, ნიშნავდა, რომ მე და ჩემს გოგონას ახალი ცხოვრება დამოუკიდებლად უნდა დაგვეწყო. ვფიქრობდი, რომ ჩემი შვილისთვის სახლიდან მოშორებით ყოფნა მარტივი არ იქნებოდა.
+          As soon as I heard the confirmation that I had received a scholarship and was going to study in Tbilisi (Georgia), the first thing that came to my mind was that it would not be difficult for
+          me to live there with my daughter ?! I was hesitant to submit such documents to the American embassy. Because it meant that my daughter and I had to start living together again from the
+          beginning. I thought it would be difficult for my daughter to be far from homeland.
         </p>
 
         <div class="photo-container2 inner-page-container">
           <img id="img-left" class="diary-img" src="images/international-space/1.  (Zara and me).jpeg" alt="diary-image" />
         </div>
         <p class="diary-txt diary=txt-1">
-          ერთ-ერთი სარეკომენდაციო წერილი ჩემმა საყვარელმა მასწავლებელმა ელჩინ შიხლიმ დამიწერა. ბატონი შიხლი გამოცემა „აინას“ დამფუძნებელი და მთავარი რედაქტორია. ჩემი ფიქრები მას გავუზიარე. დამამშვიდა
-          და მითხრა: „ღმერთის წყალობით, ყველაფერი კარგად იქნება.“ ზუსტად ისე მოხდა, როგორც მითხრა. მე და ჩემს გოგონას, ზარას, თბილისი ერთი ნახვით შეგვიყვარდა. ზარას არც მეგობრების პოვნა გაუჭირდა
-          სკოლაში და თბილისიც ბაქოსავით შეუყვარდა.<br /><br />
-          რამდენიმე თვე თბილისის ძველ უბანში, მთაწმინდაზე ვცხოვრობდით. მერე, ზარას სკოლასთან ახლოს რომ ვყოფილიყავით, მარჯანიშვილზე გადავედით. თავისი მრავალფეროვნებით ეს უბანი ყველაფრისგან
-          განსხვავებული აღმოჩნდა. ის ერთ-ერთი ყველაზე დიდი უბანია თბილისში. მე მხოლოდ ნაწილზე გიყვებით. ამ ფოტოების ნახვის შემდეგ, მჯერა, ეს ადგილი ისევე შეგიყვარდებათ, როგორც მე.
+          One of my recommendation letters was written and signed by Elchin Shikhli, my valuable teacher, and founder and editor-in-chief of "Ayna" ("Zerkalo"). At that time, I also told Elchin
+          Shikhli that I had doubts while submitting my documents. At that moment, his answer to me was, "God will take care of everything." And everything happened as he said. <br /><br />
+          But as soon as I arrived in Tbilisi , I had opposite feelings.. My daughter and I loved Tbilisi. My daughter's name is Zara. As soon as she started school, she made many friends and fell in
+          love with Tbilisi as much as with Baku.<br /><br />
+          On the first day when we came to Tbilisi, we lived in the Mtatsminda district. Then we had to change the house we rented, because the area where we lived was far from Zara's school. We had
+          to choose our next place in Marjanishvili district. When I moved here, I discovered a completely different environment. To me this district had more international character than the one I
+          lived in before. Here you could see people from all nations. Marjanishvili is a very large area, but my photo-story only covers part of it. I'm sure you will love Marjanishvili as I do!
+          <br /><br />
         </p>
 
         <!-- <div id="inner-page-container"> -->
 
         <p class="diary-txt diary=txt-1">
-          ფოტოების გადაღებას მარჯანიშვილის მეტროსთან მდებარე ქუჩით ვიწყებთ. აქ ყოველთვის ბევრი ხალხი და ბევრი მანქანაა. მეტროს წინ მცირე მოვაჭრეები დგანან. მარჯანიშვილის მეტრო-სადგური 1966 წლის 11
-          იანვარს გაიხსნა. სახელი დიდი ქართველი რეჟისორის, კოტე მარჯანიშვილის საპატივსაცემოდ ეწოდა
+          As a location for my first picture, I chose the street where the Marjanishvili metro station is located. This is one of the busiest streets in the area. People are doing small business in
+          front of the metro. Marjanishvili is a station on the Akhmeteli–Varketili Line of the Tbilisi Metro. It opened on 11 January 1966. The station is named after Kote Marjanishvili, a Georgian
+          theater director.
         </p>
 
         <div class="photo-container-2-images inner-page-container">
@@ -102,10 +107,13 @@
         </div>
 
         <p class="diary-txt diary=txt-1">
-          მეტროდან რამდენიმე მეტრში, ჯავახიშვილის ქუჩაზე, რუსული მართლმადიდებლური ეკლესიაა. რუსები სალოცავად აქ ყოველდღე მოდიან. ლოცულობენ მაშინაც, როცა ეკლესიას ჩაუვლიან ხოლმე. ფოტოების გადასაღებად
-          მისულს, ადგილზე ბევრი ხალხი დამხვდა. ბავშვებიც მოეყვანათ.<br /><br />> 1864 წელს აგებულ ამ რუსულ ეკლესიას რამდენიმე შთამბეჭდავი მოხატულობა ამშვენებს, მათ შორის მარიამ მაგდალინელის, წმინდა
-          ნინოსა და წმინდა ნიკოლოზის გამოსახულებები. სხვა წმინდანებს შორის იპოვით წმ. შიო მღვიმელის ხატსაც.<br /><br />
-          კვირა დღის პირველი საათია. რუსები სალოცავად მოვიდნენ
+          Close to Marjanishvili metro there is a Russian Orthodox Church which is located on Ivane Javakhishvili street. Russian people come there every day to pray. They pray even when they passing
+          by the church. On the day I went there for my photo-shooting, I saw people coming there with their children to pray.<br /><br />
+          Originally built in1864 by the donations of the faithful, the Holy Synod has allocated 5000 rubles. There are several shrines in the church: the relics of Mary Magdalene, St. Nina, St.
+          Nicholas, St. Shio Mgvime and others.<br /><br />
+
+          <span class="boldnblack">On Sunday, at 13:00 PM, the Russians came to pray in the church</span><br /><br />
+          <span class="boldnblack">Tbilisi, Georgia. Marjanishvili. Russian Orthodox Church</span>
         </p>
 
         <div class="full-slider-cont">
@@ -130,7 +138,10 @@
           </div>
         </div>
 
-        <p class="diary-txt diary=txt-1">45 წლის გიორგი გოგოლაძე ამ უბნის მოსახლეობისთვის დღეში 80 ცალ შოთს აცხობს. თონე აქ სამი წლის წინ მოაწყო და მარტო მუშაობს.</p>
+        <p class="diary-txt diary=txt-1">
+          Giorgi Gogoladze, 45, bakes about 80 loaves of bread every day for Marjanishvili’s population. Gogoladze has been baking bread in this area for more than three years. He works here alone. He
+          both bakes and sells bread.
+        </p>
 
         <div class="full-slider-cont">
           <div class="image-linear-right"></div>
@@ -158,8 +169,10 @@
         </div>
 
         <p class="diary-txt diary=txt-1">
-          მარჯანიშვილზე ხილ-ბოსტნეულის სახელდახელოდ მოწყობილ უამრავ მაღაზიას შეხვდებით. მოვაჭრეების უმრავლესობა ეთნიკურად აზერბაიჯანელია. 51 წლის ლალა რასულოვა მათგან ერთ-ერთია. თავად საბურთალოზე
-          ცხოვრობს, თუმცა აქ თავის შვილებთან ერთად მუშაობს. შვილები საქართველოში დაიბადნენ და გაიზარდნენ. ლალა თქმით, მის მაღაზიას ყოველდღე ბევრი სხვადასხვა კულტურისა და ტრადიციის ადამიანისტუმრობს.
+          If you walk in Marjanishvili district, you will come across many fruit and vegetable shops along the streets. Most of the sellers there are Azerbaijanis.<br /><br />
+
+          Lala Rasulova, 51, is one of them. . She works in this shop with her daughter and son. Rasulova lives in Saburtalo. Her children were born in Georgia and grew there. She says that people of
+          different nationalities come to the store every day.
         </p>
 
         <div class="full-slider-cont">
@@ -185,10 +198,12 @@
         </div>
 
         <p class="diary-txt diary=txt-1">
-          მაღაზია „ანკარა“ იორდანელ არაბებს ეკუთვნით. მაღაზიის კონსულტანტები ჰიჯაბს ატარებენ. მაღაზიაში ფოტოების გადაღების უფლება არ მომცეს. ვერც მოლარეები გადავიღე. ძალიან კონსერვატიული ხალხია
+          The Ankara market is run by Arabs. The sellers in the market wear hijabs. They did not allow me to shoot the market from inside. I was not allowed to shoot sellers either. However, I saw
+          that the Arabs were more conservative.<br /><br />
+          Marjanishvili is a home for many Turkish restaurants. One of them is Ankara restaurant, the owner and employees are Turks. Ahmed Aydemir is the chef of the restaurant and loves to cook
+          Turkish food.
         </p>
 
-                
         <div class="full-slider-cont">
           <div class="image-linear-right"></div>
           <div class="image-linear-left"></div>
@@ -210,7 +225,7 @@
           </div>
         </div>
 
-        <p class="diary-txt diary=txt-1">„ხინკალოში“ ქართველებთან ერთად, რუსებიც მუშაობენ. ყოველდღიურად აქ ასობით პელმენი და ხინკალი მზადდება</p>
+        <p class="diary-txt diary=txt-1">Both Russians and Georgians work at the Khingal House. Every day they prepare plemeni (Russian cuisine) and Georgian khinkali here.</p>
 
         <div class="full-slider-cont">
           <div class="image-linear-right"></div>
@@ -234,7 +249,7 @@
           </div>
         </div>
 
-        <p class="diary-txt diary=txt-1">მარჯანიშვილის ქუჩას ყოველდღიურად ასუფთავებენ. დასუფთავების სამსახურის თანამშრომლებს შორის არიან ქართველები, რუსები, და სომხები.</p>
+        <p class="diary-txt diary=txt-1">Every morning, afternoon and evening, garbage trucks clean the streets of Marja- nishvili. The staff includes Georgians, Russians and Armenians.</p>
 
         <div class="photo-container inner-page-container"></div>
 
@@ -244,8 +259,12 @@
         </div>
 
         <p class="diary-txt diary=txt-1">
-          მარჯანიშვილის ერთ ქუჩაზე, ერთმანეთის მოპირდაპირედ, რუსულ და სომხურ ეკლესიებს დაინახავთ. მეტროდან ოდნავ მოშორებით პეტრე-პავლეს სახელობის კათოლიკური ეკლესიაა. ბაროკოს სტილის ეს შენობა 1877 წელს
-          აშენდა, ძმები ზუბალაშვილების ინიციატივით. ეკლესიის მრევლი რუსებს, სომხებს, ქართველებსა და დასავლელ ექსპატებს აერთიანებს
+          One of the interesting points is that in Marjanishvili, on one side of the same street, the Russian Church and on the other side, the Armenian Church are waiting for people with religious
+          beliefs to worship.<br /><br />
+
+          Just off Tbilisi’s Marjanishvili Street lies the beautiful Saint Peter & Paul church. This Catholic house of worship, built in the Baroque style as part of a Zubalashvili Brothers
+          initiative, was completed in 1877. The parish has served as a focal point for the city’s Catholic community ever since—bringing together ethnic Armenians, Georgians, Russians, and Western
+          expats around a common faith.
         </p>
 
         <div class="full-slider-cont">
@@ -271,7 +290,7 @@
         </div>
 
         <p class="diary-txt diary=txt-1">
-          37-ე სკოლა მარჯანიშვილის უბანში ერთადერთია, სადაც სხვადასხვა ეროვნების მოსწავლეები დადიან. აქ ნახავთ აზერბაიჯანელ, თურქ, სომეხ, რუს, ჩინელ და ქართველ მოსწავლეებს
+          School No. 37 is the only school in Marjanishvili where children of all nationalities study. There are Azerbaijani, Turkmen, Armenian, Russian and Chinese, Georgians among the students.
         </p>
 
         <div class="full-slider-cont">
@@ -298,9 +317,8 @@
           </div>
         </div>
 
-        <p class="diary-txt diary=txt-1">ზარა და ვართანიანი სკოლიდან სახლისკენ მომავალ გზაზე მარჯანიშვილის მეტროს ერთად მიუყვებიან.</p>
+        <p class="diary-txt diary=txt-1">Zara and Vartanyan sometimes use the Marjanishvili metro when they go from the school to the for a walk.</p>
 
-        
         <div class="full-slider-cont">
           <div class="image-linear-right"></div>
           <div class="image-linear-left"></div>
@@ -322,22 +340,21 @@
           </div>
         </div>
 
-
-        <p class="diary-txt diary=txt-1">ახალგაზრდებისა და ტურისტების საყვარელი გასართობი სივრცე „ფაბრიკაც“ მარჯანიშვილზეა. აქ იპოვით ბარებს, ჰოსტელებს და საერთო სამუშაო სივრცეებს.</p>
+        <p class="diary-txt diary=txt-1">The famous FABRİKA is also located in Marjanishvili. Urban Hotspot. Multifunctional Cultural Center </p>
 
         <div class="photo-container-2-images inner-page-container">
           <img class="diary-img diary-img-1 diary-img-cont-2" src="images/international-space/37 Photo Fabrika 2nd.jpeg" alt="diary-image" />
           <img class="diary-img diary-img-cont-2" src="images/international-space/38 Photo Fabrika.jpeg" alt="diary-image" />
         </div>
 
-        <p class="diary-txt diary=txt-1">გუმბათოვანი შენობები აქ ყველაზე პოპულარული შენობებია</p>
+        <p class="diary-txt diary=txt-1">One of Marjanishvili's most famous buildings is this crowned building.</p>
 
         <div class="photo-container-2-images inner-page-container">
           <img class="diary-img diary-img-1 diary-img-cont-2" src="images/international-space/39 Photo .jpg" alt="diary-image" />
           <img class="diary-img diary-img-cont-2" src="images/international-space/40 Photo .jpg" alt="diary-image" />
         </div>
 
-        <p class="diary-txt diary=txt-1">ამ უბანში ბევრ ისტორიულ შენობას დაინახავთ, თუმცა კარგად თუ დააკვირდებით, თანამედროვე არქიტექტურის ნიმუშებსაც მოკრავთ თვალს.</p>
+        <p class="diary-txt diary=txt-1">Every street in Marjanishvili is different. Some streets are full of historic buildings, and some are surrounded by modern buildings.</p>
 
         <div class="full-slider-cont">
           <div class="image-linear-right"></div>
@@ -362,7 +379,11 @@
           </div>
         </div>
 
-        <p class="diary-txt diary=txt-1"></p>
+        <p class="diary-txt diary=txt-1">
+            Finally, think of a space that will unite all nations in the South Caucasus. It is a place where people of different nationalities, different cultures and finally different languages can easily understand each other.<br><br> 
+            If you are looking for tolerance in the South Caucasus, it must be Georgia. In my opinion, the leading part of tolerance in Georgia is Marjanishvili. I wish peace and love to the whole world, as well as to Georgia!
+
+        </p>
         <!-- </div> -->
       </div>
     </section>

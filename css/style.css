@@ -1727,6 +1727,14 @@ footer {
   transform: translateY(-50%);
 }
 
+.red {
+  color: red;
+}
+
+.black {
+  color: #000;
+}
+
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
   .audio-story-head {
     font-size: 3rem;
@@ -1889,6 +1897,12 @@ footer {
   color: #707070;
   margin-left: 8%;
   text-align: justify;
+}
+
+.boldnblack {
+  font-weight: bolder;
+  color: #000;
+  font-style: italic;
 }
 
 .photo-container {
