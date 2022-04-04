@@ -17,9 +17,9 @@ window.addEventListener("click", e => {
   eachword.addEventListener("click", () => {
     eachword.querySelector(".note").style.display = "block";
     eachword.querySelector(".noted-x").style.display = "inline";
-  });
+  }, true )
   eachword.querySelector(".noted-x").addEventListener("click", () => {
-      eachword.querySelector(".note").remove();
-      eachword.querySelector(".noted-x").remove();
+      eachword.querySelector(".note").style.display = "none";
+      eachword.querySelector(".noted-x").style.display = "none";
   });
 });

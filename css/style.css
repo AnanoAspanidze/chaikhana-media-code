@@ -1499,8 +1499,6 @@ h6 {
   display: none;
 }
 
-
-
 .vertical-line {
   width: 1px;
   height: 330.87px;
@@ -1582,9 +1580,6 @@ h6 {
 }
 
 @media (max-width: 768px) {
-
-
-  
   .L svg {
     width: 20px;
   }
@@ -1768,7 +1763,7 @@ footer {
 }
 
 .blue {
-  color:#0038d3;
+  color: #0038d3;
 }
 
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
@@ -2961,24 +2956,22 @@ hr {
 }
 
 .note-word {
-  position: relative;
+  /* position: relative; */
   cursor: pointer;
   color: #0038d3;
 }
 .note {
   position: absolute;
-  top: calc(100% + 7px);
-  left: 50%;
-  transform: translateX(-50%);
+  left: 7%;
   z-index: 1;
-  width: 300px;
+  width: 86%;
   cursor: default;
-  background-color: #4d4d4d;
-  color: white;
-  padding: 5px 15px;
+  background-color: #F0F4FF;
+  color: #666666;
+  border-radius: 25px;
+  border: 1px solid #0038D3;
+  padding: 15px 50px 15px 15px;
   overflow: hidden;
-  /* height: 0; */
-  /* white-space: nowrap; */
   font-size: 18px;
   line-height: 20px;
   transition: height 0.1s ease-out, padding 0.1s ease-out;
@@ -2987,16 +2980,15 @@ hr {
 
 .noted-x {
   position: absolute;
-  z-index: 2;
-  top: 50%;
-  transform: translate(0, -50%);
-  background-color: #4d4d4d;
-  padding: 0 10px;
+  right: 0;
+  top: 10%;
+  font-size: 30px;
+  z-index: 3;
+  padding-right: 20px;
   cursor: pointer;
-  color: white;
+  color: rgb(14, 14, 14);
   /* overflow: hidden; */
   transition: height 0.1s ease, padding 0.1s ease-out;
-  padding: 5px 10px;
   display: none;
 }
 
@@ -3004,18 +2996,6 @@ hr {
   color: rgb(89, 142, 191);
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
-  .note {
-    width: 200px;
-  }
-}
-
-@media (max-width: 768px) {
-  .note {
-    width: 100px;
-  }
-}
-
 .link {
-  color:#0038d3;
+  color: #0038d3;
 }
