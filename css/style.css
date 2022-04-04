@@ -577,7 +577,7 @@ h6 {
   width: 100%;
   /* min-height: 1165px; */
   background-color: #0038d3;
-  padding-bottom: 179px;
+  padding-bottom: 100px;
 }
 
 .project-head {
@@ -619,7 +619,7 @@ h6 {
   /* height: 354px; */
   border-radius: 42px;
   cursor: pointer;
-  padding: 37px 20px 52px 20px;
+  padding: 25px 20px 20px 20px;
   overflow: auto;
   overflow: hidden;
 }
@@ -1192,7 +1192,7 @@ h6 {
 .grid-ru {
   background-color: white;
   border-radius: 42px;
-  padding: 53px 20px 42px 28px;
+  padding: 20px 20px 20px 20px;
 }
 
 .grid-ru:hover {
@@ -1413,7 +1413,7 @@ h6 {
   width: 100%;
   /* height: 1668px; */
   background-color: #0038d3;
-  padding-bottom: 200px; /*დროებით ჩემით მივაწერე*/
+  padding-bottom: 75px;
   position: relative;
 }
 
@@ -1423,7 +1423,7 @@ h6 {
   font-size: 7.4rem;
   width: 50%;
   margin-left: 7%;
-  padding-top: 259px;
+  padding-top: 169px;
   margin-bottom: 117px;
 }
 
@@ -1513,7 +1513,7 @@ h6 {
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
   .reflexion-header h1 {
     font-size: 3rem;
-    padding-top: 182px;
+    padding-top: 100px;
     margin-bottom: 87px;
   }
 
@@ -1765,6 +1765,10 @@ footer {
 
 .black {
   color: #000;
+}
+
+.blue {
+  color:#0038d3;
 }
 
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
@@ -3010,4 +3014,8 @@ hr {
   .note {
     width: 100px;
   }
+}
+
+.link {
+  color:#0038d3;
 }
