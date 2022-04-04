@@ -1166,7 +1166,15 @@ h6 {
   font-family: "BPG WEB 001";
   padding-top: 14px;
   padding-left: 7%;
+  padding-right: 7%;
   margin-bottom: 62px;
+}
+
+.text-russian-ol {
+  font-size: 2.5rem;
+  color: #707070;
+  margin-left: 11%;
+  text-align: justify;
 }
 
 .project-ru-grid-cont {
@@ -1950,7 +1958,6 @@ footer {
   height: auto;
 }
 
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
   #img-left {
     float: none;
@@ -1979,6 +1986,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .text-russian-ol {
+    text-align: left;
+  }
+
   .diary-txt {
     text-align: left;
   }
@@ -2077,6 +2088,10 @@ hr {
     margin-bottom: 46.5px;
   }
 
+  .text-russian-ol {
+    font-size: 1.6rem;
+  }
+
   .diary-txt {
     font-size: 1.6rem;
   }
@@ -2103,6 +2118,10 @@ hr {
     margin-bottom: 33px;
   }
 
+  .text-russian-ol {
+    font-size: 1.8rem;
+  }
+
   .diary-txt {
     font-size: 1.8rem;
   }
@@ -2123,6 +2142,10 @@ hr {
   .diary-author {
     font-size: 1.6rem;
     margin-bottom: 17px;
+  }
+
+  .text-russian-ol {
+    font-size: 1.6rem;
   }
 
   .diary-txt {
@@ -2904,7 +2927,6 @@ hr {
   z-index: 1;
   display: none;
 }
-
 
 #img100max {
   max-width: 100% !important;

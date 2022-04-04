@@ -74,6 +74,10 @@ function mobileMenu() {
   document.querySelector(".line").style.display = "block";
   document.querySelector(".mobile-menu-cont").style.display = "block";
   document.querySelector(".logo").style.display = "none";
+  document.querySelector(".right").style.display = "none";
+  document.querySelector(".left").style.display = "none";
+  document.querySelector(".image-linear-right").style.display = "none";
+  document.querySelector(".image-linear-left").style.display = "none";
 }
 
 function removeMenu() {
@@ -83,6 +87,10 @@ function removeMenu() {
   document.querySelector(".line").style.display = "none";
   document.querySelector(".mobile-menu-cont").style.display = "none";
   document.querySelector(".logo").style.display = "block";
+  document.querySelector(".right").style.display = "block";
+  document.querySelector(".left").style.display = "block";
+  document.querySelector(".image-linear-right").style.display = "block";
+  document.querySelector(".image-linear-left").style.display = "block";
 }
 
 //ფოტო-სლაიდერები
