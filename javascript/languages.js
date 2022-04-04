@@ -12,3 +12,14 @@ window.addEventListener("click", e => {
     document.getElementById("ge").classList.remove("show");
   }
 }); // აქ გარე კლიკის დროს ვკეცავ ენებს
+
+[...document.querySelectorAll(".note-word")].forEach(eachword => {
+  eachword.addEventListener("click", () => {
+    eachword.querySelector(".note").style.display = "block";
+    eachword.querySelector(".noted-x").style.display = "inline";
+  });
+  eachword.querySelector(".noted-x").addEventListener("click", () => {
+      eachword.querySelector(".note").remove();
+      eachword.querySelector(".noted-x").remove();
+  });
+});

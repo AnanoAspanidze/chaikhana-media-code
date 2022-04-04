@@ -2931,3 +2931,59 @@ hr {
 #img100max {
   max-width: 100% !important;
 }
+
+.note-word {
+  position: relative;
+  cursor: pointer;
+  color: #0038d3;
+}
+.note {
+  position: absolute;
+  top: calc(100% + 7px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 300px;
+  cursor: default;
+  background-color: #4d4d4d;
+  color: white;
+  padding: 5px 15px;
+  overflow: hidden;
+  /* height: 0; */
+  /* white-space: nowrap; */
+  font-size: 18px;
+  line-height: 20px;
+  transition: height 0.1s ease-out, padding 0.1s ease-out;
+  display: none;
+}
+
+.noted-x {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: #4d4d4d;
+  padding: 0 10px;
+  cursor: pointer;
+  color: white;
+  /* overflow: hidden; */
+  transition: height 0.1s ease, padding 0.1s ease-out;
+  padding: 5px 10px;
+  display: none;
+}
+
+.note-a {
+  color: rgb(89, 142, 191);
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
+  .note {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .note {
+    width: 100px;
+  }
+}
