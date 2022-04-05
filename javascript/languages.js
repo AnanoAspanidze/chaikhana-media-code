@@ -13,13 +13,29 @@ window.addEventListener("click", e => {
   }
 }); // აქ გარე კლიკის დროს ვკეცავ ენებს
 
+
+//ამ კოდით სიტყვაზე დაჭერისას ამოდის popup note და ჰაერში კლიკზე იკეცება
+
 [...document.querySelectorAll(".note-word")].forEach(eachword => {
-  eachword.addEventListener("click", () => {
-    eachword.querySelector(".note").style.display = "block";
-    eachword.querySelector(".noted-x").style.display = "inline";
-  }, true )
+  eachword.addEventListener(
+    "click",
+    () => {
+      eachword.querySelector(".note").style.display = "block";
+      eachword.querySelector(".noted-x").style.display = "inline";
+    },
+    true
+  );
   eachword.querySelector(".noted-x").addEventListener("click", () => {
+    eachword.querySelector(".note").style.display = "none";
+    eachword.querySelector(".noted-x").style.display = "none";
+  });
+
+  window.addEventListener(
+    "click",
+    e => {
       eachword.querySelector(".note").style.display = "none";
       eachword.querySelector(".noted-x").style.display = "none";
-  });
+    },
+    true
+  );
 });
