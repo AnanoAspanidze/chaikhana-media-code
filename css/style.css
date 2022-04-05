@@ -824,7 +824,11 @@ h6 {
 }
 
 .project-details {
-  padding-bottom: 100px;
+  padding-bottom: 70px;
+}
+
+.project-details-ru {
+  padding-bottom: 20px;
 }
 
 /* პირველი ფლექს კონტეინერი */
@@ -1220,9 +1224,13 @@ h6 {
   color: #707070;
 }
 
-.authors2 {
-  color: #707070 !important;
+.add-rus-author {
+  color: #707070;
 }
+
+/* .authors2 {
+  color: #707070 !important;
+} */
 
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
   .authors-ru-grid {
@@ -1231,7 +1239,7 @@ h6 {
 
   .projects-for-rus-header {
     font-size: 3.5rem;
-    margin-top: 67px;
+    /* margin-top: 67px; */
   }
 
   .projects-for-rus-header-2 {
