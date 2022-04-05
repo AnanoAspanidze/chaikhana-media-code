@@ -41,7 +41,7 @@ h6 {
   content: "\2022";
   color: #0044ff;
   font-weight: bold;
-  display: inline-block; 
+  display: inline-block;
   width: 1em;
   margin-left: -1em;
 }
@@ -810,6 +810,10 @@ h6 {
   flex-direction: column;
 }
 
+.project-details {
+  padding-bottom: 100px;
+}
+
 /* პირველი ფლექს კონტეინერი */
 
 .details-head {
@@ -888,7 +892,6 @@ h6 {
   margin-left: 54px;
 }
 
-
 .list {
   margin-bottom: 50px;
 }
@@ -928,6 +931,7 @@ h6 {
   .details-shadow {
     width: 31rem;
     height: 2.4rem;
+    margin-bottom: 123px;
     -webkit-transform: translateY(57%);
     -ms-transform: translateY(57%);
     transform: translateY(57%);
@@ -963,14 +967,16 @@ h6 {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
-
-
   .details-main {
     flex-direction: column;
   }
 
   .flex {
     margin-bottom: 50px;
+  }
+
+  .project-details {
+    padding-bottom: 0;
   }
 
   .details-head h1 {
@@ -1031,14 +1037,13 @@ h6 {
 }
 
 @media (max-width: 768px) {
-
-  
   .details-main {
     flex-direction: column;
   }
 
   .project-details {
     list-style: inherit;
+    padding-bottom: 0%;
   }
 
   .details-head {
@@ -1100,7 +1105,6 @@ h6 {
   .inner-flex-list li {
     margin-left: 10px;
   }
-
 }
 /* --------------------PROJECTS (for russian)---------------------- */
 
