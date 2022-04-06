@@ -2618,7 +2618,7 @@ hr {
 @media (max-width: 700px) {
   .arrows {
     position: absolute;
-    bottom: 200px;
+    bottom: -85px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -2628,7 +2628,7 @@ hr {
 @media (max-width: 650px) {
   .arrows {
     position: absolute;
-    bottom: 300px;
+    bottom: 0;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -2643,7 +2643,7 @@ hr {
 @media (max-width: 600px) {
   .arrows {
     position: absolute;
-    bottom: 300px;
+    bottom: 50px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -2658,7 +2658,7 @@ hr {
 @media (max-width: 550px) {
   .arrows {
     position: absolute;
-    bottom: 300px;
+    bottom: 150px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -2673,7 +2673,7 @@ hr {
 @media (max-width: 500px) {
   .arrows {
     position: absolute;
-    bottom: 350px;
+    bottom: 150px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -2728,7 +2728,7 @@ hr {
 @media (max-width: 450px) {
   .arrows {
     position: absolute;
-    bottom: 400px;
+    bottom: 200px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -2743,7 +2743,7 @@ hr {
 @media (max-width: 400px) {
   .arrows {
     position: absolute;
-    bottom: 450px;
+    bottom: 250px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -2776,7 +2776,7 @@ hr {
 @media (max-width: 350px) {
   .arrows {
     position: absolute;
-    bottom: 550px;
+    bottom: 300px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);

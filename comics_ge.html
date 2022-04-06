@@ -1,220 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chai Khana media.code</title>
     <link rel="icon" href="images/logo.png" />
-    <meta name="description" content="მედია და ციფრული წიგნიერების ინიციატივა სამხრეთ კავკასიის კონფლიქტურ რეგიონებში"/>
+    <meta name="description" content="მედია და ციფრული წიგნიერების ინიციატივა სამხრეთ კავკასიის კონფლიქტურ რეგიონებში" />
     <meta property="og:type" content="article" />
     <!-- <meta property="og:url" content="" />  -->
     <meta property="og:title" content="Chai Khana media.code" />
     <meta property="og:description" content="მედია და ციფრული წიგნიერების ინიციატივა სამხრეთ კავკასიის კონფლიქტურ რეგიონებში" />
     <meta property="og:image" content="images/og" />
 
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
     <script src="https://kit.fontawesome.com/ad2b7b6887.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ad2b7b6887.js" crossorigin="anonymous"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!----------------------- BACKGROUND ------------------------>
     <section class="background-slider">
-        <header class="navigation">
-            <div class="border"></div>
-                <div class="logo">
-                    <a href="index_ge.html">Chai Khana media.code</a>
-                </div>
-                <nav class="menu">
-                    <ul class="firstul">
-                        <li><a href="index_ge.html" class="main">მთავარი</a></li>
-                        <li><a href="index_ge.html#projects-cont" class="projects">პროექტები</a></li>
-                    </ul>
-                    <ul class="languages">
-                        <div class="ge-cont">
-                        <li><a href="#" id="ge" class="lang ge">Geo</a></li>
-                        <i class="fa-solid fa-caret-down"></i>
-                        </div>
-                        <li><a href="comics_en.html" id="en" class="lang enru en">Eng</a></li>
-                        <li><a href="comics_ru.html" id="ru" class="lang enru ru">Rus</a></li>
-                    </ul>
-                    <div class="burger">
-                        <i id="burger" class="fa-solid fa-bars"  onclick="mobileMenu()"></i>
-                        <div id="mobMenu" class="mobile-menu"></div>
-                        <div class="mobile-nav-cont">
-                            <div class="logo-burger">Chai Khana media.code</div>
-                            <hr class="line">
-                        </div>
-                        <div class="mobile-menu-cont">
-                            <ul>
-                                <li><a href="index_ge.html" class="mobile-main">მთავარი</a></li><br>
-                                <li><a href="index_ge.html#projects-cont" class="mobile-projects" onclick="removeMenu()">პროექტები</a></li><br>
-                                <ul class="mobile-languages">
-                                    <li><a href="#" class="mobile-leng" onclick="removeMenu()"><b>Geo</b></a></li>
-                                    <li><a href="comics_en.html"  class="mobile-leng mobile-enru" onclick="removeMenu()">Eng</a></li>
-                                    <li><a href="comics_ru.html"  class="mobile-leng mobile-enru" onclick="removeMenu()">Rus</a></li>
-                                </ul>
-                            </ul>
-                        </div>
-                    </div>
-                <div id="xmark" class="xmark" onclick="removeMenu()">&times;</div>
-            </nav>
-        </header>
-        <section class="inner-cont-slider">
-            <h1 class="slider-header">აბიტურიენტობა გალში</h1>
-            <h1 class="slider-author">ავტორები: ანონიმური</h1>
-            <!-- <p class="paragtaph1"> უნივერსიტეტში მისაღები გამოცდებისთვის მზადება ერთ-ერთი ყველაზე სტრესული პერიოდია
+      <header class="navigation">
+        <div class="border"></div>
+        <div class="logo">
+          <a href="index_ge.html">Chai Khana media.code</a>
+        </div>
+        <nav class="menu">
+          <ul class="firstul">
+            <li><a href="index_ge.html" class="main">მთავარი</a></li>
+            <li><a href="index_ge.html#projects-cont" class="projects">პროექტები</a></li>
+          </ul>
+          <ul class="languages">
+            <div class="ge-cont">
+              <li><a href="#" id="ge" class="lang ge">Geo</a></li>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <li><a href="comics_en.html" id="en" class="lang enru en">Eng</a></li>
+            <li><a href="comics_ru.html" id="ru" class="lang enru ru">Rus</a></li>
+          </ul>
+          <div class="burger">
+            <i id="burger" class="fa-solid fa-bars" onclick="mobileMenu()"></i>
+            <div id="mobMenu" class="mobile-menu"></div>
+            <div class="mobile-nav-cont">
+              <div class="logo-burger">Chai Khana media.code</div>
+              <hr class="line" />
+            </div>
+            <div class="mobile-menu-cont">
+              <ul>
+                <li><a href="index_ge.html" class="mobile-main">მთავარი</a></li>
+                <br />
+                <li><a href="index_ge.html#projects-cont" class="mobile-projects" onclick="removeMenu()">პროექტები</a></li>
+                <br />
+                <ul class="mobile-languages">
+                  <li>
+                    <a href="#" class="mobile-leng" onclick="removeMenu()"><b>Geo</b></a>
+                  </li>
+                  <li><a href="comics_en.html" class="mobile-leng mobile-enru" onclick="removeMenu()">Eng</a></li>
+                  <li><a href="comics_ru.html" class="mobile-leng mobile-enru" onclick="removeMenu()">Rus</a></li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+          <div id="xmark" class="xmark" onclick="removeMenu()">&times;</div>
+        </nav>
+      </header>
+      <section class="inner-cont-slider">
+        <h1 class="slider-header">აბიტურიენტობა გალში</h1>
+        <h1 class="slider-author">ავტორები: ანონიმური</h1>
+        <!-- <p class="paragtaph1"> უნივერსიტეტში მისაღები გამოცდებისთვის მზადება ერთ-ერთი ყველაზე სტრესული პერიოდია
                 მოზარდების ცხოვრებაში. Ემოციურუდაც და რაციონალურადაც ეს ცხოვრების ახალ ეტაპზე გადასვლას უკავშირდება.
                 Გრაფიკული დიზაინისა და ჟურნალისტიკის მიმართულების სტუდენტების მიერ შექმნილი ეს კომიქსი გვიყვება გალელი
                 აბიტურიენტების გრძელ და საფრთხის შემცველ გზაზე, რომელსაც ისინი საკუთარი სახლებიდან უნივერსიტეტის კარამდე
                 გადიან.</p> -->
-            <div class="slider-img intro">
-                <div class="slider-items">
-                    <img id="img" src="images/comics/1.jpg" alt="images">
-                </div>
-                <div class="slider-items">
-                    <img id="img" src="images/comics/2.jpg" alt="images">
-                </div>
-                <div class="slider-items">
-                    <img id="img" src="images/comics/3.webp" alt="images">
-                </div>
-                <div class="slider-items">
-                    <img id="img" src="images/comics/4.webp" alt="images">
-                </div>
-                <div class="slider-items">
-                    <img id="img" src="images/comics/5.webp" alt="images">
-                </div>
-                <div class="slider-items">
-                    <img id="img" src="images/comics/6.webp" alt="images">
-                </div>
-                <div class="slider-items">
-                    <img id="img" src="images/comics/7.webp" alt="images">
-                </div>
-                <div class="slider-items">
-                    <img id="img" src="images/comics/8.webp" alt="images">
-                </div>
-                <div class="slider-items">
-                    <img id="img" src="images/comics/9.webp" alt="images">
-                </div>
-                <div class="slider-items">
-                    <img id="img" src="images/comics/10.webp" alt="images">
-                </div>
-                <div class="slider-items">
-                    <img id="img" src="images/comics/11.webp" alt="images">
-                </div>
-                <div class="slider-items">
-                    <img id="img" src="images/comics/12.webp" alt="images">
-                </div>
-                <div class="slider-items">
-                    <img id="img" src="images/comics/13.webp" alt="images">
-                </div>
-                <div class="slider-items">
-                    <img id="img" src="images/comics/14.webp" alt="images">
-                </div>
-                <div class="slider-items">
-                    <img id="img" src="images/comics/15.webp" alt="images">
-                </div>
-                <div class="slider-items">
-                    <img id="img" src="images/comics/16.webp" alt="images">
-                </div>
-                <div class="slider-items">
-                    <img id="img" src="images/comics/ნახატები1.jpg" alt="images">
-                </div>
-                
+        <div class="slider-container">
+          <div class="slider-img intro">
+            <div class="slider-items">
+              <img id="img" src="images/comics/1.jpg" alt="images" />
             </div>
-            <div class="arrows">
-
-                <span id="p" class="prev-arr" onclick="sliderCounter(false)">
-                    <svg id="Path_3" xmlns="http://www.w3.org/2000/svg" width="16.947" height="48.209" viewBox="0 0 16.947 48.209">
-                        <path id="Path_5" data-name="Path 5" d="M48.209,0l-24,16.947L0,0,24.211,9.078Z" transform="translate(16.947) rotate(90)" fill="#004fd8"/>
-                    </svg>                      
-                </span>
-                <div id="text"> 1/9 </div>
-
-                <div id="n" class="next-arr" onclick="sliderCounter(true)">
-                    <svg id="Path_4" xmlns="http://www.w3.org/2000/svg" width="16.947" height="48.209" viewBox="0 0 16.947 48.209">
-                        <path id="Path_6" data-name="Path 6" d="M48.209,0l-24,16.947L0,0,24.211,9.078Z" transform="translate(16.947) rotate(90)" fill="#004fd8"/>
-                    </svg>                      
-                </div>
-
+            <div class="slider-items">
+              <img id="img" src="images/comics/2.jpg" alt="images" />
             </div>
-
-            <div class="popup-image">
-                <span id="close">&times;</span>
-                <button class="arrow-l-slider">
-                    <svg class="prev-arr rightArr" onclick="sliderCounter(false)" xmlns="http://www.w3.org/2000/svg"
-                        width="44.907" height="127.743" viewBox="0 0 44.907 127.743">
-                        <path id="Path_1" data-name="Path 2" d="M1782.736-32l-63.59,44.907L1654.994-32l64.153,24.054Z"
-                            transform="translate(31.995 1782.736) rotate(-90)" fill="#fff" />
-                    </svg>
-                </button>
-                <button class="arrow-r-slider">
-                    <svg class="next-arr leftArr" onclick="sliderCounter(true)" xmlns="http://www.w3.org/2000/svg"
-                        width="44.907" height="127.743" viewBox="0 0 44.907 127.743">
-                        <path id="Path_2" data-name="Path 2" d="M1782.736-32l-63.59,44.907L1654.994-32l64.153,24.054Z"
-                            transform="translate(31.995 1782.736) rotate(-90)" fill="#fff" />
-                    </svg>
-                </button>
+            <div class="slider-items">
+              <img id="img" src="images/comics/3.webp" alt="images" />
             </div>
+            <div class="slider-items">
+              <img id="img" src="images/comics/4.webp" alt="images" />
+            </div>
+            <div class="slider-items">
+              <img id="img" src="images/comics/5.webp" alt="images" />
+            </div>
+            <div class="slider-items">
+              <img id="img" src="images/comics/6.webp" alt="images" />
+            </div>
+            <div class="slider-items">
+              <img id="img" src="images/comics/7.webp" alt="images" />
+            </div>
+            <div class="slider-items">
+              <img id="img" src="images/comics/8.webp" alt="images" />
+            </div>
+            <div class="slider-items">
+              <img id="img" src="images/comics/9.webp" alt="images" />
+            </div>
+            <div class="slider-items">
+              <img id="img" src="images/comics/10.webp" alt="images" />
+            </div>
+            <div class="slider-items">
+              <img id="img" src="images/comics/11.webp" alt="images" />
+            </div>
+            <div class="slider-items">
+              <img id="img" src="images/comics/12.webp" alt="images" />
+            </div>
+            <div class="slider-items">
+              <img id="img" src="images/comics/13.webp" alt="images" />
+            </div>
+            <div class="slider-items">
+              <img id="img" src="images/comics/14.webp" alt="images" />
+            </div>
+            <div class="slider-items">
+              <img id="img" src="images/comics/15.webp" alt="images" />
+            </div>
+            <div class="slider-items">
+              <img id="img" src="images/comics/16.webp" alt="images" />
+            </div>
+            <div class="slider-items">
+              <img id="img" src="images/comics/ნახატები1.jpg" alt="images" />
+            </div>
+          </div>
+          <div class="arrows">
+            <span id="p" class="prev-arr" onclick="sliderCounter(false)">
+              <svg id="Path_3" xmlns="http://www.w3.org/2000/svg" width="16.947" height="48.209" viewBox="0 0 16.947 48.209">
+                <path id="Path_5" data-name="Path 5" d="M48.209,0l-24,16.947L0,0,24.211,9.078Z" transform="translate(16.947) rotate(90)" fill="#004fd8" />
+              </svg>
+            </span>
+            <div id="text">1/9</div>
 
-
-
-            <p class="paragtaph">
-                <b class="black">2019 წლის 2 ივლისი.</b><br><br>
-                დილის 6 საათი იყო, როდესაც დედამ გამაღვიძა და მთხოვა, რომ შეძელბისდაგვარად მალე მოვმზადებულიყავი. 2 ივლისი იყო. ეროვნული გამოცდები გუშინ დაიწყო, მე პირველი გამოცდა დღეს უნდა მქონოდა, 9 საათზე.<br><br>
-                ნერვიულობისგან ხელები მიკანკალებდა. გამოცდაზე მეტად იმაზე ვდარდობდი, შევძლებდი თუ არა საგამოცდო ცენტრამდე მისვლას.<br><br>
-                საწოლზე წამომჯდარი, თავში რამდენიმე დღის წინ გამართული „მეჯლისის’’ კადრებს ვატრიალდებდი. ვხედავდი ტირილისგან თვალებაწითლებულ ბავშვებს, ნერვიულობისგან გაფითრებულ მშობლებს. ვხედავდი დედაჩემს, რომელიც ცდილობდა სევდა და დარდი როგორმე დაემალა, მაგრამ ამას ვერ ახერხებდა. მეუბნებოდა, რომ ყველაფერი კარგად იქნებოდა და ხიდის ჩაკეტვის მიუხედავად, გამოცდებზე მაინც მოვხვდებოდი და სულ მალე სტუდენტი გავხდებოდი.<br><br>
-                ვეცადე ამ ყველაფერზე ფიქრი როგორმე თავიდან ამომეგდო. მოვემზადე და დაბლა ჩავედი.<br><br>
-                ბებიასა და ჩემს დას განუსაზღვრელი ვადით დავემშვიდობე, და ბაბუას მანქანაში ჩავჯექი.<br><br>
-                მთელი გზა მესმოდა როგორ აწყობდნენ დედა და ბაბუა გეგმებს, როგორ მოვხვედრილიყავით ენგურს იქით. ამ ლაპარაკის პარალელურად გული მეკუმშებოდა. სწავლაზე ოცნებას ვერ ვთმობდი.<br><br>
-                საზღვარს როგორც კი მივუახლოვდით, ნერვიულობამაც იმატა. კიდევ უფრო შევშინდით. ჩემ გარდა, კიდევ რამდენიმე აბიტურიენტი დავინახე გამშვებ პუნქტთან. ისინიც დაძაბულებული და განერვიულებულები ჩანდნენ. <br><br>
-                ვიცოდი, რომ „ლეგალურად“ ახლა არც-ერთი ჩვენგანის გაშვებას არ აპირებდნენ. საზღვრის ჩაკეტვა პირდაპირ მიგვანიშნებდა იმაზე, რომ ჩვენი საბუთები საკმარისი არ იქნებოდა. <br><br>
-                მახსოვს, როგორ მივიდა ბაბუა მესაზღვრესთან, ხელით ჩემზე ანიშნა და ლაპარაკი დაუწყო. დავინახე როგორ მიაწოდა დაკეცილი კუპიურა, მესაზღვრემ როგორ დაუქნია თავი და შევიდა ჯიხურში. ბაბუა დედას და მე მოგვიახლოვდა და გვითხრა, გამოცდაზე მისვლას ვასწრებთო.<br><br>
-                რამდენიმე აბიტურიენტი ჩემზე წინ წავიდა. ახლაც მახსოვს, ერთ გოგონას დედის გარეშე მოუწია საზღვის გადაკვეთა. ცრემლიანი თვალები დავუნახე. ძალიან შეშინებული იყო.<br><br>
-                ჩემი რიგიც მოვიდა. შემიმოწმეს ჩანთები და საბუთები. დასრულებული არ ჰქონდათ შემოწმება, რომ მე და დედა უკვე საზღვრის მეორე მხარეს ვიყავით. აფხაზი მესაზღვრის ეს სიტყვები ექოსავით ჩაგვესმა: „გეგონება, ჩვენ არ გვქონდეს უნივერსიტეტი, ისე მიიჩქარიან იქ წასვლას“.<br><br>
-                ვცადე უკან მიბრუნების გარეშე გამეგრძელებინა გზა, მაგრამ ვერ შევძელი. მაინც გავხედე პუნქტის იქეთ მდგარ ბაბუას, რომელიც გაფითრებული იყო და ხელს მიქნევდა, თვალებით წარმატებებს მისურვებდა.<br><br>
-                <b class="black">6 თვით ადრე - მზადება გამოცდებისთვის</b><br><br>
-                გამოცდებისთვის მზადება, ეროვნულ გამოცდებამდე, ექვსი თვით ადრე დავიწყე. ზოგად უნარებში რეპეტიტორთან ვმეცადინებოდი. მასწვალებელი ჩემს სოფელში არ ყოფილა. სამ სოფელს გავდიოდი ფეხით. Გალში ტრანსპორტი ცუდათ დადის. ხან ბაბუას დავყავდი, ხან კი ვინმე ნაცნობს მივყვებოდი ხოლმე.<br><br>
-                გალის რაიონის სოფლებში მცხოვრები აბიტურიენტების მთავარი  პრობლემაც სწორედ ესაა - მანძილი და ტრანსპორტი. ავტობუსებს კონკრეტული გრაფიკი არ აქვთ, ამიტომ ხშირად ფეხით დავდივართ. როდესაც მასწავლებლისგან სახლში გვიან საღამოს, დაღლილი ბრუნდები, მეცადინეობის თავი აღარ გაქვს. როცა მესაზღვრე რამეს გკითხავს, მაინც ვუმალავთ ხოლმე სად მივდივართ და რას ვსწავლობთ.<br><br>
-                ალბათ, ეს იყო ყველაზე რთული ამ პერიოდში.<br><br>
-                <b class="black">ხიდზე სასაზღვრო პუნქტების გავლა და საგამოცდო ცენტრი</b><br><br>
-                საგამოცდო ცენტრთან მე და დედა, დაახლოებით, 8 საათისთვის მივედით. გახარებულები ვიყავით. არ დაგვიგვიანია. გამოცდას მივუსწარი. მაინც ვნერვიულობდი. იმ აბიტურიენტებზე ვდარდობდი, რომლებმაც საზღვარი ვერ გადმოკვეთეს. <br><br>
-                საგამოცდო ცენტრში შესულს ხელები მიკანკალებდა და მეშინოდა. თუმცა, ის მამშვიდებდა, რომ დედა გარეთ მელოდებოდა. თან იმაზე მეფიქრებოდა, მომდევნო დღეს დედას წასვლა რომ მოუწევდა, მე კი დარჩენილი გამოცდები მარტოს, გულშემატკივრის გარეშე უნდა დამეწერა. <br><br>
-                ქართული ენისა და ლიტერატურის გამოცდის დაწყებიდან 10 წუთის განმავლობაში ვერაფერი დავწერე. მერე ძალა მოვიკრიბე და წერა დავიწყე. გამოცდა დასრულდა და გარეთ რამდენიმე ნაცნობიც ვნახე. <br><br>
-                ამ დღეს გავიგე ამბავი გოგონაზე, რომელმაც საზღვრის არალეგალურად გადაკვეთისას, შემთხვევით, ხელები დაისერა მავთულხლართებზე. ამბავი იმ მოსწავლეებზეც, რომლებსაც დიდი თანხის გადახდა მოუწიათ გამოცდების დასაწერად რომ წამოსულიყვნენ.<br><br>
-                ბევრ ასეთ ისტორიას მოისმენთ გალელი აბიტურიენტებისგან. თითქმის ყველას რაღაც წინააღმდეგობა ხვდება სანამ საგამოცდო ცენტრამდე მივა. ისიც, უნდა გაუმართლოს. <br><br>
-                <b class="black">ახლა</b><br><br>
-
-
-                2 წლის შემდეგაც თვალწინ მიდგას ეს ამბები, გალის რაიონის პატარა სოფლიდან წამოსვლის ტკივილითა და წინაღობებით აღსავსე პროცესი. სწორედ ჩემი სახლი, ეს გამოცდილება მაძლევს მოტივაციას უკეთესი გავხდე, კარგად ვისწავლო და ჩემი განათლება გალში სასიკეთო ცვლილებებს მოვახმარო.<br><br>
-
-                დღეს, 2 წლის შემდეგ, ვსწავლობ იმ უნივერსიტეტში, რომელში მოსახვედრადაც ჩვეულებრივზე მეტი შრომა და წვალება დამჭირდა.  მიუხედავად ამდენი წინააღმდეგობისა, დღეს ჩემი ოცნების ასახდენად ვიბრძვი და ეს ყველაზე მნიშვენლოვანია. სახლშიც მივდივარ ხოლმე, იშვიათად, მაგრამ რაც მთავარია, ჯერ კიდევ შემიძლია ჩასვლა. Ზოგჯერ იქაურობა ტკივილამდე, ცრემლებამდე მენატრება. გასაკვირი არცაა, ყველას უყვარს საკუთარი სახლი და მასთან დაკავშირებული მოგონებები. თუმცა, არასოდეს მავიწყდება, რატომ ვარ იქ, სადაც ახლა ვარ. არასოდეს მავიწყდება ჩემი მთავარი მიზანი, რომ აფხაზეთსა და მის მოსახლეობას, ჩემი თაობის წარმომადგენლებთან ერთად, უკეთესი მომავალი შევუქმნა. 
-
-            </p>
-        </section>
-        <div class="logo-slider">
-            <a href="https://chaikhana.media/" target="_blank"><img src="images/logo.png" alt="logo"></a>
+            <div id="n" class="next-arr" onclick="sliderCounter(true)">
+              <svg id="Path_4" xmlns="http://www.w3.org/2000/svg" width="16.947" height="48.209" viewBox="0 0 16.947 48.209">
+                <path id="Path_6" data-name="Path 6" d="M48.209,0l-24,16.947L0,0,24.211,9.078Z" transform="translate(16.947) rotate(90)" fill="#004fd8" />
+              </svg>
+            </div>
+          </div>
         </div>
+
+        <div class="popup-image">
+          <span id="close">&times;</span>
+          <button class="arrow-l-slider">
+            <svg class="prev-arr rightArr" onclick="sliderCounter(false)" xmlns="http://www.w3.org/2000/svg" width="44.907" height="127.743" viewBox="0 0 44.907 127.743">
+              <path id="Path_1" data-name="Path 2" d="M1782.736-32l-63.59,44.907L1654.994-32l64.153,24.054Z" transform="translate(31.995 1782.736) rotate(-90)" fill="#fff" />
+            </svg>
+          </button>
+          <button class="arrow-r-slider">
+            <svg class="next-arr leftArr" onclick="sliderCounter(true)" xmlns="http://www.w3.org/2000/svg" width="44.907" height="127.743" viewBox="0 0 44.907 127.743">
+              <path id="Path_2" data-name="Path 2" d="M1782.736-32l-63.59,44.907L1654.994-32l64.153,24.054Z" transform="translate(31.995 1782.736) rotate(-90)" fill="#fff" />
+            </svg>
+          </button>
+        </div>
+
+        <p class="paragtaph">
+          <b class="black">2019 წლის 2 ივლისი.</b><br /><br />
+          დილის 6 საათი იყო, როდესაც დედამ გამაღვიძა და მთხოვა, რომ შეძელბისდაგვარად მალე მოვმზადებულიყავი. 2 ივლისი იყო. ეროვნული გამოცდები გუშინ დაიწყო, მე პირველი გამოცდა დღეს უნდა მქონოდა, 9
+          საათზე.<br /><br />
+          ნერვიულობისგან ხელები მიკანკალებდა. გამოცდაზე მეტად იმაზე ვდარდობდი, შევძლებდი თუ არა საგამოცდო ცენტრამდე მისვლას.<br /><br />
+          საწოლზე წამომჯდარი, თავში რამდენიმე დღის წინ გამართული „მეჯლისის’’ კადრებს ვატრიალდებდი. ვხედავდი ტირილისგან თვალებაწითლებულ ბავშვებს, ნერვიულობისგან გაფითრებულ მშობლებს. ვხედავდი დედაჩემს,
+          რომელიც ცდილობდა სევდა და დარდი როგორმე დაემალა, მაგრამ ამას ვერ ახერხებდა. მეუბნებოდა, რომ ყველაფერი კარგად იქნებოდა და ხიდის ჩაკეტვის მიუხედავად, გამოცდებზე მაინც მოვხვდებოდი და სულ მალე
+          სტუდენტი გავხდებოდი.<br /><br />
+          ვეცადე ამ ყველაფერზე ფიქრი როგორმე თავიდან ამომეგდო. მოვემზადე და დაბლა ჩავედი.<br /><br />
+          ბებიასა და ჩემს დას განუსაზღვრელი ვადით დავემშვიდობე, და ბაბუას მანქანაში ჩავჯექი.<br /><br />
+          მთელი გზა მესმოდა როგორ აწყობდნენ დედა და ბაბუა გეგმებს, როგორ მოვხვედრილიყავით ენგურს იქით. ამ ლაპარაკის პარალელურად გული მეკუმშებოდა. სწავლაზე ოცნებას ვერ ვთმობდი.<br /><br />
+          საზღვარს როგორც კი მივუახლოვდით, ნერვიულობამაც იმატა. კიდევ უფრო შევშინდით. ჩემ გარდა, კიდევ რამდენიმე აბიტურიენტი დავინახე გამშვებ პუნქტთან. ისინიც დაძაბულებული და განერვიულებულები ჩანდნენ.
+          <br /><br />
+          ვიცოდი, რომ „ლეგალურად“ ახლა არც-ერთი ჩვენგანის გაშვებას არ აპირებდნენ. საზღვრის ჩაკეტვა პირდაპირ მიგვანიშნებდა იმაზე, რომ ჩვენი საბუთები საკმარისი არ იქნებოდა. <br /><br />
+          მახსოვს, როგორ მივიდა ბაბუა მესაზღვრესთან, ხელით ჩემზე ანიშნა და ლაპარაკი დაუწყო. დავინახე როგორ მიაწოდა დაკეცილი კუპიურა, მესაზღვრემ როგორ დაუქნია თავი და შევიდა ჯიხურში. ბაბუა დედას და მე
+          მოგვიახლოვდა და გვითხრა, გამოცდაზე მისვლას ვასწრებთო.<br /><br />
+          რამდენიმე აბიტურიენტი ჩემზე წინ წავიდა. ახლაც მახსოვს, ერთ გოგონას დედის გარეშე მოუწია საზღვის გადაკვეთა. ცრემლიანი თვალები დავუნახე. ძალიან შეშინებული იყო.<br /><br />
+          ჩემი რიგიც მოვიდა. შემიმოწმეს ჩანთები და საბუთები. დასრულებული არ ჰქონდათ შემოწმება, რომ მე და დედა უკვე საზღვრის მეორე მხარეს ვიყავით. აფხაზი მესაზღვრის ეს სიტყვები ექოსავით ჩაგვესმა:
+          „გეგონება, ჩვენ არ გვქონდეს უნივერსიტეტი, ისე მიიჩქარიან იქ წასვლას“.<br /><br />
+          ვცადე უკან მიბრუნების გარეშე გამეგრძელებინა გზა, მაგრამ ვერ შევძელი. მაინც გავხედე პუნქტის იქეთ მდგარ ბაბუას, რომელიც გაფითრებული იყო და ხელს მიქნევდა, თვალებით წარმატებებს მისურვებდა.<br /><br />
+          <b class="black">6 თვით ადრე - მზადება გამოცდებისთვის</b><br /><br />
+          გამოცდებისთვის მზადება, ეროვნულ გამოცდებამდე, ექვსი თვით ადრე დავიწყე. ზოგად უნარებში რეპეტიტორთან ვმეცადინებოდი. მასწვალებელი ჩემს სოფელში არ ყოფილა. სამ სოფელს გავდიოდი ფეხით. Გალში
+          ტრანსპორტი ცუდათ დადის. ხან ბაბუას დავყავდი, ხან კი ვინმე ნაცნობს მივყვებოდი ხოლმე.<br /><br />
+          გალის რაიონის სოფლებში მცხოვრები აბიტურიენტების მთავარი პრობლემაც სწორედ ესაა - მანძილი და ტრანსპორტი. ავტობუსებს კონკრეტული გრაფიკი არ აქვთ, ამიტომ ხშირად ფეხით დავდივართ. როდესაც
+          მასწავლებლისგან სახლში გვიან საღამოს, დაღლილი ბრუნდები, მეცადინეობის თავი აღარ გაქვს. როცა მესაზღვრე რამეს გკითხავს, მაინც ვუმალავთ ხოლმე სად მივდივართ და რას ვსწავლობთ.<br /><br />
+          ალბათ, ეს იყო ყველაზე რთული ამ პერიოდში.<br /><br />
+          <b class="black">ხიდზე სასაზღვრო პუნქტების გავლა და საგამოცდო ცენტრი</b><br /><br />
+          საგამოცდო ცენტრთან მე და დედა, დაახლოებით, 8 საათისთვის მივედით. გახარებულები ვიყავით. არ დაგვიგვიანია. გამოცდას მივუსწარი. მაინც ვნერვიულობდი. იმ აბიტურიენტებზე ვდარდობდი, რომლებმაც
+          საზღვარი ვერ გადმოკვეთეს. <br /><br />
+          საგამოცდო ცენტრში შესულს ხელები მიკანკალებდა და მეშინოდა. თუმცა, ის მამშვიდებდა, რომ დედა გარეთ მელოდებოდა. თან იმაზე მეფიქრებოდა, მომდევნო დღეს დედას წასვლა რომ მოუწევდა, მე კი დარჩენილი
+          გამოცდები მარტოს, გულშემატკივრის გარეშე უნდა დამეწერა. <br /><br />
+          ქართული ენისა და ლიტერატურის გამოცდის დაწყებიდან 10 წუთის განმავლობაში ვერაფერი დავწერე. მერე ძალა მოვიკრიბე და წერა დავიწყე. გამოცდა დასრულდა და გარეთ რამდენიმე ნაცნობიც ვნახე. <br /><br />
+          ამ დღეს გავიგე ამბავი გოგონაზე, რომელმაც საზღვრის არალეგალურად გადაკვეთისას, შემთხვევით, ხელები დაისერა მავთულხლართებზე. ამბავი იმ მოსწავლეებზეც, რომლებსაც დიდი თანხის გადახდა მოუწიათ
+          გამოცდების დასაწერად რომ წამოსულიყვნენ.<br /><br />
+          ბევრ ასეთ ისტორიას მოისმენთ გალელი აბიტურიენტებისგან. თითქმის ყველას რაღაც წინააღმდეგობა ხვდება სანამ საგამოცდო ცენტრამდე მივა. ისიც, უნდა გაუმართლოს. <br /><br />
+          <b class="black">ახლა</b><br /><br />
+
+          2 წლის შემდეგაც თვალწინ მიდგას ეს ამბები, გალის რაიონის პატარა სოფლიდან წამოსვლის ტკივილითა და წინაღობებით აღსავსე პროცესი. სწორედ ჩემი სახლი, ეს გამოცდილება მაძლევს მოტივაციას უკეთესი
+          გავხდე, კარგად ვისწავლო და ჩემი განათლება გალში სასიკეთო ცვლილებებს მოვახმარო.<br /><br />
+
+          დღეს, 2 წლის შემდეგ, ვსწავლობ იმ უნივერსიტეტში, რომელში მოსახვედრადაც ჩვეულებრივზე მეტი შრომა და წვალება დამჭირდა. მიუხედავად ამდენი წინააღმდეგობისა, დღეს ჩემი ოცნების ასახდენად ვიბრძვი და
+          ეს ყველაზე მნიშვენლოვანია. სახლშიც მივდივარ ხოლმე, იშვიათად, მაგრამ რაც მთავარია, ჯერ კიდევ შემიძლია ჩასვლა. Ზოგჯერ იქაურობა ტკივილამდე, ცრემლებამდე მენატრება. გასაკვირი არცაა, ყველას უყვარს
+          საკუთარი სახლი და მასთან დაკავშირებული მოგონებები. თუმცა, არასოდეს მავიწყდება, რატომ ვარ იქ, სადაც ახლა ვარ. არასოდეს მავიწყდება ჩემი მთავარი მიზანი, რომ აფხაზეთსა და მის მოსახლეობას, ჩემი
+          თაობის წარმომადგენლებთან ერთად, უკეთესი მომავალი შევუქმნა.
+        </p>
+      </section>
+      <div class="logo-slider">
+        <a href="https://chaikhana.media/" target="_blank"><img src="images/logo.png" alt="logo" /></a>
+      </div>
     </section>
 
     <footer>
-        <div class="footer-txt">
-            <p>პროექტთან დაკავშირებული კითხვების შემთხვევაში დაგვიკავშირდით მეილზე: <span
-                    class="mail">info@chaikhana.media</span></p>
-        </div>
+      <div class="footer-txt">
+        <p>პროექტთან დაკავშირებული კითხვების შემთხვევაში დაგვიკავშირდით მეილზე: <span class="mail">info@chaikhana.media</span></p>
+      </div>
     </footer>
-
 
     <!-- script -->
     <script src="javascript/slick.min.js"></script>
     <script src="javascript/script.js"></script>
     <script src="javascript/slides.js"></script>
     <script src="javascript/languages.js"></script>
-
-</body>
+  </body>
+</html>
