@@ -535,7 +535,7 @@ h6 {
 }
 
 #eu-undp.show-img {
-  display: block;
+  display: none;
 }
 
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
@@ -2258,7 +2258,6 @@ hr {
   /* transform: translate(-11%, -20%); */
 }
 
-
 @media (max-width: 1400px) {
   .background-slider {
     padding-bottom: 200px;
@@ -2410,7 +2409,6 @@ hr {
   z-index: 2;
 }
 
-
 .slick-center {
   height: 1000px;
 }
@@ -2454,16 +2452,13 @@ hr {
   .slick-center {
     height: 400px;
   }
-
 }
 
 @media (max-width: 400px) {
-   .slick-center {
+  .slick-center {
     height: 300px;
   }
-
 }
-
 
 @media (max-width: 768px) {
   .arrows {
@@ -2966,4 +2961,3 @@ hr {
 .link {
   color: #0038d3;
 }
-
