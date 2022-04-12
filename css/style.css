@@ -673,6 +673,7 @@ h6 {
 .grid-head {
   margin-bottom: 13px;
   color: #0038d3;
+  font-size: 1.25em;
 }
 
 .grid-author {
@@ -2790,7 +2791,7 @@ hr {
     left: 20%;
   } */
 }
-/* 
+/*
 @media (max-width: 800px) {
   .left-friends {
     left: 22%;
